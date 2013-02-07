@@ -1,0 +1,1096 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		394EE4BF16C34F67000ADC8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE4BE16C34F67000ADC8E /* Foundation.framework */; };
+		394EE4C416C34F67000ADC8E /* Eidynamic_Workflow_Process_and_Semantic_Web_Services.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 394EE4C316C34F67000ADC8E /* Eidynamic_Workflow_Process_and_Semantic_Web_Services.h */; };
+		394EE4C616C34F67000ADC8E /* Eidynamic_Workflow_Process_and_Semantic_Web_Services.m in Sources */ = {isa = PBXBuildFile; fileRef = 394EE4C516C34F67000ADC8E /* Eidynamic_Workflow_Process_and_Semantic_Web_Services.m */; };
+		394EE4CE16C34F67000ADC8E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE4CD16C34F67000ADC8E /* SenTestingKit.framework */; };
+		394EE4D016C34F67000ADC8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE4CF16C34F67000ADC8E /* UIKit.framework */; };
+		394EE4D116C34F67000ADC8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE4BE16C34F67000ADC8E /* Foundation.framework */; };
+		394EE4D416C34F67000ADC8E /* libEidynamic Workflow Process and Semantic Web Services.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE4BB16C34F67000ADC8E /* libEidynamic Workflow Process and Semantic Web Services.a */; };
+		394EE4DA16C34F67000ADC8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 394EE4D816C34F67000ADC8E /* InfoPlist.strings */; };
+		394EE4DD16C34F67000ADC8E /* Eidynamic_Workflow_Process_and_Semantic_Web_ServicesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 394EE4DC16C34F67000ADC8E /* Eidynamic_Workflow_Process_and_Semantic_Web_ServicesTests.m */; };
+		394EE4EB16C34FC7000ADC8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE4CF16C34F67000ADC8E /* UIKit.framework */; };
+		394EE4EC16C34FC7000ADC8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE4BE16C34F67000ADC8E /* Foundation.framework */; };
+		394EE4EE16C34FC7000ADC8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE4ED16C34FC7000ADC8E /* CoreGraphics.framework */; };
+		394EE4F416C34FC7000ADC8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 394EE4F216C34FC7000ADC8E /* InfoPlist.strings */; };
+		394EE4F616C34FC7000ADC8E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 394EE4F516C34FC7000ADC8E /* main.m */; };
+		394EE4FA16C34FC7000ADC8E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 394EE4F916C34FC7000ADC8E /* AppDelegate.m */; };
+		394EE4FC16C34FC7000ADC8E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 394EE4FB16C34FC7000ADC8E /* Default.png */; };
+		394EE4FE16C34FC7000ADC8E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 394EE4FD16C34FC7000ADC8E /* Default@2x.png */; };
+		394EE50016C34FC7000ADC8E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 394EE4FF16C34FC7000ADC8E /* Default-568h@2x.png */; };
+		394EE50316C34FC8000ADC8E /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 394EE50116C34FC8000ADC8E /* MainStoryboard_iPhone.storyboard */; };
+		394EE50616C34FC8000ADC8E /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 394EE50416C34FC8000ADC8E /* MainStoryboard_iPad.storyboard */; };
+		394EE50916C34FC8000ADC8E /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 394EE50816C34FC8000ADC8E /* MasterViewController.m */; };
+		394EE50C16C34FC8000ADC8E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 394EE50B16C34FC8000ADC8E /* DetailViewController.m */; };
+		394EE51316C34FC8000ADC8E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE4CD16C34F67000ADC8E /* SenTestingKit.framework */; };
+		394EE51416C34FC8000ADC8E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE4CF16C34F67000ADC8E /* UIKit.framework */; };
+		394EE51516C34FC8000ADC8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE4BE16C34F67000ADC8E /* Foundation.framework */; };
+		394EE51D16C34FC8000ADC8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 394EE51B16C34FC8000ADC8E /* InfoPlist.strings */; };
+		394EE52016C34FC8000ADC8E /* Eidynamic_WorkflowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 394EE51F16C34FC8000ADC8E /* Eidynamic_WorkflowTests.m */; };
+		394EE52816C3504C000ADC8E /* InterfaceBuilderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE52716C3504C000ADC8E /* InterfaceBuilderKit.framework */; };
+		394EE53016C350E9000ADC8E /* Automator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE52F16C350E9000ADC8E /* Automator.framework */; };
+		394EE53216C350E9000ADC8E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53116C350E9000ADC8E /* Cocoa.framework */; };
+		394EE53416C350E9000ADC8E /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53316C350E9000ADC8E /* AppleScriptObjC.framework */; };
+		394EE53E16C350E9000ADC8E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 394EE53C16C350E9000ADC8E /* InfoPlist.strings */; };
+		394EE54016C350E9000ADC8E /* Strategic_Response_Web_Service.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 394EE53F16C350E9000ADC8E /* Strategic_Response_Web_Service.applescript */; };
+		394EE54316C350E9000ADC8E /* main.xib in Resources */ = {isa = PBXBuildFile; fileRef = 394EE54116C350E9000ADC8E /* main.xib */; };
+		394EE55116C3521A000ADC8E /* Eidynamic_Workflow_Process_and_Semantic_Web_Services.h in Sources */ = {isa = PBXBuildFile; fileRef = 394EE4C316C34F67000ADC8E /* Eidynamic_Workflow_Process_and_Semantic_Web_Services.h */; };
+		394EE55216C35228000ADC8E /* Eidynamic_Workflow_Process_and_Semantic_Web_Services.m in Sources */ = {isa = PBXBuildFile; fileRef = 394EE4C516C34F67000ADC8E /* Eidynamic_Workflow_Process_and_Semantic_Web_Services.m */; };
+		394EE55316C35235000ADC8E /* Eidynamic Workflow Process and Semantic Web Services-Prefix.pch in Sources */ = {isa = PBXBuildFile; fileRef = 394EE4C216C34F67000ADC8E /* Eidynamic Workflow Process and Semantic Web Services-Prefix.pch */; };
+		394EE55416C35277000ADC8E /* libEidynamic Workflow Process and Semantic Web Services.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE4BB16C34F67000ADC8E /* libEidynamic Workflow Process and Semantic Web Services.a */; };
+		394EE55616C353A2000ADC8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE4BE16C34F67000ADC8E /* Foundation.framework */; };
+		394EE55716C354E0000ADC8E /* Automator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE52F16C350E9000ADC8E /* Automator.framework */; };
+		394EE55816C354E2000ADC8E /* Automator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE52F16C350E9000ADC8E /* Automator.framework */; };
+		394EE55916C354FA000ADC8E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53116C350E9000ADC8E /* Cocoa.framework */; };
+		394EE55A16C354FC000ADC8E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53116C350E9000ADC8E /* Cocoa.framework */; };
+		394EE55B16C3552C000ADC8E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53116C350E9000ADC8E /* Cocoa.framework */; };
+		394EE55C16C35532000ADC8E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53116C350E9000ADC8E /* Cocoa.framework */; };
+		394EE55D16C355CE000ADC8E /* Strategic Response Web Service-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 394EE53B16C350E9000ADC8E /* Strategic Response Web Service-Info.plist */; };
+		394EE55E16C355DB000ADC8E /* Strategic Response Web Service-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 394EE53B16C350E9000ADC8E /* Strategic Response Web Service-Info.plist */; };
+		394EE55F16C355DF000ADC8E /* Strategic Response Web Service-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 394EE53B16C350E9000ADC8E /* Strategic Response Web Service-Info.plist */; };
+		394EE56016C356D3000ADC8E /* InterfaceBuilderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE52716C3504C000ADC8E /* InterfaceBuilderKit.framework */; };
+		394EE56116C356D5000ADC8E /* InterfaceBuilderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE52716C3504C000ADC8E /* InterfaceBuilderKit.framework */; };
+		394EE56216C356D6000ADC8E /* InterfaceBuilderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE52716C3504C000ADC8E /* InterfaceBuilderKit.framework */; };
+		394EE56316C356D8000ADC8E /* InterfaceBuilderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE52716C3504C000ADC8E /* InterfaceBuilderKit.framework */; };
+		394EE56416C356F7000ADC8E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE4CD16C34F67000ADC8E /* SenTestingKit.framework */; };
+		394EE56516C356F9000ADC8E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE4CD16C34F67000ADC8E /* SenTestingKit.framework */; };
+		394EE56616C356FB000ADC8E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE4CD16C34F67000ADC8E /* SenTestingKit.framework */; };
+		394EE56716C35701000ADC8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE4ED16C34FC7000ADC8E /* CoreGraphics.framework */; };
+		394EE56816C35702000ADC8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE4ED16C34FC7000ADC8E /* CoreGraphics.framework */; };
+		394EE56916C35704000ADC8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE4ED16C34FC7000ADC8E /* CoreGraphics.framework */; };
+		394EE56A16C35705000ADC8E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE4ED16C34FC7000ADC8E /* CoreGraphics.framework */; };
+		394EE56B16C3571A000ADC8E /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53616C350E9000ADC8E /* AppKit.framework */; };
+		394EE56C16C3571C000ADC8E /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53616C350E9000ADC8E /* AppKit.framework */; };
+		394EE56D16C35720000ADC8E /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53616C350E9000ADC8E /* AppKit.framework */; };
+		394EE56E16C35723000ADC8E /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53616C350E9000ADC8E /* AppKit.framework */; };
+		394EE56F16C35724000ADC8E /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53616C350E9000ADC8E /* AppKit.framework */; };
+		394EE57016C3572A000ADC8E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53716C350E9000ADC8E /* CoreData.framework */; };
+		394EE57116C3572C000ADC8E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53716C350E9000ADC8E /* CoreData.framework */; };
+		394EE57216C3572D000ADC8E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53716C350E9000ADC8E /* CoreData.framework */; };
+		394EE57316C3572E000ADC8E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53716C350E9000ADC8E /* CoreData.framework */; };
+		394EE57416C35730000ADC8E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53716C350E9000ADC8E /* CoreData.framework */; };
+		394EE57516C35735000ADC8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53816C350E9000ADC8E /* Foundation.framework */; };
+		394EE57616C35736000ADC8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53816C350E9000ADC8E /* Foundation.framework */; };
+		394EE57716C35738000ADC8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53816C350E9000ADC8E /* Foundation.framework */; };
+		394EE57816C35739000ADC8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53816C350E9000ADC8E /* Foundation.framework */; };
+		394EE57916C3573B000ADC8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53816C350E9000ADC8E /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		394EE55516C352B1000ADC8E /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = text.plist;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# builtin-copyPlist\n";
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXContainerItemProxy section */
+		394EE4D216C34F67000ADC8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 394EE4B316C34F67000ADC8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 394EE4BA16C34F67000ADC8E;
+			remoteInfo = "Eidynamic Workflow Process and Semantic Web Services";
+		};
+		394EE51616C34FC8000ADC8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 394EE4B316C34F67000ADC8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 394EE4E916C34FC7000ADC8E;
+			remoteInfo = "Eidynamic Workflow";
+		};
+		394EE54816C35187000ADC8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 394EE4B316C34F67000ADC8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 394EE4BA16C34F67000ADC8E;
+			remoteInfo = "Eidynamic Workflow Process and Semantic Web Services";
+		};
+		394EE54A16C3519C000ADC8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 394EE4B316C34F67000ADC8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 394EE4CB16C34F67000ADC8E;
+			remoteInfo = "Eidynamic Workflow Process and Semantic Web ServicesTests";
+		};
+		394EE54C16C351A4000ADC8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 394EE4B316C34F67000ADC8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 394EE4E916C34FC7000ADC8E;
+			remoteInfo = "Eidynamic Workflow";
+		};
+		394EE54E16C351AB000ADC8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 394EE4B316C34F67000ADC8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 394EE51116C34FC8000ADC8E;
+			remoteInfo = "Eidynamic WorkflowTests";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		394EE4B916C34F67000ADC8E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				394EE4C416C34F67000ADC8E /* Eidynamic_Workflow_Process_and_Semantic_Web_Services.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		394EE4BB16C34F67000ADC8E /* libEidynamic Workflow Process and Semantic Web Services.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libEidynamic Workflow Process and Semantic Web Services.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		394EE4BE16C34F67000ADC8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		394EE4C216C34F67000ADC8E /* Eidynamic Workflow Process and Semantic Web Services-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Eidynamic Workflow Process and Semantic Web Services-Prefix.pch"; sourceTree = "<group>"; };
+		394EE4C316C34F67000ADC8E /* Eidynamic_Workflow_Process_and_Semantic_Web_Services.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Eidynamic_Workflow_Process_and_Semantic_Web_Services.h; sourceTree = "<group>"; };
+		394EE4C516C34F67000ADC8E /* Eidynamic_Workflow_Process_and_Semantic_Web_Services.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Eidynamic_Workflow_Process_and_Semantic_Web_Services.m; sourceTree = "<group>"; };
+		394EE4CC16C34F67000ADC8E /* Eidynamic Workflow Process and Semantic Web ServicesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eidynamic Workflow Process and Semantic Web ServicesTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		394EE4CD16C34F67000ADC8E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		394EE4CF16C34F67000ADC8E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		394EE4D716C34F67000ADC8E /* Eidynamic Workflow Process and Semantic Web ServicesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Eidynamic Workflow Process and Semantic Web ServicesTests-Info.plist"; sourceTree = "<group>"; };
+		394EE4D916C34F67000ADC8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		394EE4DB16C34F67000ADC8E /* Eidynamic_Workflow_Process_and_Semantic_Web_ServicesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Eidynamic_Workflow_Process_and_Semantic_Web_ServicesTests.h; sourceTree = "<group>"; };
+		394EE4DC16C34F67000ADC8E /* Eidynamic_Workflow_Process_and_Semantic_Web_ServicesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Eidynamic_Workflow_Process_and_Semantic_Web_ServicesTests.m; sourceTree = "<group>"; };
+		394EE4EA16C34FC7000ADC8E /* Eidynamic Workflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Eidynamic Workflow.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		394EE4ED16C34FC7000ADC8E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		394EE4F116C34FC7000ADC8E /* Eidynamic Workflow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Eidynamic Workflow-Info.plist"; sourceTree = "<group>"; };
+		394EE4F316C34FC7000ADC8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		394EE4F516C34FC7000ADC8E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		394EE4F716C34FC7000ADC8E /* Eidynamic Workflow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Eidynamic Workflow-Prefix.pch"; sourceTree = "<group>"; };
+		394EE4F816C34FC7000ADC8E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		394EE4F916C34FC7000ADC8E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		394EE4FB16C34FC7000ADC8E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		394EE4FD16C34FC7000ADC8E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		394EE4FF16C34FC7000ADC8E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		394EE50216C34FC8000ADC8E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		394EE50516C34FC8000ADC8E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		394EE50716C34FC8000ADC8E /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		394EE50816C34FC8000ADC8E /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		394EE50A16C34FC8000ADC8E /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		394EE50B16C34FC8000ADC8E /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		394EE51216C34FC8000ADC8E /* Eidynamic WorkflowTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Eidynamic WorkflowTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		394EE51A16C34FC8000ADC8E /* Eidynamic WorkflowTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Eidynamic WorkflowTests-Info.plist"; sourceTree = "<group>"; };
+		394EE51C16C34FC8000ADC8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		394EE51E16C34FC8000ADC8E /* Eidynamic_WorkflowTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Eidynamic_WorkflowTests.h; sourceTree = "<group>"; };
+		394EE51F16C34FC8000ADC8E /* Eidynamic_WorkflowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Eidynamic_WorkflowTests.m; sourceTree = "<group>"; };
+		394EE52716C3504C000ADC8E /* InterfaceBuilderKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InterfaceBuilderKit.framework; path = Library/Frameworks/InterfaceBuilderKit.framework; sourceTree = DEVELOPER_DIR; };
+		394EE52E16C350E9000ADC8E /* Strategic Response Web Service.action */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Strategic Response Web Service.action"; sourceTree = BUILT_PRODUCTS_DIR; };
+		394EE52F16C350E9000ADC8E /* Automator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Automator.framework; path = Library/Frameworks/Automator.framework; sourceTree = DEVELOPER_DIR; };
+		394EE53116C350E9000ADC8E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		394EE53316C350E9000ADC8E /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = Library/Frameworks/AppleScriptObjC.framework; sourceTree = DEVELOPER_DIR; };
+		394EE53616C350E9000ADC8E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		394EE53716C350E9000ADC8E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		394EE53816C350E9000ADC8E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		394EE53B16C350E9000ADC8E /* Strategic Response Web Service-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Strategic Response Web Service-Info.plist"; sourceTree = "<group>"; };
+		394EE53D16C350E9000ADC8E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		394EE53F16C350E9000ADC8E /* Strategic_Response_Web_Service.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = Strategic_Response_Web_Service.applescript; sourceTree = "<group>"; };
+		394EE54216C350E9000ADC8E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/main.xib; sourceTree = "<group>"; };
+		394EE54416C350E9000ADC8E /* Strategic Response Web Service-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Strategic Response Web Service-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		394EE4B816C34F67000ADC8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				394EE4BF16C34F67000ADC8E /* Foundation.framework in Frameworks */,
+				394EE55716C354E0000ADC8E /* Automator.framework in Frameworks */,
+				394EE55A16C354FC000ADC8E /* Cocoa.framework in Frameworks */,
+				394EE56016C356D3000ADC8E /* InterfaceBuilderKit.framework in Frameworks */,
+				394EE56616C356FB000ADC8E /* SenTestingKit.framework in Frameworks */,
+				394EE56716C35701000ADC8E /* CoreGraphics.framework in Frameworks */,
+				394EE56B16C3571A000ADC8E /* AppKit.framework in Frameworks */,
+				394EE57016C3572A000ADC8E /* CoreData.framework in Frameworks */,
+				394EE57516C35735000ADC8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		394EE4C816C34F67000ADC8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				394EE4CE16C34F67000ADC8E /* SenTestingKit.framework in Frameworks */,
+				394EE4D016C34F67000ADC8E /* UIKit.framework in Frameworks */,
+				394EE4D116C34F67000ADC8E /* Foundation.framework in Frameworks */,
+				394EE4D416C34F67000ADC8E /* libEidynamic Workflow Process and Semantic Web Services.a in Frameworks */,
+				394EE55816C354E2000ADC8E /* Automator.framework in Frameworks */,
+				394EE55916C354FA000ADC8E /* Cocoa.framework in Frameworks */,
+				394EE56116C356D5000ADC8E /* InterfaceBuilderKit.framework in Frameworks */,
+				394EE56816C35702000ADC8E /* CoreGraphics.framework in Frameworks */,
+				394EE56C16C3571C000ADC8E /* AppKit.framework in Frameworks */,
+				394EE57116C3572C000ADC8E /* CoreData.framework in Frameworks */,
+				394EE57616C35736000ADC8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		394EE4E716C34FC7000ADC8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				394EE4EB16C34FC7000ADC8E /* UIKit.framework in Frameworks */,
+				394EE4EC16C34FC7000ADC8E /* Foundation.framework in Frameworks */,
+				394EE4EE16C34FC7000ADC8E /* CoreGraphics.framework in Frameworks */,
+				394EE55B16C3552C000ADC8E /* Cocoa.framework in Frameworks */,
+				394EE56216C356D6000ADC8E /* InterfaceBuilderKit.framework in Frameworks */,
+				394EE56516C356F9000ADC8E /* SenTestingKit.framework in Frameworks */,
+				394EE56D16C35720000ADC8E /* AppKit.framework in Frameworks */,
+				394EE57216C3572D000ADC8E /* CoreData.framework in Frameworks */,
+				394EE57716C35738000ADC8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		394EE50E16C34FC8000ADC8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				394EE52816C3504C000ADC8E /* InterfaceBuilderKit.framework in Frameworks */,
+				394EE51316C34FC8000ADC8E /* SenTestingKit.framework in Frameworks */,
+				394EE51416C34FC8000ADC8E /* UIKit.framework in Frameworks */,
+				394EE51516C34FC8000ADC8E /* Foundation.framework in Frameworks */,
+				394EE55C16C35532000ADC8E /* Cocoa.framework in Frameworks */,
+				394EE56916C35704000ADC8E /* CoreGraphics.framework in Frameworks */,
+				394EE56F16C35724000ADC8E /* AppKit.framework in Frameworks */,
+				394EE57316C3572E000ADC8E /* CoreData.framework in Frameworks */,
+				394EE57816C35739000ADC8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		394EE52A16C350E9000ADC8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				394EE55416C35277000ADC8E /* libEidynamic Workflow Process and Semantic Web Services.a in Frameworks */,
+				394EE53016C350E9000ADC8E /* Automator.framework in Frameworks */,
+				394EE53216C350E9000ADC8E /* Cocoa.framework in Frameworks */,
+				394EE53416C350E9000ADC8E /* AppleScriptObjC.framework in Frameworks */,
+				394EE55616C353A2000ADC8E /* Foundation.framework in Frameworks */,
+				394EE56316C356D8000ADC8E /* InterfaceBuilderKit.framework in Frameworks */,
+				394EE56416C356F7000ADC8E /* SenTestingKit.framework in Frameworks */,
+				394EE56A16C35705000ADC8E /* CoreGraphics.framework in Frameworks */,
+				394EE56E16C35723000ADC8E /* AppKit.framework in Frameworks */,
+				394EE57416C35730000ADC8E /* CoreData.framework in Frameworks */,
+				394EE57916C3573B000ADC8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		394EE4B216C34F67000ADC8E = {
+			isa = PBXGroup;
+			children = (
+				394EE52716C3504C000ADC8E /* InterfaceBuilderKit.framework */,
+				394EE4C016C34F67000ADC8E /* Eidynamic Workflow Process and Semantic Web Services */,
+				394EE4D516C34F67000ADC8E /* Eidynamic Workflow Process and Semantic Web ServicesTests */,
+				394EE4EF16C34FC7000ADC8E /* Eidynamic Workflow */,
+				394EE51816C34FC8000ADC8E /* Eidynamic WorkflowTests */,
+				394EE53916C350E9000ADC8E /* Strategic Response Web Service */,
+				394EE4BD16C34F67000ADC8E /* Frameworks */,
+				394EE4BC16C34F67000ADC8E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		394EE4BC16C34F67000ADC8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				394EE4BB16C34F67000ADC8E /* libEidynamic Workflow Process and Semantic Web Services.a */,
+				394EE4CC16C34F67000ADC8E /* Eidynamic Workflow Process and Semantic Web ServicesTests.octest */,
+				394EE4EA16C34FC7000ADC8E /* Eidynamic Workflow.app */,
+				394EE51216C34FC8000ADC8E /* Eidynamic WorkflowTests.octest */,
+				394EE52E16C350E9000ADC8E /* Strategic Response Web Service.action */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		394EE4BD16C34F67000ADC8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				394EE4BE16C34F67000ADC8E /* Foundation.framework */,
+				394EE4CD16C34F67000ADC8E /* SenTestingKit.framework */,
+				394EE4CF16C34F67000ADC8E /* UIKit.framework */,
+				394EE4ED16C34FC7000ADC8E /* CoreGraphics.framework */,
+				394EE52F16C350E9000ADC8E /* Automator.framework */,
+				394EE53116C350E9000ADC8E /* Cocoa.framework */,
+				394EE53316C350E9000ADC8E /* AppleScriptObjC.framework */,
+				394EE53516C350E9000ADC8E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		394EE4C016C34F67000ADC8E /* Eidynamic Workflow Process and Semantic Web Services */ = {
+			isa = PBXGroup;
+			children = (
+				394EE4C316C34F67000ADC8E /* Eidynamic_Workflow_Process_and_Semantic_Web_Services.h */,
+				394EE4C516C34F67000ADC8E /* Eidynamic_Workflow_Process_and_Semantic_Web_Services.m */,
+				394EE4C116C34F67000ADC8E /* Supporting Files */,
+			);
+			path = "Eidynamic Workflow Process and Semantic Web Services";
+			sourceTree = "<group>";
+		};
+		394EE4C116C34F67000ADC8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				394EE4C216C34F67000ADC8E /* Eidynamic Workflow Process and Semantic Web Services-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		394EE4D516C34F67000ADC8E /* Eidynamic Workflow Process and Semantic Web ServicesTests */ = {
+			isa = PBXGroup;
+			children = (
+				394EE4DB16C34F67000ADC8E /* Eidynamic_Workflow_Process_and_Semantic_Web_ServicesTests.h */,
+				394EE4DC16C34F67000ADC8E /* Eidynamic_Workflow_Process_and_Semantic_Web_ServicesTests.m */,
+				394EE4D616C34F67000ADC8E /* Supporting Files */,
+			);
+			path = "Eidynamic Workflow Process and Semantic Web ServicesTests";
+			sourceTree = "<group>";
+		};
+		394EE4D616C34F67000ADC8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				394EE4D716C34F67000ADC8E /* Eidynamic Workflow Process and Semantic Web ServicesTests-Info.plist */,
+				394EE4D816C34F67000ADC8E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		394EE4EF16C34FC7000ADC8E /* Eidynamic Workflow */ = {
+			isa = PBXGroup;
+			children = (
+				394EE4F816C34FC7000ADC8E /* AppDelegate.h */,
+				394EE4F916C34FC7000ADC8E /* AppDelegate.m */,
+				394EE50116C34FC8000ADC8E /* MainStoryboard_iPhone.storyboard */,
+				394EE50416C34FC8000ADC8E /* MainStoryboard_iPad.storyboard */,
+				394EE50716C34FC8000ADC8E /* MasterViewController.h */,
+				394EE50816C34FC8000ADC8E /* MasterViewController.m */,
+				394EE50A16C34FC8000ADC8E /* DetailViewController.h */,
+				394EE50B16C34FC8000ADC8E /* DetailViewController.m */,
+				394EE4F016C34FC7000ADC8E /* Supporting Files */,
+			);
+			path = "Eidynamic Workflow";
+			sourceTree = "<group>";
+		};
+		394EE4F016C34FC7000ADC8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				394EE4F116C34FC7000ADC8E /* Eidynamic Workflow-Info.plist */,
+				394EE4F216C34FC7000ADC8E /* InfoPlist.strings */,
+				394EE4F516C34FC7000ADC8E /* main.m */,
+				394EE4F716C34FC7000ADC8E /* Eidynamic Workflow-Prefix.pch */,
+				394EE4FB16C34FC7000ADC8E /* Default.png */,
+				394EE4FD16C34FC7000ADC8E /* Default@2x.png */,
+				394EE4FF16C34FC7000ADC8E /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		394EE51816C34FC8000ADC8E /* Eidynamic WorkflowTests */ = {
+			isa = PBXGroup;
+			children = (
+				394EE51E16C34FC8000ADC8E /* Eidynamic_WorkflowTests.h */,
+				394EE51F16C34FC8000ADC8E /* Eidynamic_WorkflowTests.m */,
+				394EE51916C34FC8000ADC8E /* Supporting Files */,
+			);
+			path = "Eidynamic WorkflowTests";
+			sourceTree = "<group>";
+		};
+		394EE51916C34FC8000ADC8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				394EE51A16C34FC8000ADC8E /* Eidynamic WorkflowTests-Info.plist */,
+				394EE51B16C34FC8000ADC8E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		394EE53516C350E9000ADC8E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				394EE53616C350E9000ADC8E /* AppKit.framework */,
+				394EE53716C350E9000ADC8E /* CoreData.framework */,
+				394EE53816C350E9000ADC8E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		394EE53916C350E9000ADC8E /* Strategic Response Web Service */ = {
+			isa = PBXGroup;
+			children = (
+				394EE53F16C350E9000ADC8E /* Strategic_Response_Web_Service.applescript */,
+				394EE54116C350E9000ADC8E /* main.xib */,
+				394EE53A16C350E9000ADC8E /* Supporting Files */,
+			);
+			path = "Strategic Response Web Service";
+			sourceTree = "<group>";
+		};
+		394EE53A16C350E9000ADC8E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				394EE53B16C350E9000ADC8E /* Strategic Response Web Service-Info.plist */,
+				394EE53C16C350E9000ADC8E /* InfoPlist.strings */,
+				394EE54416C350E9000ADC8E /* Strategic Response Web Service-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		394EE4BA16C34F67000ADC8E /* Eidynamic Workflow Process and Semantic Web Services */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 394EE4E016C34F67000ADC8E /* Build configuration list for PBXNativeTarget "Eidynamic Workflow Process and Semantic Web Services" */;
+			buildPhases = (
+				394EE4B716C34F67000ADC8E /* Sources */,
+				394EE4B816C34F67000ADC8E /* Frameworks */,
+				394EE4B916C34F67000ADC8E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Eidynamic Workflow Process and Semantic Web Services";
+			productName = "Eidynamic Workflow Process and Semantic Web Services";
+			productReference = 394EE4BB16C34F67000ADC8E /* libEidynamic Workflow Process and Semantic Web Services.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		394EE4CB16C34F67000ADC8E /* Eidynamic Workflow Process and Semantic Web ServicesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 394EE4E316C34F67000ADC8E /* Build configuration list for PBXNativeTarget "Eidynamic Workflow Process and Semantic Web ServicesTests" */;
+			buildPhases = (
+				394EE4C716C34F67000ADC8E /* Sources */,
+				394EE4C816C34F67000ADC8E /* Frameworks */,
+				394EE4C916C34F67000ADC8E /* Resources */,
+				394EE4CA16C34F67000ADC8E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				394EE4D316C34F67000ADC8E /* PBXTargetDependency */,
+			);
+			name = "Eidynamic Workflow Process and Semantic Web ServicesTests";
+			productName = "Eidynamic Workflow Process and Semantic Web ServicesTests";
+			productReference = 394EE4CC16C34F67000ADC8E /* Eidynamic Workflow Process and Semantic Web ServicesTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		394EE4E916C34FC7000ADC8E /* Eidynamic Workflow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 394EE52116C34FC8000ADC8E /* Build configuration list for PBXNativeTarget "Eidynamic Workflow" */;
+			buildPhases = (
+				394EE4E616C34FC7000ADC8E /* Sources */,
+				394EE4E716C34FC7000ADC8E /* Frameworks */,
+				394EE4E816C34FC7000ADC8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Eidynamic Workflow";
+			productName = "Eidynamic Workflow";
+			productReference = 394EE4EA16C34FC7000ADC8E /* Eidynamic Workflow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		394EE51116C34FC8000ADC8E /* Eidynamic WorkflowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 394EE52416C34FC8000ADC8E /* Build configuration list for PBXNativeTarget "Eidynamic WorkflowTests" */;
+			buildPhases = (
+				394EE50D16C34FC8000ADC8E /* Sources */,
+				394EE50E16C34FC8000ADC8E /* Frameworks */,
+				394EE50F16C34FC8000ADC8E /* Resources */,
+				394EE51016C34FC8000ADC8E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				394EE51716C34FC8000ADC8E /* PBXTargetDependency */,
+			);
+			name = "Eidynamic WorkflowTests";
+			productName = "Eidynamic WorkflowTests";
+			productReference = 394EE51216C34FC8000ADC8E /* Eidynamic WorkflowTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		394EE52D16C350E9000ADC8E /* Strategic Response Web Service */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 394EE54516C350E9000ADC8E /* Build configuration list for PBXNativeTarget "Strategic Response Web Service" */;
+			buildPhases = (
+				394EE52916C350E9000ADC8E /* Sources */,
+				394EE52A16C350E9000ADC8E /* Frameworks */,
+				394EE52B16C350E9000ADC8E /* Resources */,
+				394EE52C16C350E9000ADC8E /* ShellScript */,
+			);
+			buildRules = (
+				394EE55516C352B1000ADC8E /* PBXBuildRule */,
+			);
+			dependencies = (
+				394EE54F16C351AB000ADC8E /* PBXTargetDependency */,
+				394EE54D16C351A4000ADC8E /* PBXTargetDependency */,
+				394EE54B16C3519C000ADC8E /* PBXTargetDependency */,
+				394EE54916C35187000ADC8E /* PBXTargetDependency */,
+			);
+			name = "Strategic Response Web Service";
+			productName = "Strategic Response Web Service";
+			productReference = 394EE52E16C350E9000ADC8E /* Strategic Response Web Service.action */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		394EE4B316C34F67000ADC8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = smxq;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "keith scharding";
+			};
+			buildConfigurationList = 394EE4B616C34F67000ADC8E /* Build configuration list for PBXProject "Eidynamic Workflow Process and Semantic Web Services" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 394EE4B216C34F67000ADC8E;
+			productRefGroup = 394EE4BC16C34F67000ADC8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				394EE4BA16C34F67000ADC8E /* Eidynamic Workflow Process and Semantic Web Services */,
+				394EE4CB16C34F67000ADC8E /* Eidynamic Workflow Process and Semantic Web ServicesTests */,
+				394EE4E916C34FC7000ADC8E /* Eidynamic Workflow */,
+				394EE51116C34FC8000ADC8E /* Eidynamic WorkflowTests */,
+				394EE52D16C350E9000ADC8E /* Strategic Response Web Service */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		394EE4C916C34F67000ADC8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				394EE4DA16C34F67000ADC8E /* InfoPlist.strings in Resources */,
+				394EE55D16C355CE000ADC8E /* Strategic Response Web Service-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		394EE4E816C34FC7000ADC8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				394EE4F416C34FC7000ADC8E /* InfoPlist.strings in Resources */,
+				394EE4FC16C34FC7000ADC8E /* Default.png in Resources */,
+				394EE4FE16C34FC7000ADC8E /* Default@2x.png in Resources */,
+				394EE50016C34FC7000ADC8E /* Default-568h@2x.png in Resources */,
+				394EE50316C34FC8000ADC8E /* MainStoryboard_iPhone.storyboard in Resources */,
+				394EE50616C34FC8000ADC8E /* MainStoryboard_iPad.storyboard in Resources */,
+				394EE55F16C355DF000ADC8E /* Strategic Response Web Service-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		394EE50F16C34FC8000ADC8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				394EE51D16C34FC8000ADC8E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		394EE52B16C350E9000ADC8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				394EE53E16C350E9000ADC8E /* InfoPlist.strings in Resources */,
+				394EE54316C350E9000ADC8E /* main.xib in Resources */,
+				394EE55E16C355DB000ADC8E /* Strategic Response Web Service-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		394EE4CA16C34F67000ADC8E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		394EE51016C34FC8000ADC8E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		394EE52C16C350E9000ADC8E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "amlint \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		394EE4B716C34F67000ADC8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				394EE4C616C34F67000ADC8E /* Eidynamic_Workflow_Process_and_Semantic_Web_Services.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		394EE4C716C34F67000ADC8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				394EE4DD16C34F67000ADC8E /* Eidynamic_Workflow_Process_and_Semantic_Web_ServicesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		394EE4E616C34FC7000ADC8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				394EE4F616C34FC7000ADC8E /* main.m in Sources */,
+				394EE4FA16C34FC7000ADC8E /* AppDelegate.m in Sources */,
+				394EE50916C34FC8000ADC8E /* MasterViewController.m in Sources */,
+				394EE50C16C34FC8000ADC8E /* DetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		394EE50D16C34FC8000ADC8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				394EE52016C34FC8000ADC8E /* Eidynamic_WorkflowTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		394EE52916C350E9000ADC8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				394EE55316C35235000ADC8E /* Eidynamic Workflow Process and Semantic Web Services-Prefix.pch in Sources */,
+				394EE55216C35228000ADC8E /* Eidynamic_Workflow_Process_and_Semantic_Web_Services.m in Sources */,
+				394EE55116C3521A000ADC8E /* Eidynamic_Workflow_Process_and_Semantic_Web_Services.h in Sources */,
+				394EE54016C350E9000ADC8E /* Strategic_Response_Web_Service.applescript in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		394EE4D316C34F67000ADC8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 394EE4BA16C34F67000ADC8E /* Eidynamic Workflow Process and Semantic Web Services */;
+			targetProxy = 394EE4D216C34F67000ADC8E /* PBXContainerItemProxy */;
+		};
+		394EE51716C34FC8000ADC8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 394EE4E916C34FC7000ADC8E /* Eidynamic Workflow */;
+			targetProxy = 394EE51616C34FC8000ADC8E /* PBXContainerItemProxy */;
+		};
+		394EE54916C35187000ADC8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 394EE4BA16C34F67000ADC8E /* Eidynamic Workflow Process and Semantic Web Services */;
+			targetProxy = 394EE54816C35187000ADC8E /* PBXContainerItemProxy */;
+		};
+		394EE54B16C3519C000ADC8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 394EE4CB16C34F67000ADC8E /* Eidynamic Workflow Process and Semantic Web ServicesTests */;
+			targetProxy = 394EE54A16C3519C000ADC8E /* PBXContainerItemProxy */;
+		};
+		394EE54D16C351A4000ADC8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 394EE4E916C34FC7000ADC8E /* Eidynamic Workflow */;
+			targetProxy = 394EE54C16C351A4000ADC8E /* PBXContainerItemProxy */;
+		};
+		394EE54F16C351AB000ADC8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 394EE51116C34FC8000ADC8E /* Eidynamic WorkflowTests */;
+			targetProxy = 394EE54E16C351AB000ADC8E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		394EE4D816C34F67000ADC8E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				394EE4D916C34F67000ADC8E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		394EE4F216C34FC7000ADC8E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				394EE4F316C34FC7000ADC8E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		394EE50116C34FC8000ADC8E /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				394EE50216C34FC8000ADC8E /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		394EE50416C34FC8000ADC8E /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				394EE50516C34FC8000ADC8E /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		394EE51B16C34FC8000ADC8E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				394EE51C16C34FC8000ADC8E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		394EE53C16C350E9000ADC8E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				394EE53D16C350E9000ADC8E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		394EE54116C350E9000ADC8E /* main.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				394EE54216C350E9000ADC8E /* en */,
+			);
+			name = main.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		394EE4DE16C34F67000ADC8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		394EE4DF16C34F67000ADC8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		394EE4E116C34F67000ADC8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Eidynamic_Workflow_Process_and_Semantic_Web_Services.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Eidynamic Workflow Process and Semantic Web Services/Eidynamic Workflow Process and Semantic Web Services-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		394EE4E216C34F67000ADC8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Eidynamic_Workflow_Process_and_Semantic_Web_Services.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Eidynamic Workflow Process and Semantic Web Services/Eidynamic Workflow Process and Semantic Web Services-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		394EE4E416C34F67000ADC8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Eidynamic Workflow Process and Semantic Web Services/Eidynamic Workflow Process and Semantic Web Services-Prefix.pch";
+				INFOPLIST_FILE = "Eidynamic Workflow Process and Semantic Web ServicesTests/Eidynamic Workflow Process and Semantic Web ServicesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		394EE4E516C34F67000ADC8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Eidynamic Workflow Process and Semantic Web Services/Eidynamic Workflow Process and Semantic Web Services-Prefix.pch";
+				INFOPLIST_FILE = "Eidynamic Workflow Process and Semantic Web ServicesTests/Eidynamic Workflow Process and Semantic Web ServicesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		394EE52216C34FC8000ADC8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Eidynamic Workflow/Eidynamic Workflow-Prefix.pch";
+				INFOPLIST_FILE = "Eidynamic Workflow/Eidynamic Workflow-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		394EE52316C34FC8000ADC8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Eidynamic Workflow/Eidynamic Workflow-Prefix.pch";
+				INFOPLIST_FILE = "Eidynamic Workflow/Eidynamic Workflow-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		394EE52516C34FC8000ADC8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Eidynamic Workflow.app/Eidynamic Workflow";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Eidynamic Workflow/Eidynamic Workflow-Prefix.pch";
+				INFOPLIST_FILE = "Eidynamic WorkflowTests/Eidynamic WorkflowTests-Info.plist";
+				New_Setting = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		394EE52616C34FC8000ADC8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Eidynamic Workflow.app/Eidynamic Workflow";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Eidynamic Workflow/Eidynamic Workflow-Prefix.pch";
+				INFOPLIST_FILE = "Eidynamic WorkflowTests/Eidynamic WorkflowTests-Info.plist";
+				New_Setting = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		394EE54616C350E9000ADC8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Strategic Response Web Service/Strategic Response Web Service-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "Strategic Response Web Service/Strategic Response Web Service-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Automator";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_OSAFLAGS = "-x -t 0 -c 0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = action;
+			};
+			name = Debug;
+		};
+		394EE54716C350E9000ADC8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Strategic Response Web Service/Strategic Response Web Service-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "Strategic Response Web Service/Strategic Response Web Service-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Automator";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_OSAFLAGS = "-x -t 0 -c 0";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = action;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		394EE4B616C34F67000ADC8E /* Build configuration list for PBXProject "Eidynamic Workflow Process and Semantic Web Services" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				394EE4DE16C34F67000ADC8E /* Debug */,
+				394EE4DF16C34F67000ADC8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		394EE4E016C34F67000ADC8E /* Build configuration list for PBXNativeTarget "Eidynamic Workflow Process and Semantic Web Services" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				394EE4E116C34F67000ADC8E /* Debug */,
+				394EE4E216C34F67000ADC8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		394EE4E316C34F67000ADC8E /* Build configuration list for PBXNativeTarget "Eidynamic Workflow Process and Semantic Web ServicesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				394EE4E416C34F67000ADC8E /* Debug */,
+				394EE4E516C34F67000ADC8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		394EE52116C34FC8000ADC8E /* Build configuration list for PBXNativeTarget "Eidynamic Workflow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				394EE52216C34FC8000ADC8E /* Debug */,
+				394EE52316C34FC8000ADC8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		394EE52416C34FC8000ADC8E /* Build configuration list for PBXNativeTarget "Eidynamic WorkflowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				394EE52516C34FC8000ADC8E /* Debug */,
+				394EE52616C34FC8000ADC8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		394EE54516C350E9000ADC8E /* Build configuration list for PBXNativeTarget "Strategic Response Web Service" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				394EE54616C350E9000ADC8E /* Debug */,
+				394EE54716C350E9000ADC8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 394EE4B316C34F67000ADC8E /* Project object */;
+}

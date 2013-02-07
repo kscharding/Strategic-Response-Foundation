@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Eidynamic Workflow Process and Semantic Web Services' target in the 'Eidynamic Workflow Process and Semantic Web Services' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

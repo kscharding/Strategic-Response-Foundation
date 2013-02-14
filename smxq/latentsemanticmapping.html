@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LatentSemanticMapping.h Reference</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta id="book-resource-type" name="book-resource-type" content="Reference">
+    <script>String.prototype.cleanUpURL=function(){var c,b="",a=this;if(this.match("#")){b="#"+this.split("#")[1];a=this.split("#")[0]}a=a.replace(/\/\.\/|([^:])\/\//g,"$1/");if(a==="./"){return""+b}while(a!==c){c=a;a=a.replace(/[\/][^\/]+\/+\.\.\//,"/")}a=a.replace(/^.[^\/]+\/+\.\.\//,"");return a+b};(function(){var a="../../../../../";var c=window.location.pathname;var b=(c.slice(0,c.lastIndexOf("/"))+"/"+a).cleanUpURL();if(top.location.href==window.location.href){if("createTouch" in document){if(document.getElementById("book-resource-type").content!=="Standalone"){switch(navigator.platform){case"iPad":window.location.replace(a+"ipad/#"+c.replace(b,"")+window.location.hash);break;case"iPhone":break}}}else{window.location.replace(a+(window.location.protocol=="file:"?"index.html":"")+"#"+c.replace(b,"").cleanUpURL()+window.location.hash)}}})();</script>
+    <meta scheme="apple_ref" id="identifier" name="identifier" content="//apple_ref/doc/uid/TP40011480">
+	<meta id="document-version" name="document-version" content="2.0.0">
+    <meta id="build" name="build" content="d80e4893ed790679b5881d8d12f986e4">
+    <meta id="chapterId" name="chapterId" content="TP40011480-Reference">
+    <meta id="date" name="date" content="2012-07-23">
+    <meta id="description" name="description" content="Functions and data types related to latent semantic mapping.">
+    <meta id="book-title" name="book-title" content="LatentSemanticMapping.h Reference">
+    <meta id="book-root" name="book-root" content="../">
+    <meta id="book-json" name="book-json" content="../book.json">
+    <meta id="book-assignments" name="book-assignments" content="{Type/Reference}, {Framework/Core Services Layer/LatentSemanticMapping}, {Topic/Data Management/Strings, Text, & Fonts}">
+    <meta name="pdf" contents="../LatentSemanticMapping_header_reference.pdf" /><link id="book-pdf" media="print" rel="alternate" type="application/pdf" href="../LatentSemanticMapping_header_reference.pdf" />
+    
+    <meta id="generator" name="generator" content="Gutenberg 30934">
+    <meta name='numbat' content='aa879094b666337fdcde744b62fbff30'>
+    <meta id="copyright" name="copyright" content="Copyright 2013 Apple Inc. All Rights Reserved.">
+    <meta name = "viewport" content = "width = device-width" >
+    <meta id="xcode-display" name="xcode-display" content="render">
+    <meta id="IndexTitle" name="IndexTitle" content="LatentSemanticMapping.h Reference">
+    <meta id="resources-uri" name="resources-uri" content="../../../../../Resources/709">
+    <link id="book-index-page" rel="Start" title="LatentSemanticMapping.h Reference" type="text/html" href="../index.html">
+    <link id="next-page" rel="Next" type="text/html" href="">
+    <link id="previous-page" rel="Prev" type="text/html" href="">
+    <link rel="stylesheet" type="text/css" href="../../../../../Resources/709/CSS/ac_media.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../../../../Resources/709/CSS/devpubs.css" charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../../../../Resources/709/CSS/docs.css" charset="utf-8">
+    <!--[if IE]><link rel="stylesheet" type="text/css" href="../../../../../Resources/709/CSS/ie.css"><![endif]-->
+    
+</head>    
+<body><a name="//apple_ref/doc/uid/TP40011480-Reference" title="LatentSemanticMapping.h Reference"></a>
+    <article id="contents" tabindex="0" role="main">
+        <div id="pageNavigationLinks_top" class="pageNavigationLinks">
+            
+        </div>
+        <a id="top" name="top"></a>
+        <a id="INDEX" href="../index.html" style="display:none;"></a>
+        
+        <a name="//apple_ref/doc/uid/TP40011480" title="LatentSemanticMapping.h Reference"></a><a name="//apple_ref/doc/uid/TP40011480-Reference-DontLinkElementID_47" title="LatentSemanticMapping.h Reference"></a><h1 id="pageTitle">LatentSemanticMapping.h Reference</h1><div class="spec_sheet_info_box hideInXcode"><table cellspacing="0" class="specbox"><tr><td scope="row"><strong><span class="DeclaredIn">Declared in</span></strong></td><td><div class="zSharedSpecBoxHeadList"><span class="content_text">LatentSemanticMapping.h</span><br/></div></td></tr></table></div><section><a name="//apple_ref/doc/uid/LatentSemanticMapping.h-DontLinkElementID_44" title="Overview"></a><a name="//apple_ref/doc/header/lsm_fw/LatentSemanticMapping.h" title="Overview"></a><h2 class="jump">Overview</h2><p>Semantic Mapping This framework classifies texts based on latent semantic information.</p><section><a name="//apple_ref/doc/uid/LatentSemanticMapping.h-DontLinkElementID_43" title="Included Headers"></a><h3 class="jump">Included Headers</h3><ul class="ul"><li class="li"><p><code><!--a target="_self" -->&lt;CoreFoundation/CoreFoundation.h><!--/a--></code></p></li><li class="li"><p><code><!--a target="_self" -->&lt;CoreServices/CoreServices.h><!--/a--></code></p></li><li class="li"><p><code><!--a target="_self" -->&lt;Carbon/Carbon.h><!--/a--></code></p></li><li class="li"><p><code><!--a target="_self" -->&lt;stdio.h><!--/a--></code></p></li><li class="li"><p><code><!--a target="_self" -->&lt;stdint.h><!--/a--></code></p></li></ul></section>
+
+
+
+
+</section><section><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_12" title="Functions"></a><h2 class="jump">Functions</h2><p>See the Overview for header-level documentation.</p>
+
+
+
+
+<a name="//apple_ref/c/func/LSMMapAddCategory" title="LSMMapAddCategory"></a><a name="//apple_ref/doc/c_ref/LSMMapAddCategory" title="LSMMapAddCategory"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_13" title="LSMMapAddCategory"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_48"></a><h3 class="tight jump function">LSMMapAddCategory</h3><p class="abstract"></p><pre class="declaration">
+LSMCategory LSMMapAddCategory(
+   LSMMapRef mapref);
+</pre><div class="api discussion"><h5>Discussion</h5><p>Adds another category and returns its category identifier.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMMapAddText" title="LSMMapAddText"></a><a name="//apple_ref/doc/c_ref/LSMMapAddText" title="LSMMapAddText"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_14" title="LSMMapAddText"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_49"></a><h3 class="tight jump function">LSMMapAddText</h3><p class="abstract"></p><pre class="declaration">
+OSStatus LSMMapAddText(
+   LSMMapRef mapref,
+   LSMTextRef textref,
+   LSMCategory category);
+</pre><div class="api discussion"><h5>Discussion</h5>
+<p>Adds a training text to the given category. The textref is no longer needed after this call.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMMapAddTextWithWeight" title="LSMMapAddTextWithWeight"></a><a name="//apple_ref/doc/c_ref/LSMMapAddTextWithWeight" title="LSMMapAddTextWithWeight"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_15" title="LSMMapAddTextWithWeight"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_50"></a><h3 class="tight jump function">LSMMapAddTextWithWeight</h3><p class="abstract"></p><pre class="declaration">
+OSStatus LSMMapAddTextWithWeight(
+   LSMMapRef mapref,
+   LSMTextRef textref,
+   LSMCategory category,
+   float weight);
+</pre><div class="api discussion"><h5>Discussion</h5>
+<p>Adds a training text to the given category with a weight different from 1. The weight may be negative, but global counts will be pinned to 0. The textref is no longer needed after this call.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMMapApplyClusters" title="LSMMapApplyClusters"></a><a name="//apple_ref/doc/c_ref/LSMMapApplyClusters" title="LSMMapApplyClusters"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_16" title="LSMMapApplyClusters"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_51"></a><h3 class="tight jump function">LSMMapApplyClusters</h3><p class="abstract"></p><pre class="declaration">
+OSStatus LSMMapApplyClusters(
+   LSMMapRef mapref,
+   CFArrayRef clusters);
+</pre><div class="api discussion"><h5>Discussion</h5><p>Group categories or words (tokens) into the specified sets of clusters.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMMapCompile" title="LSMMapCompile"></a><a name="//apple_ref/doc/c_ref/LSMMapCompile" title="LSMMapCompile"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_17" title="LSMMapCompile"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_52"></a><h3 class="tight jump function">LSMMapCompile</h3><p class="abstract"></p><pre class="declaration">
+OSStatus LSMMapCompile(
+   LSMMapRef mapref);
+</pre><div class="api discussion"><h5>Discussion</h5>
+<p>Compiles the map into executable form and puts it into mapping mode, preparing it for the classification of texts. This function is computationally expensive.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMMapCreate" title="LSMMapCreate"></a><a name="//apple_ref/doc/c_ref/LSMMapCreate" title="LSMMapCreate"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_18" title="LSMMapCreate"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_53"></a><h3 class="tight jump function">LSMMapCreate</h3><p class="abstract"></p><pre class="declaration">
+LSMMapRef LSMMapCreate(
+   CFAllocatorRef alloc,
+   CFOptionFlags flags);
+</pre><div class="api discussion"><h5>Discussion</h5><p>Creates a new LSM map. Call CFRelease to dispose.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMMapCreateClusters" title="LSMMapCreateClusters"></a><a name="//apple_ref/doc/c_ref/LSMMapCreateClusters" title="LSMMapCreateClusters"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_19" title="LSMMapCreateClusters"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_54"></a><h3 class="tight jump function">LSMMapCreateClusters</h3><p class="abstract"></p><pre class="declaration">
+CFArrayRef LSMMapCreateClusters(
+   CFAllocatorRef alloc,
+   LSMMapRef mapref,
+   CFArrayRef subset,
+   CFIndex numClusters,
+   CFOptionFlags flags);
+</pre><div class="api discussion"><h5>Discussion</h5>
+<p>Compute a set of clusters grouping similar categories or words. If subset is non-NULL, only perform clustering on the categories or words listed.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMMapCreateFromURL" title="LSMMapCreateFromURL"></a><a name="//apple_ref/doc/c_ref/LSMMapCreateFromURL" title="LSMMapCreateFromURL"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_20" title="LSMMapCreateFromURL"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_55"></a><h3 class="tight jump function">LSMMapCreateFromURL</h3><p class="abstract"></p><pre class="declaration">
+LSMMapRef LSMMapCreateFromURL(
+   CFAllocatorRef alloc,
+   CFURLRef file,
+   CFOptionFlags flags);
+</pre><div class="api discussion"><h5>Discussion</h5><p>Loads a map from a given file.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMMapGetCategoryCount" title="LSMMapGetCategoryCount"></a><a name="//apple_ref/doc/c_ref/LSMMapGetCategoryCount" title="LSMMapGetCategoryCount"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_21" title="LSMMapGetCategoryCount"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_56"></a><h3 class="tight jump function">LSMMapGetCategoryCount</h3><p class="abstract"></p><pre class="declaration">
+CFIndex LSMMapGetCategoryCount(
+   LSMMapRef mapref);
+</pre><div class="api discussion"><h5>Discussion</h5><p>Returns the number of categories in the map.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMMapGetProperties" title="LSMMapGetProperties"></a><a name="//apple_ref/doc/c_ref/LSMMapGetProperties" title="LSMMapGetProperties"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_22" title="LSMMapGetProperties"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_57"></a><h3 class="tight jump function">LSMMapGetProperties</h3><p class="abstract"></p><pre class="declaration">
+CFDictionaryRef LSMMapGetProperties(
+   LSMMapRef mapref);
+</pre><div class="api discussion"><h5>Discussion</h5>
+<p>Get a dictionary of properties for the map. LSM retains ownership of this dictionary, do not release it.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMMapGetTypeID" title="LSMMapGetTypeID"></a><a name="//apple_ref/doc/c_ref/LSMMapGetTypeID" title="LSMMapGetTypeID"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_23" title="LSMMapGetTypeID"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_58"></a><h3 class="tight jump function">LSMMapGetTypeID</h3><p class="abstract"></p><pre class="declaration">
+CFTypeID LSMMapGetTypeID(
+   void);
+</pre><div class="api discussion"><h5>Discussion</h5><p>Returns the Core Foundation type identifier for LSM maps.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMMapSetProperties" title="LSMMapSetProperties"></a><a name="//apple_ref/doc/c_ref/LSMMapSetProperties" title="LSMMapSetProperties"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_24" title="LSMMapSetProperties"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_59"></a><h3 class="tight jump function">LSMMapSetProperties</h3><p class="abstract"></p><pre class="declaration">
+void LSMMapSetProperties(
+   LSMMapRef mapref,
+   CFDictionaryRef properties);
+</pre><div class="api discussion"><h5>Discussion</h5>
+<p>Set a dictionary of properties for the map. LSM makes its own copy of the properties, there's no need to retain them past this call.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMMapSetStopWords" title="LSMMapSetStopWords"></a><a name="//apple_ref/doc/c_ref/LSMMapSetStopWords" title="LSMMapSetStopWords"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_25" title="LSMMapSetStopWords"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_60"></a><h3 class="tight jump function">LSMMapSetStopWords</h3><p class="abstract"></p><pre class="declaration">
+OSStatus LSMMapSetStopWords(
+   LSMMapRef mapref,
+   LSMTextRef textref);
+</pre><div class="api discussion"><h5>Discussion</h5>
+<p>The specified words will be omitted from all classification efforts. Needs to be called before any other texts are created. The textref is no longer needed after this call.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMMapStartTraining" title="LSMMapStartTraining"></a><a name="//apple_ref/doc/c_ref/LSMMapStartTraining" title="LSMMapStartTraining"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_26" title="LSMMapStartTraining"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_61"></a><h3 class="tight jump function">LSMMapStartTraining</h3><p class="abstract"></p><pre class="declaration">
+OSStatus LSMMapStartTraining(
+   LSMMapRef mapref);
+</pre><div class="api discussion"><h5>Discussion</h5>
+<p>Puts the map into training mode, preparing it for the addition of more categories and/or texts. This function will be somewhat expensive, as it requires substantial data structure reorganization.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMMapWriteToStream" title="LSMMapWriteToStream"></a><a name="//apple_ref/doc/c_ref/LSMMapWriteToStream" title="LSMMapWriteToStream"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_27" title="LSMMapWriteToStream"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_62"></a><h3 class="tight jump function">LSMMapWriteToStream</h3><p class="abstract"></p><pre class="declaration">
+OSStatus LSMMapWriteToStream(
+   LSMMapRef mapref,
+   LSMTextRef textref,
+   CFWriteStreamRef stream,
+   CFOptionFlags options);
+</pre><div class="api discussion"><h5>Discussion</h5><p>Writes information about a map and/or text to a stream in text form</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMMapWriteToURL" title="LSMMapWriteToURL"></a><a name="//apple_ref/doc/c_ref/LSMMapWriteToURL" title="LSMMapWriteToURL"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_28" title="LSMMapWriteToURL"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_63"></a><h3 class="tight jump function">LSMMapWriteToURL</h3><p class="abstract"></p><pre class="declaration">
+OSStatus LSMMapWriteToURL(
+   LSMMapRef mapref,
+   CFURLRef file,
+   CFOptionFlags flags);
+</pre><div class="api discussion"><h5>Discussion</h5><p>Compiles the map if necessary and then stores it into the given file.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMResultCopyToken" title="LSMResultCopyToken"></a><a name="//apple_ref/doc/c_ref/LSMResultCopyToken" title="LSMResultCopyToken"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_29" title="LSMResultCopyToken"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_64"></a><h3 class="tight jump function">LSMResultCopyToken</h3><p class="abstract"></p><pre class="declaration">
+CFDataRef LSMResultCopyToken(
+   LSMResultRef mapref,
+   CFIndex n);
+</pre><div class="api discussion"><h5>Discussion</h5><p>Returns the token for the n-th best (zero based) result.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMResultCopyTokenCluster" title="LSMResultCopyTokenCluster"></a><a name="//apple_ref/doc/c_ref/LSMResultCopyTokenCluster" title="LSMResultCopyTokenCluster"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_30" title="LSMResultCopyTokenCluster"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_65"></a><h3 class="tight jump function">LSMResultCopyTokenCluster</h3><p class="abstract"></p><pre class="declaration">
+CFArrayRef LSMResultCopyTokenCluster(
+   LSMResultRef mapref,
+   CFIndex n);
+</pre><div class="api discussion"><h5>Discussion</h5><p>Returns the cluster of tokens for the n-th best (zero based) result.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMResultCopyWord" title="LSMResultCopyWord"></a><a name="//apple_ref/doc/c_ref/LSMResultCopyWord" title="LSMResultCopyWord"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_31" title="LSMResultCopyWord"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_66"></a><h3 class="tight jump function">LSMResultCopyWord</h3><p class="abstract"></p><pre class="declaration">
+CFStringRef LSMResultCopyWord(
+   LSMResultRef result,
+   CFIndex n);
+</pre><div class="api discussion"><h5>Discussion</h5><p>Returns the word for the n-th best (zero based) result.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMResultCopyWordCluster" title="LSMResultCopyWordCluster"></a><a name="//apple_ref/doc/c_ref/LSMResultCopyWordCluster" title="LSMResultCopyWordCluster"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_32" title="LSMResultCopyWordCluster"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_67"></a><h3 class="tight jump function">LSMResultCopyWordCluster</h3><p class="abstract"></p><pre class="declaration">
+CFArrayRef LSMResultCopyWordCluster(
+   LSMResultRef result,
+   CFIndex n);
+</pre><div class="api discussion"><h5>Discussion</h5><p>Returns the cluster of words for the n-th best (zero based) result.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMResultCreate" title="LSMResultCreate"></a><a name="//apple_ref/doc/c_ref/LSMResultCreate" title="LSMResultCreate"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_33" title="LSMResultCreate"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_68"></a><h3 class="tight jump function">LSMResultCreate</h3><p class="abstract"></p><pre class="declaration">
+LSMResultRef LSMResultCreate(
+   CFAllocatorRef alloc,
+   LSMMapRef mapref,
+   LSMTextRef textref,
+   CFIndex numResults,
+   CFOptionFlags flags);
+</pre><div class="api discussion"><h5>Discussion</h5>
+<p>Returns, in decreasing order of likelihood, the categories or words that best match when a text is mapped into a map.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMResultGetCategory" title="LSMResultGetCategory"></a><a name="//apple_ref/doc/c_ref/LSMResultGetCategory" title="LSMResultGetCategory"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_34" title="LSMResultGetCategory"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_69"></a><h3 class="tight jump function">LSMResultGetCategory</h3><p class="abstract"></p><pre class="declaration">
+LSMCategory LSMResultGetCategory(
+   LSMResultRef result,
+   CFIndex n);
+</pre><div class="api discussion"><h5>Discussion</h5><p>Returns the category of the n-th best (zero based) result.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMResultGetCount" title="LSMResultGetCount"></a><a name="//apple_ref/doc/c_ref/LSMResultGetCount" title="LSMResultGetCount"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_35" title="LSMResultGetCount"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_70"></a><h3 class="tight jump function">LSMResultGetCount</h3><p class="abstract"></p><pre class="declaration">
+CFIndex LSMResultGetCount(
+   LSMResultRef result);
+</pre><div class="api discussion"><h5>Discussion</h5><p>Returns the number of results.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMResultGetScore" title="LSMResultGetScore"></a><a name="//apple_ref/doc/c_ref/LSMResultGetScore" title="LSMResultGetScore"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_36" title="LSMResultGetScore"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_71"></a><h3 class="tight jump function">LSMResultGetScore</h3><p class="abstract"></p><pre class="declaration">
+float LSMResultGetScore(
+   LSMResultRef result,
+   CFIndex n);
+</pre><div class="api discussion"><h5>Discussion</h5><p>Returns the likelihood of the n-th best (zero based) result. A nan score often indicates that the category does not contain any token.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMResultGetTypeID" title="LSMResultGetTypeID"></a><a name="//apple_ref/doc/c_ref/LSMResultGetTypeID" title="LSMResultGetTypeID"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_37" title="LSMResultGetTypeID"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_72"></a><h3 class="tight jump function">LSMResultGetTypeID</h3><p class="abstract"></p><pre class="declaration">
+CFTypeID LSMResultGetTypeID(
+   void);
+</pre><div class="api discussion"><h5>Discussion</h5><p>Returns the Core Foundation type identifier for LSM results.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMTextAddToken" title="LSMTextAddToken"></a><a name="//apple_ref/doc/c_ref/LSMTextAddToken" title="LSMTextAddToken"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_38" title="LSMTextAddToken"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_73"></a><h3 class="tight jump function">LSMTextAddToken</h3><p class="abstract"></p><pre class="declaration">
+OSStatus LSMTextAddToken(
+   LSMTextRef textref,
+   CFDataRef token);
+</pre><div class="api discussion"><h5>Discussion</h5>
+<p>Adds an arbitrary binary token to the text. The order of tokens is significant if the map uses pairs or triplets, and the count of tokens is always significant.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMTextAddWord" title="LSMTextAddWord"></a><a name="//apple_ref/doc/c_ref/LSMTextAddWord" title="LSMTextAddWord"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_39" title="LSMTextAddWord"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_74"></a><h3 class="tight jump function">LSMTextAddWord</h3><p class="abstract"></p><pre class="declaration">
+OSStatus LSMTextAddWord(
+   LSMTextRef textref,
+   CFStringRef word);
+</pre><div class="api discussion"><h5>Discussion</h5>
+<p>Adds a word to the text. The order of words is significant if the map uses pairs or triplets, and the count of words is always significant.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMTextAddWords" title="LSMTextAddWords"></a><a name="//apple_ref/doc/c_ref/LSMTextAddWords" title="LSMTextAddWords"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_40" title="LSMTextAddWords"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_75"></a><h3 class="tight jump function">LSMTextAddWords</h3><p class="abstract"></p><pre class="declaration">
+OSStatus LSMTextAddWords(
+   LSMTextRef textref,
+   CFStringRef words,
+   CFLocaleRef locale,
+   CFOptionFlags flags);
+</pre><div class="api discussion"><h5>Discussion</h5>
+<p>Breaks a string into words using the locale provided and adds the words to the text.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMTextCreate" title="LSMTextCreate"></a><a name="//apple_ref/doc/c_ref/LSMTextCreate" title="LSMTextCreate"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_41" title="LSMTextCreate"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_76"></a><h3 class="tight jump function">LSMTextCreate</h3><p class="abstract"></p><pre class="declaration">
+LSMTextRef LSMTextCreate(
+   CFAllocatorRef alloc,
+   LSMMapRef mapref);
+</pre><div class="api discussion"><h5>Discussion</h5><p>Creates a new text.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/func/LSMTextGetTypeID" title="LSMTextGetTypeID"></a><a name="//apple_ref/doc/c_ref/LSMTextGetTypeID" title="LSMTextGetTypeID"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_42" title="LSMTextGetTypeID"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghFunctions-DontLinkElementID_77"></a><h3 class="tight jump function">LSMTextGetTypeID</h3><p class="abstract"></p><pre class="declaration">
+CFTypeID LSMTextGetTypeID(
+   void);
+</pre><div class="api discussion"><h5>Discussion</h5><p>Returns the Core Foundation type identifier for LSM texts.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div></section><section><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghDataTypes-DontLinkElementID_45" title="Data Types"></a><h2 class="jump">Data Types</h2><p>See the Overview for header-level documentation.</p><a name="//apple_ref/c/tdef/LSMCategory" title="LSMCategory"></a><a name="//apple_ref/doc/c_ref/LSMCategory" title="LSMCategory"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghDataTypes-DontLinkElementID_7" title="LSMCategory"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghDataTypes-DontLinkElementID_78"></a><h3 class="tight jump typeDef">LSMCategory</h3><p class="abstract"></p><pre class="declaration">
+typedef uint32_t LSMCategory;
+</pre><div class="api discussion"><h5>Discussion</h5><p>An integral type representing a category.</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/tdef/LSMMapRef" title="LSMMapRef"></a><a name="//apple_ref/doc/c_ref/LSMMapRef" title="LSMMapRef"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghDataTypes-DontLinkElementID_8" title="LSMMapRef"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghDataTypes-DontLinkElementID_79"></a><h3 class="tight jump typeDef">LSMMapRef</h3><p class="abstract"></p><pre class="declaration">
+typedef struct __LSMMap * LSMMapRef;
+</pre><div class="api discussion"><h5>Discussion</h5><p>An opaque Core Foundation type representing an LSM map (mutable).</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/tdef/LSMResultRef" title="LSMResult"></a><a name="//apple_ref/doc/title:tdef/LSMResult" title="LSMResult"></a><a name="//apple_ref/doc/c_ref/LSMResultRef" title="LSMResult"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghDataTypes-DontLinkElementID_9" title="LSMResult"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghDataTypes-DontLinkElementID_80"></a><h3 class="tight jump typeDef">LSMResult</h3><p class="abstract"></p><pre class="declaration">
+typedef struct __LSMResult * LSMResultRef;
+</pre><div class="api discussion"><h5>Discussion</h5><p>An opaque Core Foundation type representing the result of a lookup (immutable).</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api seeAlso"><h5>See Also</h5><ul>
+<li>  <code><a href="#//apple_ref/c/tdef/LSMResultRef" target="_self">LSMResultRef</a></code></li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/tdef/LSMResultRef" title="LSMResultRef"></a><a name="//apple_ref/doc/c_ref/LSMResultRef" title="LSMResultRef"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghDataTypes-DontLinkElementID_10" title="LSMResultRef"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghDataTypes-DontLinkElementID_81"></a><h3 class="tight jump typeDef">LSMResultRef</h3><p class="abstract"></p><pre class="declaration">
+typedef struct __LSMResult * LSMResultRef;
+</pre><div class="api discussion"><h5>Discussion</h5><p>An opaque Core Foundation type representing the result of a lookup (immutable).</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api seeAlso"><h5>See Also</h5><ul>
+<li>  <code><a href="#//apple_ref/doc/title:tdef/LSMResult" target="_self">LSMResult</a></code></li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div><a name="//apple_ref/c/tdef/LSMTextRef" title="LSMTextRef"></a><a name="//apple_ref/doc/c_ref/LSMTextRef" title="LSMTextRef"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghDataTypes-DontLinkElementID_11" title="LSMTextRef"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghDataTypes-DontLinkElementID_82"></a><h3 class="tight jump typeDef">LSMTextRef</h3><p class="abstract"></p><pre class="declaration">
+typedef struct __LSMText * LSMTextRef;
+</pre><div class="api discussion"><h5>Discussion</h5><p>An opaque Core Foundation type representing an input text (mutable).</p></div>  <div class="api availability"><h5>Availability</h5><ul><li>Available in OS X v10.5 and later.</li></ul></div><div class="api declaredIn"><h5>Declared In</h5><code class="HeaderFile">LatentSemanticMapping.h</code></div>
+
+
+
+
+</section><section><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_46" title="Constants"></a><h2 class="jump">Constants</h2><p>See the Overview for header-level documentation.</p><a name="//apple_ref/doc/constant_group/Defines" title="Defines" role="PoundDefineGroup"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_1" title="Defines" role="PoundDefineGroup"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_83"></a><h3 class="constantGroup">Defines</h3><p class="abstract"></p><pre class="declaration">
+   
+#define kLSMAlgorithmDense CFSTR("LSMAlgorithmDense")
+#define kLSMAlgorithmKey CFSTR("LSMAlgorithm")
+#define kLSMAlgorithmSparse CFSTR("LSMAlgorithmSparse")
+#define kLSMDimensionKey CFSTR("LSMDimension")
+#define kLSMIterationsKey CFSTR("LSMIterations")
+#define kLSMPrecisionDouble CFSTR("LSMPrecisionDouble")
+#define kLSMPrecisionFloat CFSTR("LSMPrecisionFloat")
+#define kLSMPrecisionKey CFSTR("LSMPrecision")
+#define kLSMSweepAgeKey CFSTR("LSMSweepAge")
+#define kLSMSweepCutoffKey CFSTR("LSMSweepCutoff")
+</pre><h5 class="tight">Constants</h5><dl class="termdef"><a name="//apple_ref/c/macro/kLSMAlgorithmDense" title="kLSMAlgorithmDense"></a><a name="//apple_ref/doc/c_ref/kLSMAlgorithmDense" title="kLSMAlgorithmDense"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_84"></a><dt><code class="jump constantName">kLSMAlgorithmDense</code></dt>
+
+
+
+<dd><p>A CFDictionary of arbitrary properties may be associated. with an LSM map. The following keys currently are interpreted by LSM, and all other keys starting with LSM... are reserved.</p><p>Available in OS X v10.5 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd>
+
+<a name="//apple_ref/c/macro/kLSMAlgorithmKey" title="kLSMAlgorithmKey"></a><a name="//apple_ref/doc/c_ref/kLSMAlgorithmKey" title="kLSMAlgorithmKey"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_85"></a><dt><code class="jump constantName">kLSMAlgorithmKey</code></dt>
+
+
+
+<dd><p>A CFDictionary of arbitrary properties may be associated. with an LSM map. The following keys currently are interpreted by LSM, and all other keys starting with LSM... are reserved.</p><p>Available in OS X v10.5 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd>
+
+<a name="//apple_ref/c/macro/kLSMAlgorithmSparse" title="kLSMAlgorithmSparse"></a><a name="//apple_ref/doc/c_ref/kLSMAlgorithmSparse" title="kLSMAlgorithmSparse"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_86"></a><dt><code class="jump constantName">kLSMAlgorithmSparse</code></dt>
+
+
+
+<dd><p>A CFDictionary of arbitrary properties may be associated. with an LSM map. The following keys currently are interpreted by LSM, and all other keys starting with LSM... are reserved.</p><p>Available in OS X v10.5 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd>
+
+<a name="//apple_ref/c/macro/kLSMDimensionKey" title="kLSMDimensionKey"></a><a name="//apple_ref/doc/c_ref/kLSMDimensionKey" title="kLSMDimensionKey"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_87"></a><dt><code class="jump constantName">kLSMDimensionKey</code></dt>
+
+
+
+<dd><p>A CFDictionary of arbitrary properties may be associated. with an LSM map. The following keys currently are interpreted by LSM, and all other keys starting with LSM... are reserved.</p><p>Available in OS X v10.5 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd>
+
+<a name="//apple_ref/c/macro/kLSMIterationsKey" title="kLSMIterationsKey"></a><a name="//apple_ref/doc/c_ref/kLSMIterationsKey" title="kLSMIterationsKey"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_88"></a><dt><code class="jump constantName">kLSMIterationsKey</code></dt>
+
+
+
+<dd><p>A CFDictionary of arbitrary properties may be associated. with an LSM map. The following keys currently are interpreted by LSM, and all other keys starting with LSM... are reserved.</p><p>Available in OS X v10.5 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd>
+
+<a name="//apple_ref/c/macro/kLSMPrecisionDouble" title="kLSMPrecisionDouble"></a><a name="//apple_ref/doc/c_ref/kLSMPrecisionDouble" title="kLSMPrecisionDouble"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_89"></a><dt><code class="jump constantName">kLSMPrecisionDouble</code></dt>
+
+
+
+<dd><p>A CFDictionary of arbitrary properties may be associated. with an LSM map. The following keys currently are interpreted by LSM, and all other keys starting with LSM... are reserved.</p><p>Available in OS X v10.5 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd>
+
+<a name="//apple_ref/c/macro/kLSMPrecisionFloat" title="kLSMPrecisionFloat"></a><a name="//apple_ref/doc/c_ref/kLSMPrecisionFloat" title="kLSMPrecisionFloat"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_90"></a><dt><code class="jump constantName">kLSMPrecisionFloat</code></dt>
+
+
+
+<dd><p>A CFDictionary of arbitrary properties may be associated. with an LSM map. The following keys currently are interpreted by LSM, and all other keys starting with LSM... are reserved.</p><p>Available in OS X v10.5 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd>
+
+<a name="//apple_ref/c/macro/kLSMPrecisionKey" title="kLSMPrecisionKey"></a><a name="//apple_ref/doc/c_ref/kLSMPrecisionKey" title="kLSMPrecisionKey"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_91"></a><dt><code class="jump constantName">kLSMPrecisionKey</code></dt>
+
+
+
+<dd><p>A CFDictionary of arbitrary properties may be associated. with an LSM map. The following keys currently are interpreted by LSM, and all other keys starting with LSM... are reserved.</p><p>Available in OS X v10.5 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd>
+
+<a name="//apple_ref/c/macro/kLSMSweepAgeKey" title="kLSMSweepAgeKey"></a><a name="//apple_ref/doc/c_ref/kLSMSweepAgeKey" title="kLSMSweepAgeKey"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_92"></a><dt><code class="jump constantName">kLSMSweepAgeKey</code></dt>
+
+
+
+<dd><p>A CFDictionary of arbitrary properties may be associated. with an LSM map. The following keys currently are interpreted by LSM, and all other keys starting with LSM... are reserved.</p><p>Available in OS X v10.5 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd>
+
+<a name="//apple_ref/c/macro/kLSMSweepCutoffKey" title="kLSMSweepCutoffKey"></a><a name="//apple_ref/doc/c_ref/kLSMSweepCutoffKey" title="kLSMSweepCutoffKey"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_93"></a><dt><code class="jump constantName">kLSMSweepCutoffKey</code></dt>
+
+
+
+<dd><p>A CFDictionary of arbitrary properties may be associated. with an LSM map. The following keys currently are interpreted by LSM, and all other keys starting with LSM... are reserved.</p><p>Available in OS X v10.5 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd>
+
+</dl><div class="api seeAlso"><h5>See Also</h5><ul>
+<li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmKey" target="_self">kLSMAlgorithmKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmSparse" target="_self">kLSMAlgorithmSparse</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionKey" target="_self">kLSMPrecisionKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionFloat" target="_self">kLSMPrecisionFloat</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionDouble" target="_self">kLSMPrecisionDouble</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMDimensionKey" target="_self">kLSMDimensionKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMIterationsKey" target="_self">kLSMIterationsKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMSweepAgeKey" target="_self">kLSMSweepAgeKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMSweepCutoffKey" target="_self">kLSMSweepCutoffKey</a></code></li>
+<li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmDense" target="_self">kLSMAlgorithmDense</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmSparse" target="_self">kLSMAlgorithmSparse</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionKey" target="_self">kLSMPrecisionKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionFloat" target="_self">kLSMPrecisionFloat</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionDouble" target="_self">kLSMPrecisionDouble</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMDimensionKey" target="_self">kLSMDimensionKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMIterationsKey" target="_self">kLSMIterationsKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMSweepAgeKey" target="_self">kLSMSweepAgeKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMSweepCutoffKey" target="_self">kLSMSweepCutoffKey</a></code></li>
+<li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmKey" target="_self">kLSMAlgorithmKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmDense" target="_self">kLSMAlgorithmDense</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionKey" target="_self">kLSMPrecisionKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionFloat" target="_self">kLSMPrecisionFloat</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionDouble" target="_self">kLSMPrecisionDouble</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMDimensionKey" target="_self">kLSMDimensionKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMIterationsKey" target="_self">kLSMIterationsKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMSweepAgeKey" target="_self">kLSMSweepAgeKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMSweepCutoffKey" target="_self">kLSMSweepCutoffKey</a></code></li>
+<li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmKey" target="_self">kLSMAlgorithmKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmDense" target="_self">kLSMAlgorithmDense</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmSparse" target="_self">kLSMAlgorithmSparse</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionKey" target="_self">kLSMPrecisionKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionFloat" target="_self">kLSMPrecisionFloat</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionDouble" target="_self">kLSMPrecisionDouble</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMIterationsKey" target="_self">kLSMIterationsKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMSweepAgeKey" target="_self">kLSMSweepAgeKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMSweepCutoffKey" target="_self">kLSMSweepCutoffKey</a></code></li>
+<li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmKey" target="_self">kLSMAlgorithmKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmDense" target="_self">kLSMAlgorithmDense</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmSparse" target="_self">kLSMAlgorithmSparse</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionKey" target="_self">kLSMPrecisionKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionFloat" target="_self">kLSMPrecisionFloat</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionDouble" target="_self">kLSMPrecisionDouble</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMDimensionKey" target="_self">kLSMDimensionKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMSweepAgeKey" target="_self">kLSMSweepAgeKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMSweepCutoffKey" target="_self">kLSMSweepCutoffKey</a></code></li>
+<li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmKey" target="_self">kLSMAlgorithmKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmDense" target="_self">kLSMAlgorithmDense</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmSparse" target="_self">kLSMAlgorithmSparse</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionKey" target="_self">kLSMPrecisionKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionFloat" target="_self">kLSMPrecisionFloat</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMDimensionKey" target="_self">kLSMDimensionKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMIterationsKey" target="_self">kLSMIterationsKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMSweepAgeKey" target="_self">kLSMSweepAgeKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMSweepCutoffKey" target="_self">kLSMSweepCutoffKey</a></code></li>
+<li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmKey" target="_self">kLSMAlgorithmKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmDense" target="_self">kLSMAlgorithmDense</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmSparse" target="_self">kLSMAlgorithmSparse</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionKey" target="_self">kLSMPrecisionKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionDouble" target="_self">kLSMPrecisionDouble</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMDimensionKey" target="_self">kLSMDimensionKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMIterationsKey" target="_self">kLSMIterationsKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMSweepAgeKey" target="_self">kLSMSweepAgeKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMSweepCutoffKey" target="_self">kLSMSweepCutoffKey</a></code></li>
+<li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmKey" target="_self">kLSMAlgorithmKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmDense" target="_self">kLSMAlgorithmDense</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmSparse" target="_self">kLSMAlgorithmSparse</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionFloat" target="_self">kLSMPrecisionFloat</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionDouble" target="_self">kLSMPrecisionDouble</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMDimensionKey" target="_self">kLSMDimensionKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMIterationsKey" target="_self">kLSMIterationsKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMSweepAgeKey" target="_self">kLSMSweepAgeKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMSweepCutoffKey" target="_self">kLSMSweepCutoffKey</a></code></li>
+<li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmKey" target="_self">kLSMAlgorithmKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmDense" target="_self">kLSMAlgorithmDense</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmSparse" target="_self">kLSMAlgorithmSparse</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionKey" target="_self">kLSMPrecisionKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionFloat" target="_self">kLSMPrecisionFloat</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionDouble" target="_self">kLSMPrecisionDouble</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMDimensionKey" target="_self">kLSMDimensionKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMIterationsKey" target="_self">kLSMIterationsKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMSweepCutoffKey" target="_self">kLSMSweepCutoffKey</a></code></li>
+<li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmKey" target="_self">kLSMAlgorithmKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmDense" target="_self">kLSMAlgorithmDense</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMAlgorithmSparse" target="_self">kLSMAlgorithmSparse</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionKey" target="_self">kLSMPrecisionKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionFloat" target="_self">kLSMPrecisionFloat</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMPrecisionDouble" target="_self">kLSMPrecisionDouble</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMDimensionKey" target="_self">kLSMDimensionKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMIterationsKey" target="_self">kLSMIterationsKey</a></code></li><li>  <code><a href="#//apple_ref/c/macro/kLSMSweepAgeKey" target="_self">kLSMSweepAgeKey</a></code></li></ul></div><a name="//apple_ref/doc/constant_group/Error_codes" title="Error codes" role="Enum"></a><a name="//apple_ref/doc/title:tag/Errorcodes" title="Error codes" role="Enum"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_2" title="Error codes" role="Enum"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_94"></a><h3 class="constantGroup">Error codes</h3><p class="abstract"></p><pre class="declaration">
+enum {
+   kLSMMapOutOfState = -6640,
+   kLSMMapNoSuchCategory = -6641,
+   kLSMMapWriteError = -6642,
+   kLSMMapBadPath = -6643,
+   kLSMMapBadCluster = -6644,
+   kLSMMapOverflow = -6645
+};
+</pre><h5 class="tight">Constants</h5><dl class="termdef"><a name="//apple_ref/c/econst/kLSMMapOutOfState" title="kLSMMapOutOfState"></a><a name="//apple_ref/doc/title:econst/kLSMMapOutOfState" title="kLSMMapOutOfState"></a><a name="//apple_ref/doc/c_ref/kLSMMapOutOfState" title="kLSMMapOutOfState"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_95"></a><dt><code class="jump constantName">kLSMMapOutOfState</code></dt><dd><p>This call cannot be issued in this map state</p><p>Available in OS X v10.5 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd><a name="//apple_ref/c/econst/kLSMMapNoSuchCategory" title="kLSMMapNoSuchCategory"></a><a name="//apple_ref/doc/c_ref/kLSMMapNoSuchCategory" title="kLSMMapNoSuchCategory"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_96"></a><dt><code class="jump constantName">kLSMMapNoSuchCategory</code></dt><dd><p>Invalid category specified</p><p>Available in OS X v10.5 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd><a name="//apple_ref/c/econst/kLSMMapWriteError" title="kLSMMapWriteError"></a><a name="//apple_ref/doc/c_ref/kLSMMapWriteError" title="kLSMMapWriteError"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_97"></a><dt><code class="jump constantName">kLSMMapWriteError</code></dt><dd><p>An error occurred writing the map</p><p>Available in OS X v10.5 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd><a name="//apple_ref/c/econst/kLSMMapBadPath" title="kLSMMapBadPath"></a><a name="//apple_ref/doc/c_ref/kLSMMapBadPath" title="kLSMMapBadPath"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_98"></a><dt><code class="jump constantName">kLSMMapBadPath</code></dt><dd><p>The URL you specified does not exist</p><p>Available in OS X v10.5 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd><a name="//apple_ref/c/econst/kLSMMapBadCluster" title="kLSMMapBadCluster"></a><a name="//apple_ref/doc/c_ref/kLSMMapBadCluster" title="kLSMMapBadCluster"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_99"></a><dt><code class="jump constantName">kLSMMapBadCluster</code></dt><dd><p>The clusters you specified are invalid</p><p>Available in OS X v10.5 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd><a name="//apple_ref/c/econst/kLSMMapOverflow" title="kLSMMapOverflow"></a><a name="//apple_ref/doc/c_ref/kLSMMapOverflow" title="kLSMMapOverflow"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_100"></a><dt><code class="jump constantName">kLSMMapOverflow</code></dt><dd><p>Cannot add more data to map</p><p>Available in OS X v10.7 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd></dl><div class="api discussion"><h5>Discussion</h5><p>Errors returned from LSM routines</p></div>  <a name="//apple_ref/doc/constant_group/Map_Flags" title="Map Flags" role="Enum"></a><a name="//apple_ref/doc/title:tag/MapFlags" title="Map Flags" role="Enum"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_3" title="Map Flags" role="Enum"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_101"></a><h3 class="constantGroup">Map Flags</h3><p class="abstract"></p><pre class="declaration">
+enum {
+   kLSMMapPairs = 1,
+   kLSMMapTriplets = 2,
+   kLSMMapHashText = 256
+};
+</pre><h5 class="tight">Constants</h5><dl class="termdef"><a name="//apple_ref/c/econst/kLSMMapPairs" title="kLSMMapPairs"></a><a name="//apple_ref/doc/title:econst/kLSMMapPairs" title="kLSMMapPairs"></a><a name="//apple_ref/doc/c_ref/kLSMMapPairs" title="kLSMMapPairs"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_102"></a><dt><code class="jump constantName">kLSMMapPairs</code></dt><dd><p>Use pairs in addition to single words.</p><p>Available in OS X v10.5 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd><a name="//apple_ref/c/econst/kLSMMapTriplets" title="kLSMMapTriplets"></a><a name="//apple_ref/doc/c_ref/kLSMMapTriplets" title="kLSMMapTriplets"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_103"></a><dt><code class="jump constantName">kLSMMapTriplets</code></dt><dd><p>Use triplets and pairs in addition to single words.</p><p>Available in OS X v10.5 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd><a name="//apple_ref/c/econst/kLSMMapHashText" title="kLSMMapHashText"></a><a name="//apple_ref/doc/c_ref/kLSMMapHashText" title="kLSMMapHashText"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_104"></a><dt><code class="jump constantName">kLSMMapHashText</code></dt><dd><p>Transform the text so it's not trivially human readable. Disables creation of language models.</p><p>Available in OS X v10.5 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd></dl><div class="api discussion"><h5>Discussion</h5><p>Options that can be specified for LSMMapCreate. These options can improve mapping accuracy, at a potentially significant increase in memory use.</p></div>  <a name="//apple_ref/doc/constant_group/Parsing_Flags" title="Parsing Flags" role="Enum"></a><a name="//apple_ref/doc/title:tag/ParsingFlags" title="Parsing Flags" role="Enum"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_4" title="Parsing Flags" role="Enum"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_105"></a><h3 class="constantGroup">Parsing Flags</h3><p class="abstract"></p><pre class="declaration">
+enum {
+   kLSMTextPreserveCase = 1,
+   kLSMTextPreserveAcronyms = 2,
+   kLSMTextApplySpamHeuristics = 4
+};
+</pre><h5 class="tight">Constants</h5><dl class="termdef"><a name="//apple_ref/c/econst/kLSMTextPreserveAcronyms" title="kLSMTextPreserveAcronyms"></a><a name="//apple_ref/doc/title:econst/kLSMTextPreserveAcronyms" title="kLSMTextPreserveAcronyms"></a><a name="//apple_ref/doc/c_ref/kLSMTextPreserveAcronyms" title="kLSMTextPreserveAcronyms"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_106"></a><dt><code class="jump constantName">kLSMTextPreserveAcronyms</code></dt><dd><p>Don't map all uppercase words to lowercase.</p><p>Available in OS X v10.5 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd><a name="//apple_ref/c/econst/kLSMTextPreserveCase" title="kLSMTextPreserveCase"></a><a name="//apple_ref/doc/c_ref/kLSMTextPreserveCase" title="kLSMTextPreserveCase"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_107"></a><dt><code class="jump constantName">kLSMTextPreserveCase</code></dt><dd><p>Don't change any words to lowercase.</p><p>Available in OS X v10.5 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd><a name="//apple_ref/c/econst/kLSMTextApplySpamHeuristics" title="kLSMTextApplySpamHeuristics"></a><a name="//apple_ref/doc/c_ref/kLSMTextApplySpamHeuristics" title="kLSMTextApplySpamHeuristics"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_108"></a><dt><code class="jump constantName">kLSMTextApplySpamHeuristics</code></dt><dd><p>Try to find words in hostile text.</p><p>Available in OS X v10.5 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd></dl><div class="api discussion"><h5>Discussion</h5><p>Options you can specify for LSMTextAddWords.</p></div>  <a name="//apple_ref/doc/constant_group/Result_Flags" title="Result Flags" role="Enum"></a><a name="//apple_ref/doc/title:tag/ResultFlags" title="Result Flags" role="Enum"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_5" title="Result Flags" role="Enum"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_109"></a><h3 class="constantGroup">Result Flags</h3><p class="abstract"></p><pre class="declaration">
+enum {
+   kLSMResultBestWords = 1,
+};
+</pre><h5 class="tight">Constants</h5><dl class="termdef"><a name="//apple_ref/c/econst/kLSMResultBestWords" title="kLSMResultBestWords"></a><a name="//apple_ref/doc/title:econst/kLSMResultBestWords" title="kLSMResultBestWords"></a><a name="//apple_ref/doc/c_ref/kLSMResultBestWords" title="kLSMResultBestWords"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_110"></a><dt><code class="jump constantName">kLSMResultBestWords</code></dt><dd><p>Find the words, rather than categories, that best match.</p><p>Available in OS X v10.5 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd></dl><div class="api discussion"><h5>Discussion</h5><p>Options for LSMResultCreate.</p></div>  <a name="//apple_ref/doc/constant_group/Storage_Flags" title="Storage Flags" role="Enum"></a><a name="//apple_ref/doc/title:tag/StorageFlags" title="Storage Flags" role="Enum"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_6" title="Storage Flags" role="Enum"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_111"></a><h3 class="constantGroup">Storage Flags</h3><p class="abstract"></p><pre class="declaration">
+enum {
+   kLSMMapDiscardCounts = 1,
+   kLSMMapLoadMutable = 2,
+};
+</pre><h5 class="tight">Constants</h5><dl class="termdef"><a name="//apple_ref/c/econst/kLSMMapDiscardCounts" title="kLSMMapDiscardCounts"></a><a name="//apple_ref/doc/title:econst/kLSMMapDiscardCounts" title="kLSMMapDiscardCounts"></a><a name="//apple_ref/doc/c_ref/kLSMMapDiscardCounts" title="kLSMMapDiscardCounts"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_112"></a><dt><code class="jump constantName">kLSMMapDiscardCounts</code></dt><dd><p>Don't keep counts. If specified on loading, the map needs to be reloaded without this option before calling LSMStartTraining. If specified on storing, the stored map can't be retrained at all. This option can save a lot of memory and/or disk space.</p><p>Available in OS X v10.5 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd><a name="//apple_ref/c/econst/kLSMMapLoadMutable" title="kLSMMapLoadMutable"></a><a name="//apple_ref/doc/c_ref/kLSMMapLoadMutable" title="kLSMMapLoadMutable"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_113"></a><dt><code class="jump constantName">kLSMMapLoadMutable</code></dt><dd><p>Load map as mutable in training state.</p><p>Available in OS X v10.5 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd><a name="//apple_ref/c/econst/kLSMMapHashText" title="kLSMMapHashText"></a><a name="//apple_ref/doc/c_ref/kLSMMapHashText" title="kLSMMapHashText"></a><a name="//apple_ref/doc/uid/TP40011480-CHLatentSemanticMappinghConstants-DontLinkElementID_114"></a><dt><code class="jump constantName">kLSMMapHashText</code></dt><dd><p>(Defined above) If specified on storing, will hash the map if it hasn't been hashed yet.</p><p>Available in OS X v10.5 and later.</p><p>Declared in <code>LatentSemanticMapping.h</code>.</p></dd></dl><div class="api discussion"><h5>Discussion</h5><p>Options for LSMMap{CreateFrom,WriteTo}URL.</p></div>  
+
+
+
+
+</section>
+        <div id="pageNavigationLinks_bottom" class="pageNavigationLinks">
+            
+        </div><br/>
+        <div class="copyright"><br/><hr /><div align="center"><p class="content_text" lang="en" dir="ltr"> &#x00a9; 2012 Apple Inc. All Rights Reserved. &#40;Last updated: 2012-07-23&#041;</p></div></div>
+
+        <div id="feedbackForm" class="hideOnPrint" style="margin-left: auto; margin-right: auto; width: 38em; margin-bottom: 15px; margin-top: 15px; font-weight: bold; color: #333333; background: #d9d9d9; padding: 5px 10px 5px 10px; height: 15px; text-align: center; -webkit-border-radius: 12px; -moz-border-radius: 12px; vertical-align: middle;">
+    Did this document help you?
+    <span class="tooltip" data-abstract="<b>Yes:</b> Tell us what works for you.">
+       <a href="/feedback/?v=1" class='urlLink'>Yes</a>
+    </span>
+    <span class="tooltip" data-abstract="<b>It's good, but:</b> Report typos, inaccuracies, and so forth.">
+        <a href="/feedback/?v=2" class='urlLink'>It's good, but...</a>
+    </span>
+    <span class="tooltip" data-abstract="<b>Not helpful:</b> Tell us what would have helped.">
+        <a href="/feedback/?v=3" class='urlLink'>Not helpful...</a>
+    </span>
+</div>
+        <div id="globalfooter" class="hideInXcode hideOnPrint">
+    <p class="gf-buy">Shop the <a href="http://www.apple.com/store/" target="_top">Apple Online Store</a> (1-800-MY-APPLE), visit an <a href="http://www.apple.com/retail/" target="_top">Apple Retail Store</a>, or find a <a href="http://www.apple.com/buy/locator/" target="_top">reseller</a>.</p>
+
+<ul class="gf-links piped">
+	<li><a class="first" href="http://lists.apple.com/" target="_top">Mailing Lists</a></li>
+	<li><a href="http://developer.apple.com/rss/" target="_top">RSS Feeds</a></li>
+</ul>
+
+<div class="gf-sosumi">
+    <p>Copyright &copy; 2010 Apple Inc. All rights reserved.</p>
+    <ul class="piped">
+    <li><a href="http://www.apple.com/legal/terms/site.html" class="first" target="_top">Terms of Use</a></li>
+    <li><a href="http://www.apple.com/legal/privacy/" target="_top">Privacy Policy</a></li>
+    </ul>
+</div>
+    </div><!--/globalfooter-->
+    </article>
+</body>
+<script charset="utf-8" src="../../../../../Resources/709/JavaScript/lib/prototype.js"></script>
+<!-- Media player includes -->
+<script charset="utf-8" src="../../../../../Resources/709/JavaScript/lib/scriptaculous.js"></script>
+<script charset="utf-8" src="../../../../../Resources/709/JavaScript/lib/event_mixins.js"></script>
+<script charset="utf-8" src="../../../../../Resources/709/JavaScript/lib/browserdetect.js"></script>
+<script charset="utf-8" src="../../../../../Resources/709/JavaScript/lib/ac_media.js"></script>
+<!-- /Media player includes -->
+<script charset="utf-8" src="../../../../../Resources/709/JavaScript/devpubs.js"></script>
+<script charset="utf-8" src="../../../../../Resources/709/JavaScript/book.js"></script>
+<script charset="utf-8" src="../../../../../Resources/709/JavaScript/tasks.js"></script>
+<script type="text/javascript" src="/library/webstats/pagetracker.js"></script>
+<script type="text/javascript">
+if(typeof PageTracker !== 'undefined') {
+  if(window.addEventListener) {
+    window.addEventListener("load", function(){PageTracker.logPageLoad()},false);
+  } else if(window.attachEvent) {
+    window.attachEvent("onload",function(){PageTracker.logPageLoad()});
+  }
+}
+</script>
+</html>

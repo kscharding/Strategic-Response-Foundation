@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMApplicationBuild</key>
+	<string>247.1</string>
+	<key>AMApplicationVersion</key>
+	<string>2.1.1</string>
+	<key>AMDocumentVersion</key>
+	<string>2</string>
+	<key>actions</key>
+	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0</string>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>allowMultipleSelection</key>
+					<dict/>
+					<key>prompt</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>AMRequiredResources</key>
+				<array>
+					<dict>
+						<key>Resource</key>
+						<string>/System/Library/PrivateFrameworks/iLifeMediaBrowser.framework/Versions/A/iLifeMediaBrowser</string>
+						<key>Type</key>
+						<string>file</string>
+					</dict>
+				</array>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Ask for Movies.action</string>
+				<key>ActionName</key>
+				<string>Ask for Movies</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>allowMultipleSelection</key>
+					<true/>
+					<key>prompt</key>
+					<string></string>
+				</dict>
+				<key>Application</key>
+				<array>
+					<string>QuickTime Player</string>
+				</array>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.AskForMovies</string>
+				<key>CFBundleVersion</key>
+				<string>1.0</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<false/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryMovies</string>
+				</array>
+				<key>Class Name</key>
+				<string>AskForMoviesAction</string>
+				<key>InputUUID</key>
+				<string>E3CAAF3F-E3B4-48A9-B10E-939F23C7C57C</string>
+				<key>Keywords</key>
+				<array/>
+				<key>OutputUUID</key>
+				<string>39CBA5B9-A3D5-4DA0-BAAD-95F1A0618E29</string>
+				<key>UUID</key>
+				<string>687A8842-0931-443F-AE51-2A12793DAAB6</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>QuickTime Player</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<true/>
+						<key>name</key>
+						<string>allowMultipleSelection</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>prompt</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>333.000000:625.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Ask for Movies.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<false/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.1</string>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>deleteSourceFiles</key>
+					<dict/>
+					<key>destinationFolder</key>
+					<dict>
+						<key>isPathPopUp</key>
+						<true/>
+						<key>variableUUIDsInMenu</key>
+						<array/>
+					</dict>
+					<key>format</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.path</string>
+					</array>
+				</dict>
+				<key>AMRequiredResources</key>
+				<array/>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Export Movies for iPod.action</string>
+				<key>ActionName</key>
+				<string>Export Movies</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>deleteSourceFiles</key>
+					<false/>
+					<key>destinationFolder</key>
+					<string>~/Movies</string>
+					<key>format</key>
+					<integer>0</integer>
+				</dict>
+				<key>Application</key>
+				<array>
+					<string>QuickTime Player</string>
+				</array>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.Export_Movies</string>
+				<key>CFBundleVersion</key>
+				<string>1.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryMovies</string>
+					<string>AMCategoryMusic</string>
+				</array>
+				<key>Class Name</key>
+				<string>ExportMovies</string>
+				<key>InputUUID</key>
+				<string>EDDB49F9-A8A0-44B7-AAC4-D0B50137CDCE</string>
+				<key>Keywords</key>
+				<array>
+					<string>iPod</string>
+					<string>Export</string>
+					<string>Compression</string>
+					<string>Movie</string>
+					<string>Apple TV</string>
+					<string>iPhone</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>70F8C87F-AE33-4B20-8C9A-21A0D7E371E1</string>
+				<key>UUID</key>
+				<string>22B7C199-BB1E-4CE2-A09B-31E5606A26FA</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>QuickTime Player</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>~/Movies</string>
+						<key>name</key>
+						<string>destinationFolder</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>format</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<false/>
+						<key>name</key>
+						<string>deleteSourceFiles</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>333.000000:520.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Export Movies for iPod.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+	</array>
+	<key>connectors</key>
+	<dict>
+		<key>47AB602F-6221-4BF6-9297-937AB43E8BB0</key>
+		<dict>
+			<key>from</key>
+			<string>687A8842-0931-443F-AE51-2A12793DAAB6 - 687A8842-0931-443F-AE51-2A12793DAAB6</string>
+			<key>to</key>
+			<string>22B7C199-BB1E-4CE2-A09B-31E5606A26FA - 22B7C199-BB1E-4CE2-A09B-31E5606A26FA</string>
+		</dict>
+	</dict>
+	<key>state</key>
+	<dict>
+		<key>AMLogTabViewSelectedIndex</key>
+		<integer>0</integer>
+		<key>libraryState</key>
+		<dict>
+			<key>actionsMajorSplitViewState</key>
+			<dict>
+				<key>expandedPosition</key>
+				<real>239</real>
+				<key>subviewState</key>
+				<array>
+					<string>0.000000, 0.000000, 381.000000, 350.000000, NO</string>
+					<string>0.000000, 351.000000, 381.000000, 238.000000, NO</string>
+				</array>
+			</dict>
+			<key>actionsMinorSplitViewState</key>
+			<dict>
+				<key>expandedPosition</key>
+				<real>0.0</real>
+				<key>subviewState</key>
+				<array>
+					<string>0.000000, 0.000000, 163.000000, 350.000000, NO</string>
+					<string>164.000000, 0.000000, 217.000000, 350.000000, NO</string>
+				</array>
+			</dict>
+			<key>variablesMajorSplitViewState</key>
+			<dict>
+				<key>expandedPosition</key>
+				<real>0.0</real>
+				<key>subviewState</key>
+				<array>
+					<string>0.000000, 0.000000, 350.000000, 555.000000, NO</string>
+					<string>0.000000, 556.000000, 350.000000, 148.000000, NO</string>
+				</array>
+			</dict>
+			<key>variablesMinorSplitViewState</key>
+			<dict>
+				<key>expandedPosition</key>
+				<real>0.0</real>
+				<key>subviewState</key>
+				<array>
+					<string>0.000000, 0.000000, 163.000000, 555.000000, NO</string>
+					<string>164.000000, 0.000000, 186.000000, 555.000000, NO</string>
+				</array>
+			</dict>
+		</dict>
+		<key>majorSplitViewState</key>
+		<dict>
+			<key>expandedPosition</key>
+			<real>0.0</real>
+			<key>subviewState</key>
+			<array>
+				<string>0.000000, 0.000000, 381.000000, 634.000000, NO</string>
+				<string>382.000000, 0.000000, 666.000000, 634.000000, NO</string>
+			</array>
+		</dict>
+		<key>minorSplitViewState</key>
+		<dict>
+			<key>expandedPosition</key>
+			<real>162</real>
+			<key>subviewState</key>
+			<array>
+				<string>0.000000, 0.000000, 666.000000, 615.000000, NO</string>
+				<string>0.000000, 615.000000, 666.000000, 0.000000, YES</string>
+			</array>
+		</dict>
+		<key>windowFrame</key>
+		<string>{{456, 178}, {1047, 711}}</string>
+		<key>workflowViewScrollPosition</key>
+		<string>{{0, 0}, {666, 615}}</string>
+	</dict>
+	<key>workflowMetaData</key>
+	<dict>
+		<key>workflowTypeIdentifier</key>
+		<string>com.apple.Automator.workflow</string>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMApplicationBuild</key>
+	<string>247.1</string>
+	<key>AMApplicationVersion</key>
+	<string>2.1.1</string>
+	<key>AMDocumentVersion</key>
+	<string>2</string>
+	<key>actions</key>
+	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMActionVersion</key>
+				<string>1.0</string>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>dateRange</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.addressbook.person-object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Find People with Birthdays.action</string>
+				<key>ActionName</key>
+				<string>Find People with Birthdays</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>dateRange</key>
+					<integer>4</integer>
+				</dict>
+				<key>Application</key>
+				<array>
+					<string>Address Book</string>
+				</array>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.BirthdayIsToday</string>
+				<key>CFBundleVersion</key>
+				<string>1.0</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryContacts</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMAppleScriptAction</string>
+				<key>InputUUID</key>
+				<string>DF8748B5-5BE0-4DE3-B4EB-1073C8304EDF</string>
+				<key>Keywords</key>
+				<array>
+					<string>Birthday</string>
+					<string>Date</string>
+					<string>Person</string>
+					<string>Find</string>
+					<string>Get</string>
+					<string>Search</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>FBBE4EFE-C9A8-4D5B-9E5C-09AD752424F9</string>
+				<key>UUID</key>
+				<string>737E5B1C-BE5A-44D9-97C5-F2873E909591</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Address Book</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>dateRange</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>301.000000:604.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Find People with Birthdays.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<false/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.addressbook.item-object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0</string>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>addLabels</key>
+					<dict/>
+					<key>combineNames</key>
+					<dict/>
+					<key>exportFormat</key>
+					<dict/>
+					<key>storedProperties</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.text-object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Get Contact Information.action</string>
+				<key>ActionName</key>
+				<string>Get Contact Information</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>addLabels</key>
+					<false/>
+					<key>combineNames</key>
+					<true/>
+					<key>exportFormat</key>
+					<integer>0</integer>
+					<key>storedProperties</key>
+					<array>
+						<array>
+							<true/>
+							<string>First Name</string>
+						</array>
+						<array>
+							<true/>
+							<string>Last Name</string>
+						</array>
+						<array>
+							<false/>
+							<string>Job Title</string>
+						</array>
+						<array>
+							<false/>
+							<string>Department</string>
+						</array>
+						<array>
+							<false/>
+							<string>Company</string>
+						</array>
+						<array>
+							<false/>
+							<string>Home Address</string>
+						</array>
+						<array>
+							<false/>
+							<string>Work Address</string>
+						</array>
+						<array>
+							<false/>
+							<string>Home Phone</string>
+						</array>
+						<array>
+							<false/>
+							<string>Work Phone</string>
+						</array>
+						<array>
+							<false/>
+							<string>Mobile Phone</string>
+						</array>
+						<array>
+							<false/>
+							<string>Home Email</string>
+						</array>
+						<array>
+							<false/>
+							<string>Work Email</string>
+						</array>
+						<array>
+							<false/>
+							<string>Chat Address</string>
+						</array>
+						<array>
+							<true/>
+							<string>Birthday</string>
+						</array>
+						<array>
+							<false/>
+							<string>Homepage</string>
+						</array>
+						<array>
+							<false/>
+							<string>(Blank Line)</string>
+						</array>
+						<array>
+							<false/>
+							<string>(Blank Line)</string>
+						</array>
+						<array>
+							<false/>
+							<string>(Blank Line)</string>
+						</array>
+						<array>
+							<false/>
+							<string>(Blank Line)</string>
+						</array>
+						<array>
+							<false/>
+							<string>(Blank Line)</string>
+						</array>
+						<array>
+							<false/>
+							<string>(Blank Line)</string>
+						</array>
+						<array>
+							<false/>
+							<string>(Blank Line)</string>
+						</array>
+						<array>
+							<false/>
+							<string>(Blank Line)</string>
+						</array>
+						<array>
+							<false/>
+							<string>(Blank Line)</string>
+						</array>
+					</array>
+				</dict>
+				<key>Application</key>
+				<array>
+					<string>Address Book</string>
+				</array>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.GetContactInfo</string>
+				<key>CFBundleVersion</key>
+				<string>1.0</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryContacts</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMAppleScriptAction</string>
+				<key>InputUUID</key>
+				<string>66575055-7DEB-42B7-A797-95D22442F95A</string>
+				<key>Keywords</key>
+				<array>
+					<string>Address</string>
+					<string>Person</string>
+					<string>Get</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>D185F695-B485-4DF9-80B1-AEB1E3686DF1</string>
+				<key>UUID</key>
+				<string>9938AD92-C341-49F4-A4CC-6940DB482852</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Address Book</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>exportFormat</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<array/>
+						<key>name</key>
+						<string>storedProperties</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<true/>
+						<key>name</key>
+						<string>addLabels</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<true/>
+						<key>name</key>
+						<string>combineNames</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>301.000000:501.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Get Contact Information.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.text-object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>2.0</string>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>checkedForDefaultEncoding</key>
+					<dict/>
+					<key>newFileFolderPath</key>
+					<dict>
+						<key>isPathPopUp</key>
+						<true/>
+						<key>variableUUIDsInMenu</key>
+						<array/>
+					</dict>
+					<key>newFileName</key>
+					<dict>
+						<key>tokenizedValue</key>
+						<array>
+							<string>Birthdays.txt</string>
+						</array>
+					</dict>
+					<key>newFileTextEncoding</key>
+					<dict/>
+					<key>replaceExistingFiles</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.alias-object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/New Text File.action</string>
+				<key>ActionName</key>
+				<string>New Text File</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>checkedForDefaultEncoding</key>
+					<true/>
+					<key>newFileFolderPath</key>
+					<string>~/Desktop</string>
+					<key>newFileName</key>
+					<string>Birthdays.txt</string>
+					<key>newFileTextEncoding</key>
+					<integer>30</integer>
+					<key>replaceExistingFiles</key>
+					<integer>0</integer>
+				</dict>
+				<key>Application</key>
+				<array>
+					<string>Finder</string>
+					<string>TextEdit</string>
+				</array>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.NewTextFile</string>
+				<key>CFBundleVersion</key>
+				<string>2.0</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryText</string>
+				</array>
+				<key>Class Name</key>
+				<string>NewTextFileAction</string>
+				<key>InputUUID</key>
+				<string>548B54D6-562B-4313-B4C8-DDA3940D75A7</string>
+				<key>Keywords</key>
+				<array>
+					<string>Create</string>
+					<string>Make</string>
+					<string>File</string>
+					<string>Text</string>
+					<string>Save</string>
+					<string>New</string>
+					<string>Document</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>3741C571-F361-4DF6-9D5C-9A2A72788079</string>
+				<key>UUID</key>
+				<string>22DB9936-59D6-4BB9-9E0E-5EDD6D7FF88D</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Finder</string>
+					<string>TextEdit</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>replaceExistingFiles</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<string>~/Desktop</string>
+						<key>name</key>
+						<string>newFileFolderPath</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>checkedForDefaultEncoding</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string>Untitled.txt</string>
+						<key>name</key>
+						<string>newFileName</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<integer>0</integer>
+						<key>name</key>
+						<string>newFileTextEncoding</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>301.000000:185.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/New Text File.action/Contents/Resources/English.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+	</array>
+	<key>connectors</key>
+	<dict>
+		<key>14EBD3B2-6794-4F09-8A5F-B04CC02A72C5</key>
+		<dict>
+			<key>from</key>
+			<string>737E5B1C-BE5A-44D9-97C5-F2873E909591 - 737E5B1C-BE5A-44D9-97C5-F2873E909591</string>
+			<key>to</key>
+			<string>9938AD92-C341-49F4-A4CC-6940DB482852 - 9938AD92-C341-49F4-A4CC-6940DB482852</string>
+		</dict>
+		<key>BD505863-409E-44B8-9C73-C29C944D1EBC</key>
+		<dict>
+			<key>from</key>
+			<string>9938AD92-C341-49F4-A4CC-6940DB482852 - 9938AD92-C341-49F4-A4CC-6940DB482852</string>
+			<key>to</key>
+			<string>22DB9936-59D6-4BB9-9E0E-5EDD6D7FF88D - 22DB9936-59D6-4BB9-9E0E-5EDD6D7FF88D</string>
+		</dict>
+	</dict>
+	<key>state</key>
+	<dict>
+		<key>AMLogTabViewSelectedIndex</key>
+		<integer>0</integer>
+		<key>libraryState</key>
+		<dict>
+			<key>actionsMajorSplitViewState</key>
+			<dict>
+				<key>expandedPosition</key>
+				<real>0.0</real>
+				<key>subviewState</key>
+				<array>
+					<string>0.000000, 0.000000, 381.000000, 328.000000, NO</string>
+					<string>0.000000, 329.000000, 381.000000, 239.000000, NO</string>
+				</array>
+			</dict>
+			<key>actionsMinorSplitViewState</key>
+			<dict>
+				<key>expandedPosition</key>
+				<real>0.0</real>
+				<key>subviewState</key>
+				<array>
+					<string>0.000000, 0.000000, 163.000000, 328.000000, NO</string>
+					<string>164.000000, 0.000000, 217.000000, 328.000000, NO</string>
+				</array>
+			</dict>
+			<key>variablesMajorSplitViewState</key>
+			<dict>
+				<key>expandedPosition</key>
+				<real>0.0</real>
+				<key>subviewState</key>
+				<array>
+					<string>0.000000, 0.000000, 350.000000, 555.000000, NO</string>
+					<string>0.000000, 556.000000, 350.000000, 148.000000, NO</string>
+				</array>
+			</dict>
+			<key>variablesMinorSplitViewState</key>
+			<dict>
+				<key>expandedPosition</key>
+				<real>0.0</real>
+				<key>subviewState</key>
+				<array>
+					<string>0.000000, 0.000000, 163.000000, 555.000000, NO</string>
+					<string>164.000000, 0.000000, 186.000000, 555.000000, NO</string>
+				</array>
+			</dict>
+		</dict>
+		<key>majorSplitViewState</key>
+		<dict>
+			<key>expandedPosition</key>
+			<real>0.0</real>
+			<key>subviewState</key>
+			<array>
+				<string>0.000000, 0.000000, 381.000000, 613.000000, NO</string>
+				<string>382.000000, 0.000000, 602.000000, 613.000000, NO</string>
+			</array>
+		</dict>
+		<key>minorSplitViewState</key>
+		<dict>
+			<key>expandedPosition</key>
+			<real>162</real>
+			<key>subviewState</key>
+			<array>
+				<string>0.000000, 0.000000, 602.000000, 594.000000, NO</string>
+				<string>0.000000, 781.000000, 619.000000, 0.000000, YES</string>
+			</array>
+		</dict>
+		<key>windowFrame</key>
+		<string>{{440, 166}, {983, 690}}</string>
+		<key>workflowViewScrollPosition</key>
+		<string>{{0, 0}, {602, 594}}</string>
+	</dict>
+	<key>workflowMetaData</key>
+	<dict>
+		<key>workflowTypeIdentifier</key>
+		<string>com.apple.Automator.workflow</string>
+	</dict>
+</dict>
+</plist>

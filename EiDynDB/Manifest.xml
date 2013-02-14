@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+
+The properties in the Manifest are applied when the application is uploaded through the Azure Services Developer Portal. 
+They are not applied when debugging or running the application from Visual Studio. 
+The following fields cannot be changed once the application is created:
+      MultiInstance
+      InstallReturnLink
+      UnInstallReturnLink
+      CallbackHomeLink
+      RequireDelegation
+
+If these fields are modified after the initial upload of the application, subsequent uploads will be rejected.
+
+To successfully change these fields a new application must be created through the Developer Portal and 
+the new Application Self-Link must be copied into the application’s project properties in Visual Studio.
+
+-->
+<Manifest xmlns="http://schemas.mesh.com/application/manifest/2008">
+  <Name>EiDynDB</Name>
+  <Description>Live Framework Silverlight Mesh-enabled Web Application</Description>
+  <PublisherName>user</PublisherName>
+  <DisplayVersion>1.0</DisplayVersion>
+  <MultiInstance>false</MultiInstance>
+  <PrivacyPolicyLink>http://example.com</PrivacyPolicyLink>
+  <SupportLink>http://example.com</SupportLink>
+  <VendorLink>http://example.com</VendorLink>
+  <RequireDelegation>false</RequireDelegation>
+</Manifest>

@@ -1,0 +1,972 @@
+  
+
+
+<!DOCTYPE html>
+<html>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# githubog: http://ogp.me/ns/fb/githubog#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>typo3-neo/Packages/Framework/TYPO3.Flow/Documentation/TheDefinitiveGuide/PartI/ConceptsOfModernProgramming.rst at 69c443d407a65c6ec538d3f5657a6122792f63db · bastichelaar/typo3-neo</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub" />
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144.png" />
+    <link rel="logo" type="image/svg" href="http://github-media-downloads.s3.amazonaws.com/github-logo.svg" />
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="fq3pC1ISJDQwlwVVhaJ+FjY66r/S1xzmdcYuPtd5LEA=" name="csrf-token" />
+
+    <link href="https://a248.e.akamai.net/assets.github.com/assets/github-6c7984e384129edf1958345326c26471eedcdc23.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="https://a248.e.akamai.net/assets.github.com/assets/github2-a68b3668ef12bc14777039845b05c8ea61e43c35.css" media="screen" rel="stylesheet" type="text/css" />
+    
+
+
+      <script src="https://a248.e.akamai.net/assets.github.com/assets/frameworks-5dcdaf734c8092261f37e6534c8f114696d913a9.js" type="text/javascript"></script>
+      <script src="https://a248.e.akamai.net/assets.github.com/assets/github-2cf4d0aa606ff4b0201e77c9366b440255e3dee2.js" type="text/javascript"></script>
+      
+
+        <link rel='permalink' href='/bastichelaar/typo3-neo/blob/69c443d407a65c6ec538d3f5657a6122792f63db/Packages/Framework/TYPO3.Flow/Documentation/TheDefinitiveGuide/PartI/ConceptsOfModernProgramming.rst'>
+    <meta property="og:title" content="typo3-neo"/>
+    <meta property="og:type" content="githubog:gitrepository"/>
+    <meta property="og:url" content="https://github.com/bastichelaar/typo3-neo"/>
+    <meta property="og:image" content="https://secure.gravatar.com/avatar/686661be8bd721a83f95bb356d9385cc?s=420&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <meta property="og:site_name" content="GitHub"/>
+    <meta property="og:description" content="Contribute to typo3-neo development by creating an account on GitHub."/>
+    <meta property="twitter:card" content="summary"/>
+    <meta property="twitter:site" content="@GitHub">
+    <meta property="twitter:title" content="bastichelaar/typo3-neo"/>
+
+    <meta name="description" content="Contribute to typo3-neo development by creating an account on GitHub." />
+
+  <link href="https://github.com/bastichelaar/typo3-neo/commits/69c443d407a65c6ec538d3f5657a6122792f63db.atom" rel="alternate" title="Recent Commits to typo3-neo:69c443d407a65c6ec538d3f5657a6122792f63db" type="application/atom+xml" />
+
+  </head>
+
+
+  <body class="logged_in page-blob  vis-public env-production  ">
+    <div id="wrapper">
+
+      
+
+      
+
+      
+
+      
+
+
+        <div class="header header-logged-in true">
+          <div class="container clearfix">
+
+            <a class="header-logo-blacktocat" href="https://github.com/">
+  <span class="mega-icon mega-icon-blacktocat"></span>
+</a>
+
+            <div class="divider-vertical"></div>
+
+              <a href="/notifications" class="notification-indicator tooltipped downwards" title="You have no unread notifications">
+    <span class="mail-status all-read"></span>
+  </a>
+  <div class="divider-vertical"></div>
+
+
+              <div class="topsearch command-bar-activated ">
+      <form accept-charset="UTF-8" action="/search" class="command_bar_form" id="top_search_form" method="get">
+  <a href="/search/advanced" class="advanced-search-icon tooltipped downwards command-bar-search" id="advanced_search" title="Advanced search"><span class="mini-icon mini-icon-advanced-search "></span></a>
+
+  <input type="text" name="q" id="command-bar" placeholder="Search or type a command" tabindex="1" data-username="kscharding" autocapitalize="off">
+
+  <span class="mini-icon help tooltipped downwards" title="Show command bar help">
+    <span class="mini-icon mini-icon-help"></span>
+  </span>
+
+  <input type="hidden" name="ref" value="commandbar">
+
+  <div class="divider-vertical"></div>
+</form>
+  <ul class="top-nav">
+      <li class="explore"><a href="https://github.com/explore">Explore</a></li>
+      <li><a href="https://gist.github.com">Gist</a></li>
+      <li><a href="/blog">Blog</a></li>
+    <li><a href="http://help.github.com">Help</a></li>
+  </ul>
+</div>
+
+
+            
+
+  
+    <ul id="user-links">
+      <li>
+        <a href="https://github.com/kscharding" class="name">
+          <img height="20" src="https://secure.gravatar.com/avatar/67b46901f128a1e5c0e25570c55dd8d4?s=140&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" width="20" /> kscharding
+        </a>
+      </li>
+      <li>
+        <a href="/new" id="new_repo" class="tooltipped downwards" title="Create a new repo">
+          <span class="mini-icon mini-icon-create"></span>
+        </a>
+      </li>
+      <li>
+        <a href="/settings/profile" id="account_settings"
+          class="tooltipped downwards"
+          title="Account settings ">
+          <span class="mini-icon mini-icon-account-settings"></span>
+        </a>
+      </li>
+      <li>
+        <a href="/logout" data-method="post" id="logout" class="tooltipped downwards" title="Sign out">
+          <span class="mini-icon mini-icon-logout"></span>
+        </a>
+      </li>
+    </ul>
+
+
+
+            
+          </div>
+        </div>
+
+
+      
+
+      
+
+
+            <div class="site hfeed" itemscope itemtype="http://schema.org/WebPage">
+      <div class="hentry">
+        
+        <div class="pagehead repohead instapaper_ignore readability-menu">
+          <div class="container">
+            <div class="title-actions-bar">
+              
+
+
+<ul class="pagehead-actions">
+
+
+    <li class="subscription">
+      <form accept-charset="UTF-8" action="/notifications/subscribe" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="fq3pC1ISJDQwlwVVhaJ+FjY66r/S1xzmdcYuPtd5LEA=" /></div>  <input id="repository_id" name="repository_id" type="hidden" value="6595971" />
+
+    <div class="select-menu js-menu-container js-select-menu">
+      <span class="minibutton select-menu-button js-menu-target">
+        <span class="js-select-button">
+          <span class="mini-icon mini-icon-watching"></span>
+          Watch
+        </span>
+      </span>
+
+      <div class="select-menu-modal-holder js-menu-content">
+        <div class="select-menu-modal">
+          <div class="select-menu-header">
+            <span class="select-menu-title">Notification status</span>
+            <span class="mini-icon mini-icon-remove-close js-menu-close"></span>
+          </div> <!-- /.select-menu-header -->
+
+          <div class="select-menu-list js-navigation-container js-select-menu-pane">
+
+            <div class="select-menu-item js-navigation-item js-navigation-target selected">
+              <span class="select-menu-checkmark mini-icon mini-icon-confirm"></span>
+              <div class="select-menu-item-text">
+                <input checked="checked" id="do_included" name="do" type="radio" value="included" />
+                <h4>Not watching</h4>
+                <span class="description">You only receive notifications for discussions in which you participate or are @mentioned.</span>
+                <span class="js-select-button-text hidden-select-button-text">
+                  <span class="mini-icon mini-icon-watching"></span>
+                  Watch
+                </span>
+              </div>
+            </div> <!-- /.select-menu-item -->
+
+            <div class="select-menu-item js-navigation-item js-navigation-target ">
+              <span class="select-menu-checkmark mini-icon mini-icon-confirm"></span>
+              <div class="select-menu-item-text">
+                <input id="do_subscribed" name="do" type="radio" value="subscribed" />
+                <h4>Watching</h4>
+                <span class="description">You receive notifications for all discussions in this repository.</span>
+                <span class="js-select-button-text hidden-select-button-text">
+                  <span class="mini-icon mini-icon-unwatch"></span>
+                  Unwatch
+                </span>
+              </div>
+            </div> <!-- /.select-menu-item -->
+
+            <div class="select-menu-item js-navigation-item js-navigation-target ">
+              <span class="select-menu-checkmark mini-icon mini-icon-confirm"></span>
+              <div class="select-menu-item-text">
+                <input id="do_ignore" name="do" type="radio" value="ignore" />
+                <h4>Ignoring</h4>
+                <span class="description">You do not receive any notifications for discussions in this repository.</span>
+                <span class="js-select-button-text hidden-select-button-text">
+                  <span class="mini-icon mini-icon-mute"></span>
+                  Stop ignoring
+                </span>
+              </div>
+            </div> <!-- /.select-menu-item -->
+
+          </div> <!-- /.select-menu-list -->
+
+        </div> <!-- /.select-menu-modal -->
+      </div> <!-- /.select-menu-modal-holder -->
+    </div> <!-- /.select-menu -->
+
+</form>
+    </li>
+
+    <li class="js-toggler-container js-social-container starring-container ">
+      <a href="/bastichelaar/typo3-neo/unstar" class="minibutton js-toggler-target star-button starred upwards" title="Unstar this repo" data-remote="true" data-method="post" rel="nofollow">
+        <span class="mini-icon mini-icon-remove-star"></span>
+        <span class="text">Unstar</span>
+      </a>
+      <a href="/bastichelaar/typo3-neo/star" class="minibutton js-toggler-target star-button unstarred upwards" title="Star this repo" data-remote="true" data-method="post" rel="nofollow">
+        <span class="mini-icon mini-icon-star"></span>
+        <span class="text">Star</span>
+      </a>
+      <a class="social-count js-social-count" href="/bastichelaar/typo3-neo/stargazers">0</a>
+    </li>
+
+        <li>
+          <a href="/bastichelaar/typo3-neo/fork" class="minibutton js-toggler-target fork-button lighter upwards" title="Fork this repo" rel="nofollow" data-method="post">
+            <span class="mini-icon mini-icon-branch-create"></span>
+            <span class="text">Fork</span>
+          </a>
+          <a href="/bastichelaar/typo3-neo/network" class="social-count">0</a>
+        </li>
+
+
+</ul>
+
+              <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+                <span class="repo-label"><span>public</span></span>
+                <span class="mega-icon mega-icon-public-repo"></span>
+                <span class="author vcard">
+                  <a href="/bastichelaar" class="url fn" itemprop="url" rel="author">
+                  <span itemprop="title">bastichelaar</span>
+                  </a></span> /
+                <strong><a href="/bastichelaar/typo3-neo" class="js-current-repository">typo3-neo</a></strong>
+              </h1>
+            </div>
+
+            
+
+  <ul class="tabs">
+    <li><a href="/bastichelaar/typo3-neo" class="selected" highlight="[:repo_source, :repo_downloads, :repo_commits, :repo_tags, :repo_branches]">Code</a></li>
+    <li><a href="/bastichelaar/typo3-neo/network" highlight="[:repo_network]">Network</a></li>
+    <li><a href="/bastichelaar/typo3-neo/pulls" highlight="[:repo_pulls]">Pull Requests <span class='counter'>0</span></a></li>
+
+      <li><a href="/bastichelaar/typo3-neo/issues" highlight="[:repo_issues]">Issues <span class='counter'>0</span></a></li>
+
+      <li><a href="/bastichelaar/typo3-neo/wiki" highlight="[:repo_wiki]">Wiki</a></li>
+
+
+    <li><a href="/bastichelaar/typo3-neo/graphs" highlight="[:repo_graphs, :repo_contributors]">Graphs</a></li>
+
+
+  </ul>
+  
+<div class="tabnav">
+
+  <span class="tabnav-right">
+    <ul class="tabnav-tabs">
+          <li><a href="/bastichelaar/typo3-neo/tags" class="tabnav-tab" highlight="repo_tags">Tags <span class="counter blank">0</span></a></li>
+    </ul>
+    
+  </span>
+
+  <div class="tabnav-widget scope">
+
+
+    <div class="select-menu js-menu-container js-select-menu js-branch-menu">
+      <a class="minibutton select-menu-button js-menu-target" data-hotkey="w" data-ref="">
+        <span class="mini-icon mini-icon-tree"></span>
+        <i>tree:</i>
+        <span class="js-select-button">69c443d407</span>
+      </a>
+
+      <div class="select-menu-modal-holder js-menu-content js-navigation-container js-select-menu-pane">
+
+        <div class="select-menu-modal js-select-menu-pane">
+          <div class="select-menu-header">
+            <span class="select-menu-title">Switch branches/tags</span>
+            <span class="mini-icon mini-icon-remove-close js-menu-close"></span>
+          </div> <!-- /.select-menu-header -->
+
+          <div class="select-menu-filters">
+            <div class="select-menu-text-filter">
+              <input type="text" id="commitish-filter-field" class="js-select-menu-text-filter js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+            </div> <!-- /.select-menu-text-filter -->
+            <div class="select-menu-tabs">
+              <ul>
+                <li class="select-menu-tab">
+                  <a href="#" data-tab-filter="branches" class="js-select-menu-tab">Branches</a>
+                </li>
+                <li class="select-menu-tab">
+                  <a href="#" data-tab-filter="tags" class="js-select-menu-tab">Tags</a>
+                </li>
+              </ul>
+            </div><!-- /.select-menu-tabs -->
+          </div><!-- /.select-menu-filters -->
+
+          <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket css-truncate" data-tab-filter="branches" data-filterable-for="commitish-filter-field" data-filterable-type="substring">
+
+
+              <div class="select-menu-item js-navigation-item js-navigation-target ">
+                <span class="select-menu-checkmark mini-icon mini-icon-confirm"></span>
+                <a href="/bastichelaar/typo3-neo/blob/master/Packages/Framework/TYPO3.Flow/Documentation/TheDefinitiveGuide/PartI/ConceptsOfModernProgramming.rst" class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target" data-name="master" rel="nofollow" title="master">master</a>
+              </div> <!-- /.select-menu-item -->
+
+              <div class="select-menu-no-results js-not-filterable">Nothing to show</div>
+          </div> <!-- /.select-menu-list -->
+
+
+          <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket css-truncate" data-tab-filter="tags" data-filterable-for="commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-no-results js-not-filterable">Nothing to show</div>
+
+          </div> <!-- /.select-menu-list -->
+
+        </div> <!-- /.select-menu-modal -->
+      </div> <!-- /.select-menu-modal-holder -->
+    </div> <!-- /.select-menu -->
+
+  </div> <!-- /.scope -->
+
+  <ul class="tabnav-tabs">
+    <li><a href="/bastichelaar/typo3-neo" class="selected tabnav-tab" highlight="repo_source">Files</a></li>
+    <li><a href="/bastichelaar/typo3-neo/commits/" class="tabnav-tab" highlight="repo_commits">Commits</a></li>
+    <li><a href="/bastichelaar/typo3-neo/branches" class="tabnav-tab" highlight="repo_branches" rel="nofollow">Branches <span class="counter ">1</span></a></li>
+  </ul>
+
+</div>
+
+  
+  
+  
+
+
+            
+          </div>
+        </div><!-- /.repohead -->
+
+        <div id="js-repo-pjax-container" class="container context-loader-container" data-pjax-container>
+          
+
+
+<!-- blob contrib key: blob_contributors:v21:42968e5616394ec2a629b2b8c738b985 -->
+<!-- blob contrib frag key: views10/v8/blob_contributors:v21:42968e5616394ec2a629b2b8c738b985 -->
+
+
+<div id="slider">
+    <div class="frame-meta">
+
+      <p title="This is a placeholder element" class="js-history-link-replace hidden"></p>
+
+        <div class="breadcrumb">
+          <span class='bold'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/bastichelaar/typo3-neo/tree/69c443d407a65c6ec538d3f5657a6122792f63db" class="js-slide-to" data-direction="back" itemscope="url" rel="nofollow"><span itemprop="title">typo3-neo</span></a></span></span> / <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/bastichelaar/typo3-neo/tree/69c443d407a65c6ec538d3f5657a6122792f63db/Packages" class="js-slide-to" data-direction="back" itemscope="url" rel="nofollow"><span itemprop="title">Packages</span></a></span> / <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/bastichelaar/typo3-neo/tree/69c443d407a65c6ec538d3f5657a6122792f63db/Packages/Framework" class="js-slide-to" data-direction="back" itemscope="url" rel="nofollow"><span itemprop="title">Framework</span></a></span> / <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/bastichelaar/typo3-neo/tree/69c443d407a65c6ec538d3f5657a6122792f63db/Packages/Framework/TYPO3.Flow" class="js-slide-to" data-direction="back" itemscope="url" rel="nofollow"><span itemprop="title">TYPO3.Flow</span></a></span> / <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/bastichelaar/typo3-neo/tree/69c443d407a65c6ec538d3f5657a6122792f63db/Packages/Framework/TYPO3.Flow/Documentation" class="js-slide-to" data-direction="back" itemscope="url" rel="nofollow"><span itemprop="title">Documentation</span></a></span> / <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/bastichelaar/typo3-neo/tree/69c443d407a65c6ec538d3f5657a6122792f63db/Packages/Framework/TYPO3.Flow/Documentation/TheDefinitiveGuide" class="js-slide-to" data-direction="back" itemscope="url" rel="nofollow"><span itemprop="title">TheDefinitiveGuide</span></a></span> / <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/bastichelaar/typo3-neo/tree/69c443d407a65c6ec538d3f5657a6122792f63db/Packages/Framework/TYPO3.Flow/Documentation/TheDefinitiveGuide/PartI" class="js-slide-to" data-direction="back" itemscope="url" rel="nofollow"><span itemprop="title">PartI</span></a></span> / <strong class="final-path">ConceptsOfModernProgramming.rst</strong> <span class="js-zeroclipboard zeroclipboard-button" data-clipboard-text="Packages/Framework/TYPO3.Flow/Documentation/TheDefinitiveGuide/PartI/ConceptsOfModernProgramming.rst" data-copied-hint="copied!" title="copy to clipboard"><span class="mini-icon mini-icon-clipboard"></span></span>
+        </div>
+
+      <a href="/bastichelaar/typo3-neo/find/69c443d407a65c6ec538d3f5657a6122792f63db" class="js-slide-to" data-hotkey="t" style="display:none">Show File Finder</a>
+
+
+        <div class="commit commit-loader file-history-tease js-deferred-content" data-url="/bastichelaar/typo3-neo/contributors/69c443d407a65c6ec538d3f5657a6122792f63db/Packages/Framework/TYPO3.Flow/Documentation/TheDefinitiveGuide/PartI/ConceptsOfModernProgramming.rst">
+          Fetching contributors…
+
+          <div class="participation">
+            <p class="loader-loading"><img alt="Octocat-spinner-32-eaf2f5" height="16" src="https://a248.e.akamai.net/assets.github.com/images/spinners/octocat-spinner-32-EAF2F5.gif?1334862346" width="16" /></p>
+            <p class="loader-error">Cannot retrieve contributors at this time</p>
+          </div>
+        </div>
+
+    </div><!-- ./.frame-meta -->
+
+    <div class="frames">
+      <div class="frame" data-permalink-url="/bastichelaar/typo3-neo/blob/69c443d407a65c6ec538d3f5657a6122792f63db/Packages/Framework/TYPO3.Flow/Documentation/TheDefinitiveGuide/PartI/ConceptsOfModernProgramming.rst" data-title="typo3-neo/Packages/Framework/TYPO3.Flow/Documentation/TheDefinitiveGuide/PartI/ConceptsOfModernProgramming.rst at 69c443d407a65c6ec538d3f5657a6122792f63db · bastichelaar/typo3-neo · GitHub" data-type="blob">
+
+        <div id="files" class="bubble">
+          <div class="file">
+            <div class="meta">
+              <div class="info">
+                <span class="icon"><b class="mini-icon mini-icon-text-file"></b></span>
+                <span class="mode" title="File Mode">file</span>
+                  <span>487 lines (400 sloc)</span>
+                <span>20.455 kb</span>
+              </div>
+              <div class="actions">
+                <div class="button-group">
+                      <a class="minibutton js-entice" href=""
+                         data-entice="You must be signed in and on a branch to make or propose changes">Edit</a>
+                  <a href="/bastichelaar/typo3-neo/raw/69c443d407a65c6ec538d3f5657a6122792f63db/Packages/Framework/TYPO3.Flow/Documentation/TheDefinitiveGuide/PartI/ConceptsOfModernProgramming.rst" class="button minibutton " id="raw-url">Raw</a>
+                    <a href="/bastichelaar/typo3-neo/blame/69c443d407a65c6ec538d3f5657a6122792f63db/Packages/Framework/TYPO3.Flow/Documentation/TheDefinitiveGuide/PartI/ConceptsOfModernProgramming.rst" class="button minibutton ">Blame</a>
+                  <a href="/bastichelaar/typo3-neo/commits/69c443d407a65c6ec538d3f5657a6122792f63db/Packages/Framework/TYPO3.Flow/Documentation/TheDefinitiveGuide/PartI/ConceptsOfModernProgramming.rst" class="button minibutton " rel="nofollow">History</a>
+                </div><!-- /.button-group -->
+              </div><!-- /.actions -->
+
+            </div>
+              
+  <div id="readme" class="blob instapaper_body">
+    <article class="markdown-body entry-content" itemprop="mainContentOfPage"><div>
+<div>
+<h1>
+<a name="domain-driven-design" class="anchor" href="#domain-driven-design"><span class="mini-icon mini-icon-link"></span></a>Domain-Driven Design</h1>
+<p>Domain-Driven Design is a development technique which focuses on understanding
+the customer's problem domain. It not only contains a set of technical
+ideas, but it also consists of techniques to structure the creativity in
+the development process.</p>
+<p>The key of Domain-Driven Design is understanding the customers
+needs, and also the environment in which the customer works. The problem
+which the to-be-written program should solve is called the
+<em>problem domain</em>, and in Domain-Driven Design,
+development is guided by the exploration of the problem domain.</p>
+<p>While talking to the customer to understand his needs and wishes,
+the developer creates a model which reflects the current understanding
+of the problem. This model is called <em>Domain Model</em>
+because it should accurately reflect the problem domain of the customer.
+Then, the domain model is tested with real use-cases, trying to
+understand if it fits to the customer's processes and way of working.
+Then, the model is refined again -- and the whole process of discussion
+with the customer starts again. Thus, Domain-Driven Design is an
+iterative approach to software development.</p>
+<p>Still, Domain-Driven Design is very pragmatic, as code is created
+very early on (instead of extensive requirements specifications); and
+real-world problems thus occur very early in the development process,
+where they can be easily corrected. Normally, it takes some iterations
+of model refinement until a domain model adequately reflects the problem
+domain, focusing on the important properties, and leaving out
+unimportant ones.</p>
+<p>In the following sections, some core components of Domain-Driven
+Design are explained. It starts with an approach to create a ubiquitous
+language, and then focuses on the technical realization of the domain
+model. After that, it is quickly explained how TYPO3 Flow enables
+Domain-Driven Design, such that the reader gets a more practical
+understanding of it.</p>
+<p>We do not explain all details of Domain-Driven Design in this
+work, as only parts of it are important for the general understanding
+needed for this work. More information can be found at [Evans].</p>
+<div>
+<h2>
+<a name="creating-a-ubiquitous-language" class="anchor" href="#creating-a-ubiquitous-language"><span class="mini-icon mini-icon-link"></span></a>Creating a Ubiquitous Language</h2>
+<p>In a typical enterprise software project, a multitude of
+different roles are involved: For instance, the customer is an expert
+in his business, and he wants to use software to solve a certain
+problem for him. Thus, he has a very clear idea on the interactions of
+the to-be-created software with the environment, and he is one of the
+people who need to use the software on a daily basis later on. Because
+he has much knowledge about how the software is used, we call him the
+<em>Domain Expert</em>.</p>
+<p>On the other hand, there are the developers who actually need to
+implement the software. While they are very skilled in applying
+certain technologies, they often are no experts in the problem domain.
+Now, developers and domain experts speak a very different language,
+and misconceptions happen very often.</p>
+<p>To reduce miscommunication, a <em>ubiquitous
+language</em> should be formed, in which key terms of the
+problem domain are described in a language understandable to both the
+domain expert and the developer. Thus, the developers learn to use the
+correct language of the problem domain right from the beginning, and
+can express themselves in a better way when discussing with the domain
+expert. Furthermore, they should also use the ubiquitous language
+throughout all parts of the project: Not only in communication, design
+documents and documentation, but the key terms should also appear in
+the domain model. Names of classes, methods and properties are also
+part of the ubiquitous language.</p>
+<p>By using the language of the domain expert also in the code, it
+is possible to discuss about difficult-to-specify functionality by
+looking at the code together with the domain expert. This is
+especially helpful for complex calculations or difficult-to-specify
+condition rules. Thus, the domain expert can decide whether the
+business logic was correctly implemented.</p>
+<p>Creating a ubiquitous language involves creating a glossary, in
+which the key terms are explained in a way both understandable to the
+domain expert and the developer. This glossary is also updated
+throughout the project, to reflect new insights gained in the
+development process.</p>
+</div>
+<div>
+<h2>
+<a name="modelling-the-domain" class="anchor" href="#modelling-the-domain"><span class="mini-icon mini-icon-link"></span></a>Modelling the domain</h2>
+<p>Now, while discussing the problem with the domain expert, the
+developer starts to create the domain model, and refines it step by
+step. Usually, UML is employed for that, which just contains the
+relevant information of the problem domain.</p>
+<p>The domain model consists of objects (as DDD is a technique for
+object-oriented languages), the so-called <em>Domain
+Objects</em>.</p>
+<p>There are two types of domain objects, called
+<em>Entities</em> and <em>Value Objects</em>.
+If a domain object has a certain <em>identity</em> which
+stays the same as the objects changes its state, the object is an
+<em>entity</em>. Otherwise, if the identity of an object
+is built from <em>all properties</em>, it is a
+<em>value object</em>. We will now explain these two types
+of objects in detail, including practical use-cases.</p>
+<p>Furthermore, association mapping is explained, and aggregates
+are introduced as a way to further structure the code.</p>
+<div>
+<h3>
+<a name="entities" class="anchor" href="#entities"><span class="mini-icon mini-icon-link"></span></a>Entities</h3>
+<p>Entities have a unique identity, which stays the same despite
+of changes in the properties of the object. For example, a user can
+have a user name as identity, a student a matriculation ID.
+Although properties of the objects can change over time (for example
+the student changes his courses), it is still the same object. Thus,
+the above examples are <em>entities</em>.</p>
+<p>The identity of an object is given by an immutable property or
+a combination of them. In some use-cases it can make a lot of sense
+to define identity properties in a way which is <em>meaningful
+in the domain context</em>: If building an application which
+interfaces with a package tracking system, the tracking ID of a
+package should be used as identity inside the system. Doing so will
+reduce the risk of inconsistent data, and can also speed up
+access.</p>
+<p>For some domain objects like a <tt>Person</tt>, it is
+highly dependent on the problem domain what should be used as
+identity property. In an internet forum, the e-mail address is often
+used as identity property for people, while when implementing an
+e-government application, one might use the passport ID to uniquely
+identify citizens (which nobody would use in the web forum because
+its data is too sensible).</p>
+<p>In case the developer does not specify an identity property,
+the framework assigns a universally unique identifier (UUID) to the
+object at creation time.</p>
+<p>It is important to stress that identity properties need to be
+set <em>at object creation time</em>, i.e. inside the
+constructor of an object, and are not allowed to change throughout
+the whole object lifetime. As we will see later, the object will be
+referenced using its identity properties, and a change of an
+identity property would effectively wipe one object and create a new
+one without updating dependent objects, leaving the system in an
+inconsistent state.</p>
+<p>In a typical system, many domain objects will be
+<em>entities</em>. However, for some use-cases, another
+type is a lot better suited: Value objects, which are explained in
+the next section.</p>
+</div>
+<div>
+<h3>
+<a name="value-objects" class="anchor" href="#value-objects"><span class="mini-icon mini-icon-link"></span></a>Value Objects</h3>
+<p>PHP provides several value types which it supports internally:
+Integer, float, string, float and array. However, it is often the
+case that you need more complex types of values inside your domain.
+These are being represented using <em>value
+objects</em>.</p>
+<p>The identity of a value object is defined by <em>all its
+properties</em>. Thus, two objects are equal if all properties
+are equal. For instance, in a painting program, the concept of
+<em>color</em> needs to be somewhere implemented. A
+color is only represented through its value, for instance using RGB
+notation. If two colors have the same RGB values, they are
+effectively similar and do not need to be distinguished
+further.</p>
+<p>Value objects do not only contain data, they can potentially
+contain very much logic, for example for converting the color value
+to another color space like HSV or CMYK, even taking color profiles
+into account.</p>
+<p>As all properties of a value object are part of its identity,
+they are not allowed to be changed after the object's creation.
+Thus, value objects are <em>immutable</em>. The only way
+to "change" a value object is to create a new one using the old one
+as basis. For example, there might be a method <tt>mix</tt> on
+the <tt>Color</tt> object, which takes another
+<tt>Color</tt> object and mixes both colors. Still, as the
+internal state is not allowed to change, the mix method
+will effectively return a new <tt>Color</tt> object containing
+the mixed color values.</p>
+<p>As value objects have a very straightforward semantic
+definition (similar to the simple data types in many programming
+languages), they can easily be created, cloned or transferred to
+other subsystems or other computers. Furthermore, it is clearly
+communicated that such objects are simple
+<em>values</em>.</p>
+<p>Internally, frameworks can optimize the use of value objects
+by re-using them whenever possible, which can greatly reduce the
+amount of memory needed for applications.</p>
+</div>
+<div>
+<h3>
+<a name="entity-or-value-object" class="anchor" href="#entity-or-value-object"><span class="mini-icon mini-icon-link"></span></a>Entity or Value Object?</h3>
+<p>An object can not be ultimately categorized into either
+being an entity or a value object -- it depends greatly on the use
+case. An example illustrates this: For many applications which
+need to store an <em>address</em>, this address is
+clearly a value object - all properties like street, number, or
+city contribute to the identity of the object, and the
+<em>address</em> is only used as container for these
+properties.</p>
+<p>However, if implementing an application for a postal service
+which should optimize letter delivery, not only the address, but
+also the person delivering to this location should be stored. This
+name of the postman does not belong to the identity of the object,
+and can change over time -- a clear sign of
+<em>Address</em> being an entity in this case. So,
+generally it often depends on the use-case whether an object is an
+entity or value object.</p>
+<p>People new to Domain-Driven Design often tend to overuse
+entities, as this is what people coming from a relational database
+background are used to.</p>
+</div>
+<div>
+<h3>
+<a name="associations" class="anchor" href="#associations"><span class="mini-icon mini-icon-link"></span></a>Associations</h3>
+<p>Now, after explaining the two types of domain objects, we will
+look at a particularly important implementation area: Associations
+between objects.</p>
+<p>Domain objects have relationships between them. In the domain
+language, these relations are expressed often as follows: A
+<em>consists of</em> B, C <em>has</em> D, E
+<em>processes</em> F, G <em>belongs to</em>
+H. These relations are called <em>associations</em> in
+the domain model.</p>
+<p>In the real world, relationships are often inherently
+bidirectional, are only active for a certain time span, and can
+contain further information. However, when modelling these
+relationships as associations, it is important to simplify them as
+much as possible, encoding only the relevant information into the
+domain model.</p>
+<p>Especially complex to implement are bidirectional many-to-many
+relations, as they can be traversed in both directions, and consist
+of two lists of objects which have to be kept in sync manually in
+most programming languages (such as Java or PHP).</p>
+<p>Still, especially in the first iterations of refining the
+domain model, many-to-many relations are very common. The following
+questions can help to simplify them:</p>
+<ul>
+<li>Is the association relevant for the core functionality of
+the application?
+If it is only used in rare use cases and there is another
+way to receive the needed information, it is often better to
+drop the association altogether.</li>
+<li>For bidirectional associations, can they be converted to
+unidirectional associations, because there is a main traversal
+direction?
+Traversing the other direction is still possible by
+querying the underlying persistence system.</li>
+<li>Can the association be qualified more restrictively, for
+example by adding multiplicities on each side?</li>
+</ul>
+<p>The more simple the association is, the more directly it can
+be mapped to code, and the more clear the intent is.</p>
+</div>
+<div>
+<h3>
+<a name="aggregates" class="anchor" href="#aggregates"><span class="mini-icon mini-icon-link"></span></a>Aggregates</h3>
+<p>When building a complex domain model, it will contain a lot of
+classes, all being on the same hierarchy level. However, often it is
+the case that certain objects are parts of a bigger object. For
+example, when modeling a <tt>Car</tt> domain object for a car
+repair shop, it might make sense to also model the wheels and the
+engine. As they are a part of the car, this understanding should be
+also reflected in our model.</p>
+<p>Such a part-whole relationship of closely related objects is
+called <em>Aggregate</em>. An aggregate contains a root,
+the so-called <em>Aggregate Root</em>, which is
+responsible for the integrity of the child-objects. Furthermore, the
+whole aggregate has only one identity visible to the outside: The
+identity of the aggregate root object. Thus, objects outside of the
+aggregate are only allowed to persistently reference the aggregate
+root, and not one of the inner objects.</p>
+<p>For the <tt>Car</tt> example this means that a
+<tt>ServiceStation</tt> object should not reference the engine
+directly, but instead reference the <tt>Car</tt> through its
+external identity. If it still needs access to the
+engine, it can retrieve it through the <tt>Car</tt>
+object.</p>
+<p>These referencing rules effectively structure the domain model
+on a more fine-grained level, which reduces the complexity of the
+application.</p>
+</div>
+</div>
+<div>
+<h2>
+<a name="life-cycle-of-objects" class="anchor" href="#life-cycle-of-objects"><span class="mini-icon mini-icon-link"></span></a>Life cycle of objects</h2>
+<p>Objects in the real world have a certain life cycle. A car is
+built, then it changes during its lifetime, and in the end it is
+scrapped. In Domain-Driven Design, the life cycle of domain objects is
+very similar:</p>
+<div>
+<a href="/bastichelaar/typo3-neo/blob/69c443d407a65c6ec538d3f5657a6122792f63db/Images/TheDefinitiveGuide/PartI/ddd-lifecycle1.png" target="_blank"><img alt="/Images/TheDefinitiveGuide/PartI/ddd-lifecycle1.png" src="/bastichelaar/typo3-neo/raw/69c443d407a65c6ec538d3f5657a6122792f63db/Packages/Framework/TYPO3.Flow/Documentation/TheDefinitiveGuide/PartI//Images/TheDefinitiveGuide/PartI/ddd-lifecycle1.png" style="max-width:100%;"></a><p>Simplified life cycle of objects</p>
+</div>
+<p>Because of performance reasons, it is not feasible to keep all
+objects in memory forever. Some kind of persistent storage, like a
+database, is needed. Objects which are not needed at the current point
+in time should be persistently stored, and only transformed into
+objects when needed. Thus, we need to expand the <tt>active</tt>
+state from <a href="#id1">:ref:`fig-lifecycle1`</a> to contain some more
+substates. These are shown below:</p>
+<div>
+<a href="/bastichelaar/typo3-neo/blob/69c443d407a65c6ec538d3f5657a6122792f63db/Images/TheDefinitiveGuide/PartI/ddd-lifecycle2.png" target="_blank"><img alt="/Images/TheDefinitiveGuide/PartI/ddd-lifecycle2.png" src="/bastichelaar/typo3-neo/raw/69c443d407a65c6ec538d3f5657a6122792f63db/Packages/Framework/TYPO3.Flow/Documentation/TheDefinitiveGuide/PartI//Images/TheDefinitiveGuide/PartI/ddd-lifecycle2.png" style="max-width:100%;"></a><p>The real life cycle of objects</p>
+</div>
+<p>If an object is newly created, it is
+<em>transient</em>, so it is being deleted from memory at
+the end of the current request. If an object is needed permanently
+across requests, it needs to be transformed to a <em>persistent
+object</em>. This is the responsibility of
+<em>Repositories</em>, which allow to persistently store
+and retrieve domain objects.</p>
+<p>So, if an object is <em>added</em> to a repository,
+this repository becomes responsible for saving the object.
+Furthermore, it is also responsible for persisting further changes to
+the object throughout its lifetime, automatically updating the
+database as needed.</p>
+<p>For retrieving objects, repositories provide a query language.
+The repository automatically handles the database retrieval, and makes
+sure that each entity is only once in memory.</p>
+<p>Despite the object being created and retrieved multiple times
+during its lifecycle, it logically continues to exist, even when it is
+stored in the database. It is only because of performance and safety
+reasons that is is not stored in main memory, but in a database. Thus,
+Domain-Driven Design distinguishes <em>creation</em> of an
+object from <em>reconstitution</em> from database: In the
+first case, the constructor is called, in the second case the
+constructor is not called as the object is only converted from another
+representation form.</p>
+<p>In order to remove a persistent object, it needs to be removed
+from the repository responsible for it, and then at the end of the
+request, the object is transparently removed from the database.</p>
+<p>For each <em>aggregate</em>, there is exactly one
+repository responsible which can be used to fetch the
+<em>aggregate root</em> object.</p>
+</div>
+<div>
+<h2>
+<a name="how-typo3-flow-enables-domain-driven-design" class="anchor" href="#how-typo3-flow-enables-domain-driven-design"><span class="mini-icon mini-icon-link"></span></a>How TYPO3 Flow enables Domain-Driven Design</h2>
+<p>TYPO3 Flow is a web development framework written in PHP, with
+Domain-Driven Design as its core principle. We will now show in what
+areas TYPO3 Flow supports Domain-Driven Design.</p>
+<p>First, the developer can directly focus on creating the domain
+model, using unit testing to implement the use-cases needed. While he
+is creating the domain model, he can use plain PHP functionality,
+without caring about any particular framework. The PHP domain model he
+creates just consists of plain PHP objects, with no base class or
+other magic functionality involved. Thus, he can fully concentrate on
+domain modelling, without thinking about infrastructure yet.</p>
+<p>This is a core principle of TYPO3 Flow: All parts of it strive for
+maximum focus and cleanness of the domain model, keeping the developer
+focused on the correct implementation of it.</p>
+<p>Furthermore, the developer can use source code annotations to
+attach metadata to classes, methods or properties. This functionality
+can be used to mark objects as entity or value object, and to add
+validation rules to properties. In the domain object below,
+a sample of such an annotated class is given. As PHP does not have a
+language construct for annotations, this is emulated by TYPO3 Flow by
+parsing the source code comments.</p>
+<p>In order to mark a domain object as <em>aggregate
+root</em>, only a repository has to be created for it, based on
+a certain naming convention. Repositories are the easiest way to make domain
+objects persistent, and TYPO3 Flow provides a base class containing generic
+<tt>findBy*</tt> methods. Furthermore, it supports a
+domain-specific language for building queries which can be used for
+more complex queries, as shown in below in the <tt>AccountRepository</tt>.</p>
+<p>Now, this is all the developer needs to do in order to
+persistently store domain objects. The database tables are created
+automatically, and all objects get a UUID assigned (as we did not
+specify an identity property).</p>
+<p>A simple domain object being marked as entity, and validation:</p>
+<pre>
+/**
+ * @Flow\Entity
+ */
+class Account {
+
+        /**
+         * @var string
+         */
+        protected $firstName;
+
+        /**
+         * @var string
+         */
+        protected $lastName;
+
+        /**
+         * @var string
+         * @Flow\Validate(type="EmailAddress")
+         */
+        protected $email;
+
+        ... getters and setters as well as other functions ...
+}
+</pre>
+<p>A simple repository:</p>
+<pre>
+class AccountRepository extends \TYPO3\Flow\Persistence\Repository {
+
+                // by extending from the base repository, there is automatically a
+                // findBy* method available for every property, i.e. findByFirstName("Sebastian")
+                // will return all accounts with the first name "Sebastian".
+        public function findByName($firstName, $lastName) {
+                $query = $this-&gt;createQuery();
+                $query-&gt;matching(
+                        $query-&gt;logicalAnd(
+                                $query-&gt;equals('firstName', $firstName),
+                                $query-&gt;equals('lastName', $lastName)
+                        )
+                );
+                return $query-&gt;execute();
+        }
+}
+</pre>
+<p>From the infrastructure perspective, TYPO3 Flow is structured as MVC
+framework, with the model being the Domain-Driven Design techniques.
+However, also in the controller and the view layer, the system has a
+strong support for domain objects: It can transparently convert
+objects to simple types, which can then be sent to the client's
+browser. It also works the other way around: Simple types will be
+converted to objects whenever possible, so the developer can deal with
+objects in an end-to-end fashion.</p>
+<p>Furthermore, TYPO3 Flow has an Aspect-Oriented Programming framework
+at its core, which makes it easy to separate cross-cutting concerns.
+There is a security framework in place (built upon AOP) where the
+developer can declaratively define access rules for his domain
+objects, and these are enforced automatically, without any checks
+needed in the controller or the model.</p>
+<p>There are a lot more features to show, like rapid prototyping
+support, dependency injection, a signal-slots system and a
+custom-built template engine, but all these should only aid the
+developer in focusing on the problem domain and writing decoupled and
+extensible code.</p>
+</div>
+</div>
+</div></article>
+  </div>
+
+          </div>
+        </div>
+
+        <a href="#jump-to-line" rel="facebox" data-hotkey="l" class="js-jump-to-line" style="display:none">Jump to Line</a>
+        <div id="jump-to-line" style="display:none">
+          <h2>Jump to Line</h2>
+          <form accept-charset="UTF-8" class="js-jump-to-line-form">
+            <input class="textfield js-jump-to-line-field" type="text">
+            <div class="full-button">
+              <button type="submit" class="button">Go</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+</div>
+
+<div id="js-frame-loading-template" class="frame frame-loading large-loading-area" style="display:none;">
+  <img class="js-frame-loading-spinner" src="https://a248.e.akamai.net/assets.github.com/images/spinners/octocat-spinner-128.gif?1347543529" height="64" width="64">
+</div>
+
+
+        </div>
+      </div>
+      <div class="context-overlay"></div>
+    </div>
+
+      <div id="footer-push"></div><!-- hack for sticky footer -->
+    </div><!-- end of wrapper - hack for sticky footer -->
+
+      <!-- footer -->
+      <div id="footer">
+  <div class="container clearfix">
+
+      <dl class="footer_nav">
+        <dt>GitHub</dt>
+        <dd><a href="https://github.com/about">About us</a></dd>
+        <dd><a href="https://github.com/blog">Blog</a></dd>
+        <dd><a href="https://github.com/contact">Contact &amp; support</a></dd>
+        <dd><a href="http://enterprise.github.com/">GitHub Enterprise</a></dd>
+        <dd><a href="http://status.github.com/">Site status</a></dd>
+      </dl>
+
+      <dl class="footer_nav">
+        <dt>Applications</dt>
+        <dd><a href="http://mac.github.com/">GitHub for Mac</a></dd>
+        <dd><a href="http://windows.github.com/">GitHub for Windows</a></dd>
+        <dd><a href="http://eclipse.github.com/">GitHub for Eclipse</a></dd>
+        <dd><a href="http://mobile.github.com/">GitHub mobile apps</a></dd>
+      </dl>
+
+      <dl class="footer_nav">
+        <dt>Services</dt>
+        <dd><a href="http://get.gaug.es/">Gauges: Web analytics</a></dd>
+        <dd><a href="http://speakerdeck.com">Speaker Deck: Presentations</a></dd>
+        <dd><a href="https://gist.github.com">Gist: Code snippets</a></dd>
+        <dd><a href="http://jobs.github.com/">Job board</a></dd>
+      </dl>
+
+      <dl class="footer_nav">
+        <dt>Documentation</dt>
+        <dd><a href="http://help.github.com/">GitHub Help</a></dd>
+        <dd><a href="http://developer.github.com/">Developer API</a></dd>
+        <dd><a href="http://github.github.com/github-flavored-markdown/">GitHub Flavored Markdown</a></dd>
+        <dd><a href="http://pages.github.com/">GitHub Pages</a></dd>
+      </dl>
+
+      <dl class="footer_nav">
+        <dt>More</dt>
+        <dd><a href="http://training.github.com/">Training</a></dd>
+        <dd><a href="https://github.com/edu">Students &amp; teachers</a></dd>
+        <dd><a href="http://shop.github.com">The Shop</a></dd>
+        <dd><a href="/plans">Plans &amp; pricing</a></dd>
+        <dd><a href="http://octodex.github.com/">The Octodex</a></dd>
+      </dl>
+
+      <hr class="footer-divider">
+
+
+    <p class="right">&copy; 2013 <span title="0.92008s from fe13.rs.github.com">GitHub</span> Inc. All rights reserved.</p>
+    <a class="left" href="https://github.com/">
+      <span class="mega-icon mega-icon-invertocat"></span>
+    </a>
+    <ul id="legal">
+        <li><a href="https://github.com/site/terms">Terms of Service</a></li>
+        <li><a href="https://github.com/site/privacy">Privacy</a></li>
+        <li><a href="https://github.com/security">Security</a></li>
+    </ul>
+
+  </div><!-- /.container -->
+
+</div><!-- /.#footer -->
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-fullscreen-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="js-fullscreen-contents" placeholder="" data-suggester="fullscreen_suggester"></textarea>
+          <div class="suggester-container">
+              <div class="suggester fullscreen-suggester js-navigation-container" id="fullscreen_suggester"
+                 data-url="/bastichelaar/typo3-neo/suggestions/commit">
+              </div>
+          </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped leftwards" title="Exit Zen Mode">
+      <span class="mega-icon mega-icon-normalscreen"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped leftwards"
+      title="Switch themes">
+      <span class="mini-icon mini-icon-brightness"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="mini-icon mini-icon-exclamation"></span>
+      Something went wrong with that request. Please try again.
+      <a href="#" class="mini-icon mini-icon-remove-close ajax-error-dismiss"></a>
+    </div>
+
+    
+    
+    <span id='server_response_time' data-time='0.92067' data-host='fe13'></span>
+    
+  </body>
+</html>
+

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<ServiceConfiguration serviceName="EiDynESBCloudService1" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration">
+  <Role name="Web">
+    <Instances count="1" />
+    <ConfigurationSettings />
+  </Role>
+  <Role name="Worker">
+    <Instances count="1" />
+    <ConfigurationSettings />
+  </Role>
+</ServiceConfiguration>

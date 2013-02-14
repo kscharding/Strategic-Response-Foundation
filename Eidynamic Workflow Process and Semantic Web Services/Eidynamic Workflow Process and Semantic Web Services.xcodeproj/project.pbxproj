@@ -81,6 +81,8 @@
 		394EE57716C35738000ADC8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53816C350E9000ADC8E /* Foundation.framework */; };
 		394EE57816C35739000ADC8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53816C350E9000ADC8E /* Foundation.framework */; };
 		394EE57916C3573B000ADC8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53816C350E9000ADC8E /* Foundation.framework */; };
+		39CBC43516CD543A007EB8C0 /* semantic structure.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 39CBC43416CD543A007EB8C0 /* semantic structure.rtf */; };
+		39CBC43616CD543A007EB8C0 /* semantic structure.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 39CBC43416CD543A007EB8C0 /* semantic structure.rtf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -201,6 +203,7 @@
 		394EE53F16C350E9000ADC8E /* Strategic_Response_Web_Service.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = Strategic_Response_Web_Service.applescript; sourceTree = "<group>"; };
 		394EE54216C350E9000ADC8E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/main.xib; sourceTree = "<group>"; };
 		394EE54416C350E9000ADC8E /* Strategic Response Web Service-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Strategic Response Web Service-Prefix.pch"; sourceTree = "<group>"; };
+		39CBC43416CD543A007EB8C0 /* semantic structure.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "semantic structure.rtf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +297,7 @@
 		394EE4B216C34F67000ADC8E = {
 			isa = PBXGroup;
 			children = (
+				39CBC43416CD543A007EB8C0 /* semantic structure.rtf */,
 				394EE52716C3504C000ADC8E /* InterfaceBuilderKit.framework */,
 				394EE4C016C34F67000ADC8E /* Eidynamic Workflow Process and Semantic Web Services */,
 				394EE4D516C34F67000ADC8E /* Eidynamic Workflow Process and Semantic Web ServicesTests */,
@@ -598,6 +602,7 @@
 				394EE50316C34FC8000ADC8E /* MainStoryboard_iPhone.storyboard in Resources */,
 				394EE50616C34FC8000ADC8E /* MainStoryboard_iPad.storyboard in Resources */,
 				394EE55F16C355DF000ADC8E /* Strategic Response Web Service-Info.plist in Resources */,
+				39CBC43516CD543A007EB8C0 /* semantic structure.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,6 +621,7 @@
 				394EE53E16C350E9000ADC8E /* InfoPlist.strings in Resources */,
 				394EE54316C350E9000ADC8E /* main.xib in Resources */,
 				394EE55E16C355DB000ADC8E /* Strategic Response Web Service-Info.plist in Resources */,
+				39CBC43616CD543A007EB8C0 /* semantic structure.rtf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1057,6 +1063,7 @@
 				394EE4E216C34F67000ADC8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		394EE4E316C34F67000ADC8E /* Build configuration list for PBXNativeTarget "Eidynamic Workflow Process and Semantic Web ServicesTests" */ = {
 			isa = XCConfigurationList;
@@ -1065,6 +1072,7 @@
 				394EE4E516C34F67000ADC8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		394EE52116C34FC8000ADC8E /* Build configuration list for PBXNativeTarget "Eidynamic Workflow" */ = {
 			isa = XCConfigurationList;
@@ -1073,6 +1081,7 @@
 				394EE52316C34FC8000ADC8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		394EE52416C34FC8000ADC8E /* Build configuration list for PBXNativeTarget "Eidynamic WorkflowTests" */ = {
 			isa = XCConfigurationList;
@@ -1081,6 +1090,7 @@
 				394EE52616C34FC8000ADC8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		394EE54516C350E9000ADC8E /* Build configuration list for PBXNativeTarget "Strategic Response Web Service" */ = {
 			isa = XCConfigurationList;
@@ -1089,6 +1099,7 @@
 				394EE54716C350E9000ADC8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

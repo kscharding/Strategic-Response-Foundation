@@ -1,0 +1,1412 @@
+  
+
+
+<!DOCTYPE html>
+<html>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# githubog: http://ogp.me/ns/fb/githubog#">
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>big_data_for_chimps/07a-data_formats.asciidoc at c55fd30a2c5d8d357ba34320a0400834b7f18f6c · infochimps-labs/big_data_for_chimps</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub" />
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144.png" />
+    <link rel="logo" type="image/svg" href="http://github-media-downloads.s3.amazonaws.com/github-logo.svg" />
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="fq3pC1ISJDQwlwVVhaJ+FjY66r/S1xzmdcYuPtd5LEA=" name="csrf-token" />
+
+    <link href="https://a248.e.akamai.net/assets.github.com/assets/github-6c7984e384129edf1958345326c26471eedcdc23.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="https://a248.e.akamai.net/assets.github.com/assets/github2-a68b3668ef12bc14777039845b05c8ea61e43c35.css" media="screen" rel="stylesheet" type="text/css" />
+    
+
+
+      <script src="https://a248.e.akamai.net/assets.github.com/assets/frameworks-5dcdaf734c8092261f37e6534c8f114696d913a9.js" type="text/javascript"></script>
+      <script src="https://a248.e.akamai.net/assets.github.com/assets/github-2cf4d0aa606ff4b0201e77c9366b440255e3dee2.js" type="text/javascript"></script>
+      
+
+        <link rel='permalink' href='/infochimps-labs/big_data_for_chimps/blob/c55fd30a2c5d8d357ba34320a0400834b7f18f6c/07a-data_formats.asciidoc'>
+    <meta property="og:title" content="big_data_for_chimps"/>
+    <meta property="og:type" content="githubog:gitrepository"/>
+    <meta property="og:url" content="https://github.com/infochimps-labs/big_data_for_chimps"/>
+    <meta property="og:image" content="https://secure.gravatar.com/avatar/c915874bfb43badfb6417e017cef7fb4?s=420&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"/>
+    <meta property="og:site_name" content="GitHub"/>
+    <meta property="og:description" content="big_data_for_chimps - A Seriously Fun guide to Big Data Analytics in Practice"/>
+    <meta property="twitter:card" content="summary"/>
+    <meta property="twitter:site" content="@GitHub">
+    <meta property="twitter:title" content="infochimps-labs/big_data_for_chimps"/>
+
+    <meta name="description" content="big_data_for_chimps - A Seriously Fun guide to Big Data Analytics in Practice" />
+
+  <link href="https://github.com/infochimps-labs/big_data_for_chimps/commits/c55fd30a2c5d8d357ba34320a0400834b7f18f6c.atom" rel="alternate" title="Recent Commits to big_data_for_chimps:c55fd30a2c5d8d357ba34320a0400834b7f18f6c" type="application/atom+xml" />
+
+  </head>
+
+
+  <body class="logged_in page-blob  vis-public env-production  ">
+    <div id="wrapper">
+
+      
+
+      
+
+      
+
+      
+
+
+        <div class="header header-logged-in true">
+          <div class="container clearfix">
+
+            <a class="header-logo-blacktocat" href="https://github.com/">
+  <span class="mega-icon mega-icon-blacktocat"></span>
+</a>
+
+            <div class="divider-vertical"></div>
+
+              <a href="/notifications" class="notification-indicator tooltipped downwards" title="You have no unread notifications">
+    <span class="mail-status all-read"></span>
+  </a>
+  <div class="divider-vertical"></div>
+
+
+              <div class="topsearch command-bar-activated ">
+      <form accept-charset="UTF-8" action="/search" class="command_bar_form" id="top_search_form" method="get">
+  <a href="/search/advanced" class="advanced-search-icon tooltipped downwards command-bar-search" id="advanced_search" title="Advanced search"><span class="mini-icon mini-icon-advanced-search "></span></a>
+
+  <input type="text" name="q" id="command-bar" placeholder="Search or type a command" tabindex="1" data-username="kscharding" autocapitalize="off">
+
+  <span class="mini-icon help tooltipped downwards" title="Show command bar help">
+    <span class="mini-icon mini-icon-help"></span>
+  </span>
+
+  <input type="hidden" name="ref" value="commandbar">
+
+  <div class="divider-vertical"></div>
+</form>
+  <ul class="top-nav">
+      <li class="explore"><a href="https://github.com/explore">Explore</a></li>
+      <li><a href="https://gist.github.com">Gist</a></li>
+      <li><a href="/blog">Blog</a></li>
+    <li><a href="http://help.github.com">Help</a></li>
+  </ul>
+</div>
+
+
+            
+
+  
+    <ul id="user-links">
+      <li>
+        <a href="https://github.com/kscharding" class="name">
+          <img height="20" src="https://secure.gravatar.com/avatar/67b46901f128a1e5c0e25570c55dd8d4?s=140&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" width="20" /> kscharding
+        </a>
+      </li>
+      <li>
+        <a href="/new" id="new_repo" class="tooltipped downwards" title="Create a new repo">
+          <span class="mini-icon mini-icon-create"></span>
+        </a>
+      </li>
+      <li>
+        <a href="/settings/profile" id="account_settings"
+          class="tooltipped downwards"
+          title="Account settings ">
+          <span class="mini-icon mini-icon-account-settings"></span>
+        </a>
+      </li>
+      <li>
+        <a href="/logout" data-method="post" id="logout" class="tooltipped downwards" title="Sign out">
+          <span class="mini-icon mini-icon-logout"></span>
+        </a>
+      </li>
+    </ul>
+
+
+
+            
+          </div>
+        </div>
+
+
+      
+
+      
+
+
+            <div class="site hfeed" itemscope itemtype="http://schema.org/WebPage">
+      <div class="hentry">
+        
+        <div class="pagehead repohead instapaper_ignore readability-menu">
+          <div class="container">
+            <div class="title-actions-bar">
+              
+
+
+<ul class="pagehead-actions">
+
+
+    <li class="subscription">
+      <form accept-charset="UTF-8" action="/notifications/subscribe" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="fq3pC1ISJDQwlwVVhaJ+FjY66r/S1xzmdcYuPtd5LEA=" /></div>  <input id="repository_id" name="repository_id" type="hidden" value="3744625" />
+
+    <div class="select-menu js-menu-container js-select-menu">
+      <span class="minibutton select-menu-button js-menu-target">
+        <span class="js-select-button">
+          <span class="mini-icon mini-icon-watching"></span>
+          Watch
+        </span>
+      </span>
+
+      <div class="select-menu-modal-holder js-menu-content">
+        <div class="select-menu-modal">
+          <div class="select-menu-header">
+            <span class="select-menu-title">Notification status</span>
+            <span class="mini-icon mini-icon-remove-close js-menu-close"></span>
+          </div> <!-- /.select-menu-header -->
+
+          <div class="select-menu-list js-navigation-container js-select-menu-pane">
+
+            <div class="select-menu-item js-navigation-item js-navigation-target selected">
+              <span class="select-menu-checkmark mini-icon mini-icon-confirm"></span>
+              <div class="select-menu-item-text">
+                <input checked="checked" id="do_included" name="do" type="radio" value="included" />
+                <h4>Not watching</h4>
+                <span class="description">You only receive notifications for discussions in which you participate or are @mentioned.</span>
+                <span class="js-select-button-text hidden-select-button-text">
+                  <span class="mini-icon mini-icon-watching"></span>
+                  Watch
+                </span>
+              </div>
+            </div> <!-- /.select-menu-item -->
+
+            <div class="select-menu-item js-navigation-item js-navigation-target ">
+              <span class="select-menu-checkmark mini-icon mini-icon-confirm"></span>
+              <div class="select-menu-item-text">
+                <input id="do_subscribed" name="do" type="radio" value="subscribed" />
+                <h4>Watching</h4>
+                <span class="description">You receive notifications for all discussions in this repository.</span>
+                <span class="js-select-button-text hidden-select-button-text">
+                  <span class="mini-icon mini-icon-unwatch"></span>
+                  Unwatch
+                </span>
+              </div>
+            </div> <!-- /.select-menu-item -->
+
+            <div class="select-menu-item js-navigation-item js-navigation-target ">
+              <span class="select-menu-checkmark mini-icon mini-icon-confirm"></span>
+              <div class="select-menu-item-text">
+                <input id="do_ignore" name="do" type="radio" value="ignore" />
+                <h4>Ignoring</h4>
+                <span class="description">You do not receive any notifications for discussions in this repository.</span>
+                <span class="js-select-button-text hidden-select-button-text">
+                  <span class="mini-icon mini-icon-mute"></span>
+                  Stop ignoring
+                </span>
+              </div>
+            </div> <!-- /.select-menu-item -->
+
+          </div> <!-- /.select-menu-list -->
+
+        </div> <!-- /.select-menu-modal -->
+      </div> <!-- /.select-menu-modal-holder -->
+    </div> <!-- /.select-menu -->
+
+</form>
+    </li>
+
+    <li class="js-toggler-container js-social-container starring-container ">
+      <a href="/infochimps-labs/big_data_for_chimps/unstar" class="minibutton js-toggler-target star-button starred upwards" title="Unstar this repo" data-remote="true" data-method="post" rel="nofollow">
+        <span class="mini-icon mini-icon-remove-star"></span>
+        <span class="text">Unstar</span>
+      </a>
+      <a href="/infochimps-labs/big_data_for_chimps/star" class="minibutton js-toggler-target star-button unstarred upwards" title="Star this repo" data-remote="true" data-method="post" rel="nofollow">
+        <span class="mini-icon mini-icon-star"></span>
+        <span class="text">Star</span>
+      </a>
+      <a class="social-count js-social-count" href="/infochimps-labs/big_data_for_chimps/stargazers">23</a>
+    </li>
+
+        <li>
+          <a href="/infochimps-labs/big_data_for_chimps/fork" class="minibutton js-toggler-target fork-button lighter upwards" title="Fork this repo" rel="nofollow" data-method="post">
+            <span class="mini-icon mini-icon-branch-create"></span>
+            <span class="text">Fork</span>
+          </a>
+          <a href="/infochimps-labs/big_data_for_chimps/network" class="social-count">4</a>
+        </li>
+
+
+</ul>
+
+              <h1 itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class="entry-title public">
+                <span class="repo-label"><span>public</span></span>
+                <span class="mega-icon mega-icon-public-repo"></span>
+                <span class="author vcard">
+                  <a href="/infochimps-labs" class="url fn" itemprop="url" rel="author">
+                  <span itemprop="title">infochimps-labs</span>
+                  </a></span> /
+                <strong><a href="/infochimps-labs/big_data_for_chimps" class="js-current-repository">big_data_for_chimps</a></strong>
+              </h1>
+            </div>
+
+            
+
+  <ul class="tabs">
+    <li><a href="/infochimps-labs/big_data_for_chimps" class="selected" highlight="[:repo_source, :repo_downloads, :repo_commits, :repo_tags, :repo_branches]">Code</a></li>
+    <li><a href="/infochimps-labs/big_data_for_chimps/network" highlight="[:repo_network]">Network</a></li>
+    <li><a href="/infochimps-labs/big_data_for_chimps/pulls" highlight="[:repo_pulls]">Pull Requests <span class='counter'>0</span></a></li>
+
+      <li><a href="/infochimps-labs/big_data_for_chimps/issues" highlight="[:repo_issues]">Issues <span class='counter'>4</span></a></li>
+
+
+
+    <li><a href="/infochimps-labs/big_data_for_chimps/graphs" highlight="[:repo_graphs, :repo_contributors]">Graphs</a></li>
+
+
+  </ul>
+  
+<div class="tabnav">
+
+  <span class="tabnav-right">
+    <ul class="tabnav-tabs">
+          <li><a href="/infochimps-labs/big_data_for_chimps/tags" class="tabnav-tab" highlight="repo_tags">Tags <span class="counter blank">0</span></a></li>
+    </ul>
+    
+  </span>
+
+  <div class="tabnav-widget scope">
+
+
+    <div class="select-menu js-menu-container js-select-menu js-branch-menu">
+      <a class="minibutton select-menu-button js-menu-target" data-hotkey="w" data-ref="">
+        <span class="mini-icon mini-icon-tree"></span>
+        <i>tree:</i>
+        <span class="js-select-button">c55fd30a2c</span>
+      </a>
+
+      <div class="select-menu-modal-holder js-menu-content js-navigation-container js-select-menu-pane">
+
+        <div class="select-menu-modal js-select-menu-pane">
+          <div class="select-menu-header">
+            <span class="select-menu-title">Switch branches/tags</span>
+            <span class="mini-icon mini-icon-remove-close js-menu-close"></span>
+          </div> <!-- /.select-menu-header -->
+
+          <div class="select-menu-filters">
+            <div class="select-menu-text-filter">
+              <input type="text" id="commitish-filter-field" class="js-select-menu-text-filter js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+            </div> <!-- /.select-menu-text-filter -->
+            <div class="select-menu-tabs">
+              <ul>
+                <li class="select-menu-tab">
+                  <a href="#" data-tab-filter="branches" class="js-select-menu-tab">Branches</a>
+                </li>
+                <li class="select-menu-tab">
+                  <a href="#" data-tab-filter="tags" class="js-select-menu-tab">Tags</a>
+                </li>
+              </ul>
+            </div><!-- /.select-menu-tabs -->
+          </div><!-- /.select-menu-filters -->
+
+          <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket css-truncate" data-tab-filter="branches" data-filterable-for="commitish-filter-field" data-filterable-type="substring">
+
+
+              <div class="select-menu-item js-navigation-item js-navigation-target ">
+                <span class="select-menu-checkmark mini-icon mini-icon-confirm"></span>
+                <a href="/infochimps-labs/big_data_for_chimps/blob/joeman/07a-data_formats.asciidoc" class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target" data-name="joeman" rel="nofollow" title="joeman">joeman</a>
+              </div> <!-- /.select-menu-item -->
+              <div class="select-menu-item js-navigation-item js-navigation-target ">
+                <span class="select-menu-checkmark mini-icon mini-icon-confirm"></span>
+                <a href="/infochimps-labs/big_data_for_chimps/blob/master/07a-data_formats.asciidoc" class="js-navigation-open select-menu-item-text js-select-button-text css-truncate-target" data-name="master" rel="nofollow" title="master">master</a>
+              </div> <!-- /.select-menu-item -->
+
+              <div class="select-menu-no-results js-not-filterable">Nothing to show</div>
+          </div> <!-- /.select-menu-list -->
+
+
+          <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket css-truncate" data-tab-filter="tags" data-filterable-for="commitish-filter-field" data-filterable-type="substring">
+
+
+            <div class="select-menu-no-results js-not-filterable">Nothing to show</div>
+
+          </div> <!-- /.select-menu-list -->
+
+        </div> <!-- /.select-menu-modal -->
+      </div> <!-- /.select-menu-modal-holder -->
+    </div> <!-- /.select-menu -->
+
+  </div> <!-- /.scope -->
+
+  <ul class="tabnav-tabs">
+    <li><a href="/infochimps-labs/big_data_for_chimps" class="selected tabnav-tab" highlight="repo_source">Files</a></li>
+    <li><a href="/infochimps-labs/big_data_for_chimps/commits/" class="tabnav-tab" highlight="repo_commits">Commits</a></li>
+    <li><a href="/infochimps-labs/big_data_for_chimps/branches" class="tabnav-tab" highlight="repo_branches" rel="nofollow">Branches <span class="counter ">2</span></a></li>
+  </ul>
+
+</div>
+
+  
+  
+  
+
+
+            
+          </div>
+        </div><!-- /.repohead -->
+
+        <div id="js-repo-pjax-container" class="container context-loader-container" data-pjax-container>
+          
+
+
+<!-- blob contrib key: blob_contributors:v21:e9ea60ec7f46a1bc00eace944fc8de0d -->
+<!-- blob contrib frag key: views10/v8/blob_contributors:v21:e9ea60ec7f46a1bc00eace944fc8de0d -->
+
+
+<div id="slider">
+    <div class="frame-meta">
+
+      <p title="This is a placeholder element" class="js-history-link-replace hidden"></p>
+
+        <div class="breadcrumb">
+          <span class='bold'><span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/infochimps-labs/big_data_for_chimps/tree/c55fd30a2c5d8d357ba34320a0400834b7f18f6c" class="js-slide-to" data-direction="back" itemscope="url" rel="nofollow"><span itemprop="title">big_data_for_chimps</span></a></span></span> / <strong class="final-path">07a-data_formats.asciidoc</strong> <span class="js-zeroclipboard zeroclipboard-button" data-clipboard-text="07a-data_formats.asciidoc" data-copied-hint="copied!" title="copy to clipboard"><span class="mini-icon mini-icon-clipboard"></span></span>
+        </div>
+
+      <a href="/infochimps-labs/big_data_for_chimps/find/c55fd30a2c5d8d357ba34320a0400834b7f18f6c" class="js-slide-to" data-hotkey="t" style="display:none">Show File Finder</a>
+
+
+        <div class="commit commit-loader file-history-tease js-deferred-content" data-url="/infochimps-labs/big_data_for_chimps/contributors/c55fd30a2c5d8d357ba34320a0400834b7f18f6c/07a-data_formats.asciidoc">
+          Fetching contributors…
+
+          <div class="participation">
+            <p class="loader-loading"><img alt="Octocat-spinner-32-eaf2f5" height="16" src="https://a248.e.akamai.net/assets.github.com/images/spinners/octocat-spinner-32-EAF2F5.gif?1338945075" width="16" /></p>
+            <p class="loader-error">Cannot retrieve contributors at this time</p>
+          </div>
+        </div>
+
+    </div><!-- ./.frame-meta -->
+
+    <div class="frames">
+      <div class="frame" data-permalink-url="/infochimps-labs/big_data_for_chimps/blob/c55fd30a2c5d8d357ba34320a0400834b7f18f6c/07a-data_formats.asciidoc" data-title="big_data_for_chimps/07a-data_formats.asciidoc at c55fd30a2c5d8d357ba34320a0400834b7f18f6c · infochimps-labs/big_data_for_chimps · GitHub" data-type="blob">
+
+        <div id="files" class="bubble">
+          <div class="file">
+            <div class="meta">
+              <div class="info">
+                <span class="icon"><b class="mini-icon mini-icon-text-file"></b></span>
+                <span class="mode" title="File Mode">file</span>
+                  <span>315 lines (210 sloc)</span>
+                <span>14.522 kb</span>
+              </div>
+              <div class="actions">
+                <div class="button-group">
+                      <a class="minibutton js-entice" href=""
+                         data-entice="You must be signed in and on a branch to make or propose changes">Edit</a>
+                  <a href="/infochimps-labs/big_data_for_chimps/raw/c55fd30a2c5d8d357ba34320a0400834b7f18f6c/07a-data_formats.asciidoc" class="button minibutton " id="raw-url">Raw</a>
+                    <a href="/infochimps-labs/big_data_for_chimps/blame/c55fd30a2c5d8d357ba34320a0400834b7f18f6c/07a-data_formats.asciidoc" class="button minibutton ">Blame</a>
+                  <a href="/infochimps-labs/big_data_for_chimps/commits/c55fd30a2c5d8d357ba34320a0400834b7f18f6c/07a-data_formats.asciidoc" class="button minibutton " rel="nofollow">History</a>
+                </div><!-- /.button-group -->
+              </div><!-- /.actions -->
+
+            </div>
+              
+  <div id="readme" class="blob instapaper_body">
+    <article class="markdown-body entry-content" itemprop="mainContentOfPage">
+
+
+<div>
+  <h2>
+<a name="data-formats-and-schemata-" class="anchor" href="#data-formats-and-schemata-"><span class="mini-icon mini-icon-link"></span></a>Data Formats and Schemata ==</h2>
+  
+  <div>
+
+<div>
+  
+  <p>there’s only three data serialization formats you should use: TSV, JSON, or Avro.</p>
+</div>
+
+<div>
+  
+  <p>TESTING</p>
+</div>
+
+
+<div>
+  <h3>
+<a name="good-format-1-tsv-its-simple-" class="anchor" href="#good-format-1-tsv-its-simple-"><span class="mini-icon mini-icon-link"></span></a>Good Format 1: TSV (It’s simple) ===</h3>
+  
+
+<div>
+  
+  <p>For data exploration, wherever reasonable use tab-separated values (TSV). Emit one record per line, ASCII-only, with no quoting, and html enttity escaping where necessary. The advantage of TSV:</p>
+</div>
+
+<div>
+  
+  <ul>
+<li>
+      <p>you only have two control characters, NL and tab.</p>
+      
+    </li>
+  
+    <li>
+      <p>It’s restartable: a newline unambiguously signals the start of a record, so a corrupted record can’t cause major damage.</p>
+      
+    </li>
+  
+    <li>
+      <p>Ubiquitous: pig, Hadoop streaming, every database bulk import tool, and excel will all import it directly.</p>
+      
+    </li>
+  
+    <li>
+      <p>Ad-hoc: Most importantly, it works with the standard unix toolkit of cut, wc, etc.
+can use without decoding all fields</p>
+      
+    </li>
+  
+  </ul>
+</div>
+
+<div>
+  
+  <p>A stray quote mark can have the computer absorb the next MB of data I into one poor little field.
+Don’t do any quoting — just escaping</p>
+</div>
+
+<div>
+  
+  <p>Disadvantages</p>
+</div>
+
+<div>
+  
+  <ul>
+<li>
+      <p>Tabular data only with uniform schema</p>
+      
+    </li>
+  
+    <li>
+      <p>Second extraction step to get text field contents</p>
+      
+    </li>
+  
+  </ul>
+</div>
+
+<div>
+  
+  <p>I will cite as a disadvantage, but want to stress how small it is: data size. Compression takes care of, </p>
+</div>
+
+<div>
+  
+  <p>Exercise: compare compression:</p>
+</div>
+
+<div>
+  
+  <ul>
+<li>
+      <p>Format: TSV, JSO, Avro, packed binary strings</p>
+      
+    </li>
+  
+    <li>
+      <p>Compression: gz, bz2, LZO, snappy, native (block)</p>
+      
+    </li>
+  
+    <li>
+      <p>Measure: map input, map output, reduce sort, reduce output, replicate, final storage size.</p>
+      
+    </li>
+  
+  </ul>
+</div>
+
+<div>
+  
+  <p><strong>best practice</strong></p>
+</div>
+
+<div>
+  
+  <ul>
+<li>
+      <p>Restartable - If you have a corrupt record, you only have to look for the next un-escaped newline </p>
+      
+    </li>
+  
+    <li>
+      <p>Keep regexes simple - Quotes and nested parens are hard,</p>
+      
+    </li>
+  
+  </ul>
+</div>
+
+<div>
+  
+  <p>Don’t use CSV — you’re sure to have <strong>some</strong> data with free form text, and then find yourself doing quoting acrobatics or using a different format.</p>
+</div>
+
+<div>
+  
+  <p>Use TSV when</p>
+</div>
+
+<div>
+  
+  <ul>
+<li>
+      <p>You’re  </p>
+      
+    </li>
+  
+  </ul>
+</div>
+
+<div>
+  
+  <p>Don’t use it when</p>
+</div>
+
+<div>
+  
+  <ul>
+<li>
+      <p>Structured data</p>
+      
+    </li>
+  
+    <li>
+      <p>Bulk documents</p>
+      
+    </li>
+  
+  </ul>
+</div>
+
+  
+</div>
+
+
+
+<div>
+  <h3>
+<a name="good-format-2-json-its-generic-and-ubiquitous-" class="anchor" href="#good-format-2-json-its-generic-and-ubiquitous-"><span class="mini-icon mini-icon-link"></span></a>Good Format 2: JSON (It’s Generic and Ubiquitous) ===</h3>
+  
+
+<div>
+  
+  <p>Individual JSON records stored one-per-line are your best bet for denormalized objects,</p>
+</div>
+
+<div>
+  
+  <div>
+    <pre>{"text":"","user":{"screen_name":"infochimps",...},...}</pre>
+  </div>
+</div>
+
+<div>
+  
+  <p>for documents,</p>
+</div>
+
+<div>
+  
+  <div>
+    <pre>{"title":"Gettysburg Address","body":"Four score and seven years ago...",...}</pre>
+  </div>
+</div>
+
+<div>
+  
+  <p>and for schema-free records:</p>
+</div>
+
+<div>
+  
+  <div>
+    <pre>{"_ts":"","":"","data":{"_type":"ev.hadoop_job",...}}
+{"_ts":"","":"","data":{"_type":"ev.web_form",...}}</pre>
+  </div>
+</div>
+
+
+<div>
+  <h4>
+<a name="structured-to-model" class="anchor" href="#structured-to-model"><span class="mini-icon mini-icon-link"></span></a>structured to model.</h4>
+  
+
+<div>
+  
+  <p>TODO: receive should take an owner field </p>
+</div>
+
+<div>
+  
+  <p>Receiver:</p>
+</div>
+
+<div>
+  
+  <div>
+    <pre>class Message
+  def receive_user
+  end
+end</pre>
+  </div>
+</div>
+
+<div>
+  
+  <div>
+    <pre>class User 
+  def receive_
+Edn</pre>
+  </div>
+</div>
+
+<div>
+  
+  <div>
+    <pre>class Factory
+  Def convert(obj)
+    Correct type return it
+    Look up factory
+    Factory.receive obj
+  End </pre>
+  </div>
+</div>
+
+<div>
+  
+  <div>
+    <pre>def factory_for
+  If factory then return it
+  If symbol then get from identity map
+  If string then Constantize it
+  If hash then create model class, model_klass
+  If array then union type
+end</pre>
+  </div>
+</div>
+
+<div>
+  
+  <p>Important that receeiver is not setter - floppy inassertive model with no sense of its own identity. Like the security line at the airport: horrible inexplicable things, more complicated then it seems like it should, but once past the security line you can g back to being a human again.</p>
+</div>
+
+<div>
+  
+  <p>Do not make filedls that represent objects and keys — if there’s a user fields put it in <tt>user</tt>, its id in user_id, and use virtual accessors to mask the difference.</p>
+</div>
+
+  
+</div>
+
+
+  
+</div>
+
+
+
+<div>
+  <h3>
+<a name="good-format-3-avro-it-does-everything-right-" class="anchor" href="#good-format-3-avro-it-does-everything-right-"><span class="mini-icon mini-icon-link"></span></a>Good Format #3: Avro (It does everything right) ===</h3>
+  
+
+<div>
+  
+  <p>that there is no essential difference among</p>
+</div>
+
+<div>
+  
+  <div>
+    <pre>File Format         Schema          API
+RPC (Remote Procedure Call) Definition
+JPG                 CREATE TABLE    Twitter API     
+HTML DTD            db defn.</pre>
+  </div>
+</div>
+
+<div>
+  
+  <p>Avro says these are imperfect reflections for the same thing: a method to send data in space and time, to yourself or others. This is a very big idea [^1].</p>
+</div>
+
+<div>
+  
+  <p>footnote:[To the people of the future: this might seem totally obvious. Trust that it is not. There are virtually no shared patterns or idioms across the systems listed here.]</p>
+</div>
+
+  
+</div>
+
+
+
+<div>
+  <h3>
+<a name="other-reasonable-choices-tagged-net-strings-and-null-delimited-documents--" class="anchor" href="#other-reasonable-choices-tagged-net-strings-and-null-delimited-documents--"><span class="mini-icon mini-icon-link"></span></a>Other reasonable choices: tagged net strings and null-delimited documents  ===</h3>
+  
+
+<div>
+  
+  <p>Not restartable.</p>
+</div>
+
+<div>
+  
+  <p>Can’t represent a document with a null</p>
+</div>
+
+  
+</div>
+
+
+
+<div>
+  <h3>
+<a name="crap-format-1-xml" class="anchor" href="#crap-format-1-xml"><span class="mini-icon mini-icon-link"></span></a>Crap format #1: XML</h3>
+  
+
+<div>
+  
+  <p>XML is disastrous as a data transport format. It’s also widely used in enterprise systems and on the web, and so you will have to learn how to work with it. Wherever possible, implement decoupled code whose only job is to translate the XML into a sane format, and write all downstream code to work with that.</p>
+</div>
+
+
+<div>
+  <h4>
+<a name="writing-xml-" class="anchor" href="#writing-xml-"><span class="mini-icon mini-icon-link"></span></a>Writing XML ====</h4>
+  
+
+<div>
+  
+  <p>If you have to emit XML for downstream consumption, yet have any control over its structure, follow these best practices: </p>
+</div>
+
+<div>
+  
+  <div>
+    <pre>.Well-formed XML
+[This has been split across multiple lines, but in production eliminate the whitespace as well]
+--------------------
+&lt;post&gt;
+  &lt;author&gt;&lt;name&gt;William Carlos William&lt;/name&gt;&lt;id&gt;88&lt;/id&gt;&lt;/author&gt;
+  &lt;id&gt;12345&lt;/id&gt;
+  &lt;title&gt;This is Just to Say&lt;/title&gt;
+  &lt;dtstart&gt;2012-04-26T12:34:56 CST&lt;/dtstart&gt;
+  &lt;text&gt;I have eaten&amp;#10;the plums&amp;#10;that were in&amp;#10;the icebox&amp;#10;&amp;#10;and which&amp;#10;you were probably&amp;#10;saving&amp;#10;for breakfast&amp;#10;&amp;#10;Forgive me&amp;#10;they were delicious&amp;#10;so sweet&amp;#10;and so cold&lt;/text&gt;
+  &lt;comments&gt;
+    &lt;comment&gt;&lt;commenter-name&gt;Holly&lt;/commenter-name&gt;&lt;id&gt;98765&lt;/id&gt;&lt;text&gt;Your poem made up for it...  &amp;lt;em&amp;gt;barely&amp;lt;/em&amp;gt;&lt;/text&gt;&lt;/comment&gt;
+  &lt;/comments&gt;
+  &lt;replies&gt;&lt;/replies&gt;
+&lt;/post&gt;
+--------------------</pre>
+  </div>
+</div>
+
+<div>
+  
+  <p>The example to the side is pretty-printed for clarity; in production, you should eliminate the whitespace as well. Otherwise it does things correctly:    
+* Tags hold only values or other tags (not both).
+* Values only appear in the contents of tags, and not the tag attributes.
+* Text contents are fully encoded (<tt>&amp;lt;em&amp;gt;barely&amp;lt;/em&amp;gt;</tt>, not <tt>&lt;em&gt;barely&lt;/em&gt;</tt>), including whitespace (<tt>&amp;amp;10;</tt> in the post text, not a literal newline). All the XML tags you see belong to the record.
+* The nesting  <tt>comments</tt> tag makes clear that it is an array-of-length-one, in contrast to a singular property like <tt>author</tt>. The <tt>replies</tt> tag is present, representing an empty array, rather than being omitted.
+* It has a predictable structure, making it easily <tt>grep</tt>'able</p>
+</div>
+
+<div>
+  
+  <p>If you have to write XML against a specific format, consider using a template language like erubis, moustache or the like. Before I learned this trick, I’d end up with a whole bunch of over-wrough soupy code just for the purpose of putting open and close tags in the right place. When 90% of the complexity is writing the XML and 10% is stuffing the values in there, you should put the code in the content and not the other way around.</p>
+</div>
+
+<div>
+  
+  <div>
+    <pre>.Well-formed XML
+[This has been split across multiple lines, but in production eliminate the whitespace as well]
+--------------------
+&lt;post&gt;
+  &lt;author&gt;&lt;name&gt;&lt;%= record.author.name.to_xml %&gt;&lt;/name&gt;&lt;id&gt;&lt;%= record.author.id.to_xml %&gt;&lt;/id&gt;&lt;/author&gt;
+  &lt;id&gt;&lt;%=      record.id.to_xml         %&gt;&lt;/id&gt;
+  &lt;title&gt;&lt;%=   record.title.to_xml      %&gt;&lt;/title&gt;
+  &lt;dtstart&gt;&lt;%= record.created_at.to_xml %&gt;&lt;/dtstart&gt;
+  &lt;text&gt;&lt;%=    record.text.to_xml       %&gt;&lt;/text&gt;
+  &lt;comments&gt;
+    &lt;% record.comments.each do |comment| -%&gt;
+    &lt;comment&gt;
+      &lt;commenter-name&gt;&lt;%= comment.commenter_name.to_xml %&gt;&lt;/commenter-name&gt;
+      &lt;id&gt;&lt;%=   comment.id.to_xml %&gt;&lt;/id&gt;
+      &lt;text&gt;&lt;%= comment.text.to_xml %&gt;&lt;/text&gt;
+    &lt;/comment&gt;
+    &lt;% end -%&gt;
+  &lt;/comments&gt;
+  &lt;replies&gt;&lt;/replies&gt;
+&lt;/post&gt;
+--------------------</pre>
+  </div>
+</div>
+
+<div>
+  
+  <p>This template generates XML with a consistent structure. The <tt>&lt;%= %&gt;</tt> blocks interpolate data — an equals-sign <tt>&lt;%= %&gt;</tt> causes output, a plain <tt>&lt;% %&gt;</tt> block is for control statements. When you’re inside a funny-braces block, you’re in ruby; everything else is literal content. Control blocks (like the <tt>&lt;% record.comments.each do |comment| %&gt;</tt>) stamp out their contents as you’d expect.</p>
+</div>
+
+
+<div>
+  <h5>
+<a name="airing-of-grievances-" class="anchor" href="#airing-of-grievances-"><span class="mini-icon mini-icon-link"></span></a>Airing of Grievances =====</h5>
+  
+
+<div>
+  
+  <p>XML is like the English Measurement System — just ubiquitous enough, and just barely useful enough, that it’s near-impossible to weed out. Neither, however, is anymore justifiable for use by the professional practitioner. XML is both too extensible and too limited to map smoothly to and from the data structures languages use in practive. In the case that you need to make the case against XML to a colleague, I arm you with the following List of Grievances:</p>
+</div>
+
+<div>
+  
+  <ul>
+<li>
+      <p><strong>Does not preserve simple types</strong>: the only primitive data type is a string; there’s no standard way to distinguish an integer, a floating-point number, or a date without external hints.</p>
+      
+    </li>
+  
+    <li>
+      <p><strong>Does not preserve complex types</strong>: You will find data stored with</p>
+      
+
+<div>
+  
+  <ul>
+<li>
+      <p>mixed attributes and data:</p>
+      
+    </li>
+  
+  </ul>
+</div>
+
+      
+    </li>
+  
+  </ul>
+</div>
+
+<div>
+  
+  <div>
+    
+    <pre>&lt;post date="2012-01-02T12:34:56 CST" author="William Carlos Williams"&gt;
+&lt;body&gt;I have eaten&amp;#10;the plums&amp;#10;that were in...&lt;/body&gt;
+&lt;/post&gt;</pre>
+    
+  </div>
+</div>
+
+<div>
+  
+  <ul>
+<li>
+      <p>mixed data and text:</p>
+      
+    </li>
+  
+  </ul>
+</div>
+
+<div>
+  
+  <div>
+    
+    <pre>&lt;post&gt;
+&lt;title&gt;This is Just to Say&lt;/title&gt;
+I have eaten the plums that ... you were probably saving for &lt;span dtstart="2012-04-27T08:00:00 CST"&gt;breakfast&lt;/span&gt;. Forgive me ...
+&lt;/post&gt;</pre>
+    
+  </div>
+</div>
+
+<div>
+  
+  <ul>
+<li>
+      <p><strong>Inconsistent cardinality</strong>: In this example, there’s no way to distinguish a singular property like <tt>title</tt> from a list-of-length-one like <tt>comment</tt>; simple XML readers will return`{"title":"…", "comment":{"text":"…"}}` when there is one, and <tt>{"title":"...", "comment":[{"text":"..."},{"text":"..."}]}</tt> when there are many.</p>
+      
+    </li>
+  
+  </ul>
+</div>
+
+<div>
+  
+  <div>
+    
+    <pre>&lt;post&gt;
+  &lt;title&gt;This is just to say&lt;/title&gt;
+  &lt;comment&gt;&lt;text&gt;Your poem made up for it&lt;/text&gt;&lt;/comment&gt;
+&lt;/post&gt;</pre>
+    
+  </div>
+</div>
+
+<div>
+  
+  <ul>
+<li>
+      <p><strong>Not restartable.</strong>: you can only properly understand an XML file by reading it from beginning to end. CDATA blocks are especially treacherous; they can in principle hold nearly anything, including out-of-band XML.</p>
+      
+    </li>
+  
+    <li>
+      <p><strong>Not unique</strong>: even  are multiple ways to represent the same final context. 
+An apostrophe might be represented directly (<tt>'</tt>), hex-encoded (<tt>&amp;amp;#x0027;</tt>), decimal-encoded (<tt>&amp;#39;</tt>), or as an SGML footnote:[SGML= Standard Generalized Markup Language, the highly-complex document format that inspired HTML] entity (<tt>&amp;amp;apos;</tt>). (You may even find people using SGML entities in the absence of the DTD footnote:[DTD = Document Type Declaration; an over-enthusiastic DTD can make XML mutable to the point of incomprehensibility.] that is technically required to interpret them.) </p>
+      
+    </li>
+  
+    <li>
+      <p><strong>Complex</strong>: the technical standard for XML is fiendishly complex, and even mature libraries in widespread use still report bugs parsing complex or ill-formed input.</p>
+      
+    </li>
+  
+  </ul>
+</div>
+
+<div>
+  
+  <p>Attributes, CDATA, model boundaries, document text</p>
+</div>
+
+<div>
+  
+  <p>If you do it, consider emitting not with a serde but with a template engine. Pretty-print fields so can use cmdline tools</p>
+</div>
+
+  
+</div>
+
+
+  
+</div>
+
+
+  
+</div>
+
+
+
+<div>
+  <h3>
+<a name="crap-format-2-n3-triples-" class="anchor" href="#crap-format-2-n3-triples-"><span class="mini-icon mini-icon-link"></span></a>Crap Format #2: N3 triples ===</h3>
+  
+
+<div>
+  
+  <p>Like most Semantic-Web developed technology, N3 is antagonistic to thought and action.</p>
+</div>
+
+<div>
+  
+  <p>If you must deal with this, pretty-print the fields and ensure delimiters are clean. </p>
+</div>
+
+  
+</div>
+
+
+
+<div>
+  <h3>
+<a name="crap-format-3-flat-format-" class="anchor" href="#crap-format-3-flat-format-"><span class="mini-icon mini-icon-link"></span></a>Crap Format #3: Flat format ===</h3>
+  
+
+<div>
+  
+  <p>WALKTHROUGH: converting the weather fields. </p>
+</div>
+
+<div>
+  
+  <p>Flat formats are surprisingly innocuous; it’s the contortions they force upon their tender that hurts.</p>
+</div>
+
+<div>
+  
+  <p>Straightforward to build a regexp. Wukong gives you a flatpack stringifier.  Specify a format string as follows: </p>
+</div>
+
+<div>
+  
+  <div>
+    <pre>"%4d%3.2f\"%r{([^\"]+)}\""</pre>
+  </div>
+</div>
+
+<div>
+  
+  <p>It returns a MatchData object (same as a regexp does).</p>
+</div>
+
+<div>
+  
+  <p>9999 as null (or other out-of-band): Override the receive_xxx method to knock those out, call super.</p>
+</div>
+
+<div>
+  
+  <p>To handle the elevation fields, override the receive method: </p>
+</div>
+
+<div>
+  
+  <p>Note that we call super <strong>first</strong> here , because we want an int to divide; in the previous case, we want to catch 9999 before it goes in for conversion.
+Wukong has some helpers for unit conversion too.</p>
+</div>
+
+  
+</div>
+
+
+
+<div>
+  <h3>
+<a name="web-log-and-regexpable" class="anchor" href="#web-log-and-regexpable"><span class="mini-icon mini-icon-link"></span></a>Web log and Regexpable</h3>
+  
+
+<div>
+  
+  <p>WALKTHROUGH: apache web logs of course.
+- 
+Regexp to tuple.
+Just capture substructure </p>
+</div>
+
+  
+</div>
+
+
+
+<div>
+  <h3>
+<a name="glyphing-string-encoding-unicodeutf-8-" class="anchor" href="#glyphing-string-encoding-unicodeutf-8-"><span class="mini-icon mini-icon-link"></span></a>Glyphing (string encoding), Unicode,UTF-8 ===</h3>
+  
+
+<div>
+  
+  <p>All of the following examples could be ambiguously referred to as "encoding":</p>
+</div>
+
+<div>
+  
+  <ul>
+<li>
+      <p>Compression: gz, LZO, Snappy, etc</p>
+      
+    </li>
+  
+    <li>
+      <p>Serialization: the actual record container</p>
+      
+    </li>
+  
+    <li>
+      <p>Stringifying: conversion to JSON, TSV, etc.</p>
+      
+    </li>
+  
+    <li>
+      <p>Glyphing: binary stream (for example UTF8-encoded Unicode) to characters (TODO: make this correct)</p>
+      
+    </li>
+  
+    <li>
+      <p>Structured to modelfootnote:[the worst example iis "node": a LAN node configured by a chef node running a Flume logical node handling graph nodes in a Node.js decorator.]</p>
+      
+    </li>
+  
+  </ul>
+</div>
+
+<div>
+  
+  <p>My best advice is </p>
+</div>
+
+<div>
+  
+  <ul>
+<li>
+      <p>Never let <strong>anything</strong> into your system unless it is UTF8, UTF-16, or ASCII.</p>
+      
+    </li>
+  
+    <li>
+      <p>Either:</p>
+      
+
+<div>
+  
+  <ul>
+<li>
+      <p>Only transmit 7-bit ASCII characters in the range 0x20 (space) to 0x126 (~), along with 0x0a (newline) and 0x09 (tab) but only when used as record (newline) or field (tab) separators. URL encoding, JSON encoding, and HTML entity encoding are all reasonable. HTML entity encoding has the charm of leaving simple international text largely readable: "caf&amp;eacute\;" or "M&amp;oumlaut\;torh&amp;eumlaut\;ad" are more easily scannable than "caf\XX". Be warned that unless you exercise care all three can be ambiguous: &amp;eacute\;, (that in decimal) and (that in hex) are all the same.to make life grep’able, force your converter to emit exactly one string for any given glyph — That is, it will not ship "0x32" for "a", and it will not ship "é" for "\XX"</p>
+      
+    </li>
+  
+    <li>
+      <p>Use unix-style newlines only.</p>
+      
+    </li>
+  
+    <li>
+      <p>Even With unique glyph coding, Unicode is still not unique: edge cases involving something something diacritic modifiers.</p>
+      
+    </li>
+  
+    <li>
+      <p>However complex you think Unicode is, it’s slightly more hairy than that.</p>
+      
+    </li>
+  
+    <li>
+      <p>URL encoding only makes sense when you’re shipping urls anyway.</p>
+      
+    </li>
+  
+    <li>
+      <p>TODO: check those character strings for correctness. Also, that I’m using "glyph" correctly</p>
+      
+    </li>
+  
+  </ul>
+</div>
+
+      
+    </li>
+  
+  </ul>
+</div>
+
+  
+</div>
+
+
+
+<div>
+  <h3>
+<a name="icss-" class="anchor" href="#icss-"><span class="mini-icon mini-icon-link"></span></a>ICSS ===</h3>
+  
+
+<div>
+  
+  <p>ICSS uses 
+footnote:[Every Avro schema file is a valid ICSS schema file, but Avro will not understand all the fields. In particular, Avro has no notion of <tt>is_a</tt> inheritance; ICSS does]</p>
+</div>
+
+
+<div>
+  <h4>
+<a name="schemaorg-types-" class="anchor" href="#schemaorg-types-"><span class="mini-icon mini-icon-link"></span></a>Schema.org Types ====</h4>
+  
+
+  
+</div>
+
+
+  
+</div>
+
+
+
+<div>
+  <h3>
+<a name="munging" class="anchor" href="#munging"><span class="mini-icon mini-icon-link"></span></a>Munging</h3>
+  
+
+<div>
+  
+  <div>
+    <pre>class RawWeatherStation
+  field :wban_id
+  # ...
+  field :latitude
+  field :longitude
+end</pre>
+  </div>
+</div>
+
+<div>
+  
+  <div>
+    <pre>class Science::Climatology::WeatherStation &lt; Type::Geo::GovernmentBuilding
+  field :wban_id
+  field :
+end</pre>
+  </div>
+</div>
+
+<div>
+  
+  <div>
+    <pre>name:   weatherstation
+types:
+  name:   raw_weather_station
+  fields:
+    - name:  latitude
+      type:  float
+    - name:  longitude
+      type:  float
+  # ...</pre>
+  </div>
+</div>
+<hr>
+</div>
+
+
+  </div>
+  
+</div></article>
+  </div>
+
+          </div>
+        </div>
+
+        <a href="#jump-to-line" rel="facebox" data-hotkey="l" class="js-jump-to-line" style="display:none">Jump to Line</a>
+        <div id="jump-to-line" style="display:none">
+          <h2>Jump to Line</h2>
+          <form accept-charset="UTF-8" class="js-jump-to-line-form">
+            <input class="textfield js-jump-to-line-field" type="text">
+            <div class="full-button">
+              <button type="submit" class="button">Go</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+</div>
+
+<div id="js-frame-loading-template" class="frame frame-loading large-loading-area" style="display:none;">
+  <img class="js-frame-loading-spinner" src="https://a248.e.akamai.net/assets.github.com/images/spinners/octocat-spinner-128.gif?1347543527" height="64" width="64">
+</div>
+
+
+        </div>
+      </div>
+      <div class="context-overlay"></div>
+    </div>
+
+      <div id="footer-push"></div><!-- hack for sticky footer -->
+    </div><!-- end of wrapper - hack for sticky footer -->
+
+      <!-- footer -->
+      <div id="footer">
+  <div class="container clearfix">
+
+      <dl class="footer_nav">
+        <dt>GitHub</dt>
+        <dd><a href="https://github.com/about">About us</a></dd>
+        <dd><a href="https://github.com/blog">Blog</a></dd>
+        <dd><a href="https://github.com/contact">Contact &amp; support</a></dd>
+        <dd><a href="http://enterprise.github.com/">GitHub Enterprise</a></dd>
+        <dd><a href="http://status.github.com/">Site status</a></dd>
+      </dl>
+
+      <dl class="footer_nav">
+        <dt>Applications</dt>
+        <dd><a href="http://mac.github.com/">GitHub for Mac</a></dd>
+        <dd><a href="http://windows.github.com/">GitHub for Windows</a></dd>
+        <dd><a href="http://eclipse.github.com/">GitHub for Eclipse</a></dd>
+        <dd><a href="http://mobile.github.com/">GitHub mobile apps</a></dd>
+      </dl>
+
+      <dl class="footer_nav">
+        <dt>Services</dt>
+        <dd><a href="http://get.gaug.es/">Gauges: Web analytics</a></dd>
+        <dd><a href="http://speakerdeck.com">Speaker Deck: Presentations</a></dd>
+        <dd><a href="https://gist.github.com">Gist: Code snippets</a></dd>
+        <dd><a href="http://jobs.github.com/">Job board</a></dd>
+      </dl>
+
+      <dl class="footer_nav">
+        <dt>Documentation</dt>
+        <dd><a href="http://help.github.com/">GitHub Help</a></dd>
+        <dd><a href="http://developer.github.com/">Developer API</a></dd>
+        <dd><a href="http://github.github.com/github-flavored-markdown/">GitHub Flavored Markdown</a></dd>
+        <dd><a href="http://pages.github.com/">GitHub Pages</a></dd>
+      </dl>
+
+      <dl class="footer_nav">
+        <dt>More</dt>
+        <dd><a href="http://training.github.com/">Training</a></dd>
+        <dd><a href="https://github.com/edu">Students &amp; teachers</a></dd>
+        <dd><a href="http://shop.github.com">The Shop</a></dd>
+        <dd><a href="/plans">Plans &amp; pricing</a></dd>
+        <dd><a href="http://octodex.github.com/">The Octodex</a></dd>
+      </dl>
+
+      <hr class="footer-divider">
+
+
+    <p class="right">&copy; 2013 <span title="0.29703s from fe2.rs.github.com">GitHub</span> Inc. All rights reserved.</p>
+    <a class="left" href="https://github.com/">
+      <span class="mega-icon mega-icon-invertocat"></span>
+    </a>
+    <ul id="legal">
+        <li><a href="https://github.com/site/terms">Terms of Service</a></li>
+        <li><a href="https://github.com/site/privacy">Privacy</a></li>
+        <li><a href="https://github.com/security">Security</a></li>
+    </ul>
+
+  </div><!-- /.container -->
+
+</div><!-- /.#footer -->
+
+
+    <div class="fullscreen-overlay js-fullscreen-overlay" id="fullscreen_overlay">
+  <div class="fullscreen-container js-fullscreen-container">
+    <div class="textarea-wrap">
+      <textarea name="fullscreen-contents" id="fullscreen-contents" class="js-fullscreen-contents" placeholder="" data-suggester="fullscreen_suggester"></textarea>
+          <div class="suggester-container">
+              <div class="suggester fullscreen-suggester js-navigation-container" id="fullscreen_suggester"
+                 data-url="/infochimps-labs/big_data_for_chimps/suggestions/commit">
+              </div>
+          </div>
+    </div>
+  </div>
+  <div class="fullscreen-sidebar">
+    <a href="#" class="exit-fullscreen js-exit-fullscreen tooltipped leftwards" title="Exit Zen Mode">
+      <span class="mega-icon mega-icon-normalscreen"></span>
+    </a>
+    <a href="#" class="theme-switcher js-theme-switcher tooltipped leftwards"
+      title="Switch themes">
+      <span class="mini-icon mini-icon-brightness"></span>
+    </a>
+  </div>
+</div>
+
+
+
+    <div id="ajax-error-message" class="flash flash-error">
+      <span class="mini-icon mini-icon-exclamation"></span>
+      Something went wrong with that request. Please try again.
+      <a href="#" class="mini-icon mini-icon-remove-close ajax-error-dismiss"></a>
+    </div>
+
+    
+    
+    <span id='server_response_time' data-time='0.29761' data-host='fe2'></span>
+    
+  </body>
+</html>
+

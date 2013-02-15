@@ -81,6 +81,15 @@
 		394EE57716C35738000ADC8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53816C350E9000ADC8E /* Foundation.framework */; };
 		394EE57816C35739000ADC8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53816C350E9000ADC8E /* Foundation.framework */; };
 		394EE57916C3573B000ADC8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 394EE53816C350E9000ADC8E /* Foundation.framework */; };
+		39BE9BE016CE8B0000E88C00 /* Documentation.mdown in Resources */ = {isa = PBXBuildFile; fileRef = 39BE9BD416CE8B0000E88C00 /* Documentation.mdown */; };
+		39BE9BE116CE8B0000E88C00 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 39BE9BD516CE8B0000E88C00 /* Info.plist */; };
+		39BE9BE216CE8B0000E88C00 /* QSAutomatorPlugIn_Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BE9BD716CE8B0000E88C00 /* QSAutomatorPlugIn_Action.m */; };
+		39BE9BE316CE8B0000E88C00 /* QSAutomatorPlugIn_Action.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BE9BD716CE8B0000E88C00 /* QSAutomatorPlugIn_Action.m */; };
+		39BE9BE416CE8B0000E88C00 /* QSAutomatorPlugIn_Source.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BE9BD916CE8B0000E88C00 /* QSAutomatorPlugIn_Source.m */; };
+		39BE9BE516CE8B0000E88C00 /* QSAutomatorPlugIn_Source.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BE9BD916CE8B0000E88C00 /* QSAutomatorPlugIn_Source.m */; };
+		39BE9BE616CE8B0000E88C00 /* QSAutomatorPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BE9BDB16CE8B0000E88C00 /* QSAutomatorPlugIn.m */; };
+		39BE9BE716CE8B0000E88C00 /* QSAutomatorPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 39BE9BDB16CE8B0000E88C00 /* QSAutomatorPlugIn.m */; };
+		39BE9BE816CE8B0000E88C00 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 39BE9BDF16CE8B0000E88C00 /* README.markdown */; };
 		39CBC43516CD543A007EB8C0 /* semantic structure.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 39CBC43416CD543A007EB8C0 /* semantic structure.rtf */; };
 		39CBC43616CD543A007EB8C0 /* semantic structure.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 39CBC43416CD543A007EB8C0 /* semantic structure.rtf */; };
 /* End PBXBuildFile section */
@@ -139,6 +148,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 394EE51116C34FC8000ADC8E;
 			remoteInfo = "Eidynamic WorkflowTests";
+		};
+		39BE9BEA16CE8B0000E88C00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 39BE9BDC16CE8B0000E88C00 /* QSAutomatorPlugIn.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D1AC9740486D14A00FE50C9;
+			remoteInfo = "Automator Plugin";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -203,6 +219,16 @@
 		394EE53F16C350E9000ADC8E /* Strategic_Response_Web_Service.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = Strategic_Response_Web_Service.applescript; sourceTree = "<group>"; };
 		394EE54216C350E9000ADC8E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/main.xib; sourceTree = "<group>"; };
 		394EE54416C350E9000ADC8E /* Strategic Response Web Service-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Strategic Response Web Service-Prefix.pch"; sourceTree = "<group>"; };
+		39BE9BD416CE8B0000E88C00 /* Documentation.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Documentation.mdown; sourceTree = "<group>"; };
+		39BE9BD516CE8B0000E88C00 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39BE9BD616CE8B0000E88C00 /* QSAutomatorPlugIn_Action.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSAutomatorPlugIn_Action.h; sourceTree = "<group>"; };
+		39BE9BD716CE8B0000E88C00 /* QSAutomatorPlugIn_Action.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSAutomatorPlugIn_Action.m; sourceTree = "<group>"; };
+		39BE9BD816CE8B0000E88C00 /* QSAutomatorPlugIn_Source.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSAutomatorPlugIn_Source.h; sourceTree = "<group>"; };
+		39BE9BD916CE8B0000E88C00 /* QSAutomatorPlugIn_Source.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSAutomatorPlugIn_Source.m; sourceTree = "<group>"; };
+		39BE9BDA16CE8B0000E88C00 /* QSAutomatorPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSAutomatorPlugIn.h; sourceTree = "<group>"; };
+		39BE9BDB16CE8B0000E88C00 /* QSAutomatorPlugIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSAutomatorPlugIn.m; sourceTree = "<group>"; };
+		39BE9BDC16CE8B0000E88C00 /* QSAutomatorPlugIn.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = QSAutomatorPlugIn.xcodeproj; sourceTree = "<group>"; };
+		39BE9BDF16CE8B0000E88C00 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		39CBC43416CD543A007EB8C0 /* semantic structure.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = "semantic structure.rtf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -327,6 +353,16 @@
 				394EE4BE16C34F67000ADC8E /* Foundation.framework */,
 				394EE4CD16C34F67000ADC8E /* SenTestingKit.framework */,
 				394EE4CF16C34F67000ADC8E /* UIKit.framework */,
+				39BE9BD416CE8B0000E88C00 /* Documentation.mdown */,
+				39BE9BD516CE8B0000E88C00 /* Info.plist */,
+				39BE9BD616CE8B0000E88C00 /* QSAutomatorPlugIn_Action.h */,
+				39BE9BD716CE8B0000E88C00 /* QSAutomatorPlugIn_Action.m */,
+				39BE9BD816CE8B0000E88C00 /* QSAutomatorPlugIn_Source.h */,
+				39BE9BD916CE8B0000E88C00 /* QSAutomatorPlugIn_Source.m */,
+				39BE9BDA16CE8B0000E88C00 /* QSAutomatorPlugIn.h */,
+				39BE9BDB16CE8B0000E88C00 /* QSAutomatorPlugIn.m */,
+				39BE9BDC16CE8B0000E88C00 /* QSAutomatorPlugIn.xcodeproj */,
+				39BE9BDF16CE8B0000E88C00 /* README.markdown */,
 				394EE4ED16C34FC7000ADC8E /* CoreGraphics.framework */,
 				394EE52F16C350E9000ADC8E /* Automator.framework */,
 				394EE53116C350E9000ADC8E /* Cocoa.framework */,
@@ -452,6 +488,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		39BE9BDD16CE8B0000E88C00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39BE9BEB16CE8B0000E88C00 /* Automator Plugin.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -570,6 +614,12 @@
 			mainGroup = 394EE4B216C34F67000ADC8E;
 			productRefGroup = 394EE4BC16C34F67000ADC8E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 39BE9BDD16CE8B0000E88C00 /* Products */;
+					ProjectRef = 39BE9BDC16CE8B0000E88C00 /* QSAutomatorPlugIn.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				394EE4BA16C34F67000ADC8E /* Eidynamic Workflow Process and Semantic Web Services */,
@@ -580,6 +630,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		39BE9BEB16CE8B0000E88C00 /* Automator Plugin.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Automator Plugin.bundle";
+			remoteRef = 39BE9BEA16CE8B0000E88C00 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		394EE4C916C34F67000ADC8E /* Resources */ = {
@@ -603,6 +663,9 @@
 				394EE50616C34FC8000ADC8E /* MainStoryboard_iPad.storyboard in Resources */,
 				394EE55F16C355DF000ADC8E /* Strategic Response Web Service-Info.plist in Resources */,
 				39CBC43516CD543A007EB8C0 /* semantic structure.rtf in Resources */,
+				39BE9BE016CE8B0000E88C00 /* Documentation.mdown in Resources */,
+				39BE9BE116CE8B0000E88C00 /* Info.plist in Resources */,
+				39BE9BE816CE8B0000E88C00 /* README.markdown in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,6 +738,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				394EE4C616C34F67000ADC8E /* Eidynamic_Workflow_Process_and_Semantic_Web_Services.m in Sources */,
+				39BE9BE216CE8B0000E88C00 /* QSAutomatorPlugIn_Action.m in Sources */,
+				39BE9BE416CE8B0000E88C00 /* QSAutomatorPlugIn_Source.m in Sources */,
+				39BE9BE616CE8B0000E88C00 /* QSAutomatorPlugIn.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -694,6 +760,9 @@
 				394EE4FA16C34FC7000ADC8E /* AppDelegate.m in Sources */,
 				394EE50916C34FC8000ADC8E /* MasterViewController.m in Sources */,
 				394EE50C16C34FC8000ADC8E /* DetailViewController.m in Sources */,
+				39BE9BE316CE8B0000E88C00 /* QSAutomatorPlugIn_Action.m in Sources */,
+				39BE9BE516CE8B0000E88C00 /* QSAutomatorPlugIn_Source.m in Sources */,
+				39BE9BE716CE8B0000E88C00 /* QSAutomatorPlugIn.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
